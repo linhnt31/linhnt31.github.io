@@ -6,7 +6,7 @@
 
 I'm working as a Research Student at Posts and Telecommunications Institute of Technology (PTIT).
 
-My research interest includes Software-Defined Network, Advanced Platforms. Find more about me:
+My research interest includes MPTCP, Software-Defined Network, Advanced Platforms. Find more about me:
 
 - [CV](CV-Thanh-Linh-Nguyen.pdf)
 - [Github](https://github.com/linhnt31)
