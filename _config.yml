@@ -1,10 +1,10 @@
 ### your site title here
-title: Lorenzo Carnevale
-description: Assistant Professor at University of Messina
+title: Linh Thanh Nguyen
+description: PhD student at Trinity College Dublin, the University of Dublin
 
 baseurl: "" #name of GitHub repository
 url: "" #custom url to be used instead of GitHub repository
-email: lcarnevale@unime.it
+email: nguyenthanhlinh58@gmail.com
 
 highlighter: rouge
 markdown: kramdown
@@ -17,14 +17,14 @@ markdown: kramdown
 # Social media links in footer
 # facebook: "#"
 # twitter: "#"
-linkedin: "lorenzocarnevale"
-github: "lcarnevale"
+linkedin: "linhnt31"
+github: "linhnt31"
 # researchgate: "#"
-orcid: "0000-0002-1349-341X"
+orcid: ""
 google_analytics: "G-V0TBR5PTVH"
-scopus: "57195963279"
-google_scholar: "_5EzmTwAAAAJ&hl=it"
-flickr: "lorenzocarnevale"
+scopus: ""
+google_scholar: ""
+flickr: ""
 
 
 # highlighter: rouge
