@@ -7,6 +7,9 @@ profile:
 published: true
 ---
 
+<!-- #### Research Agenda
+As enhanced devices at the edge of the network exploit artificial intelligence, even novel computing challenges are raised. In my current research agenda, I investigate all aspects related to distributed intelligent systems for supporting cities and communities, with a strong focus on optimizing decentralized and self-organized infrastructures. My research finds application in several domains, among which smart city, mobility, healthcare, and cultural heritage. -->
+
 #### Short Biography
 I graduated from <a href="https://portal.ptit.edu.vn/eng/">Posts and Telecommunications Institute of Technology (PTIT)</a>, Hanoi, Vietnam with an engineer's degree from the Faculty of Electronics and Telecommunications and was a member of InNet research group of Data and Intelligent Systems Lab from 2019 to 2023 under the supervision of Assoc. Prof. Le Hai Chau and Dr. Nguyen Thi Thu Hang. 
 
