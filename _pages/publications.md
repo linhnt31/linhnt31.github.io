@@ -17,7 +17,7 @@ published: true
 
 0. <ins>**Linh T. Nguyen**</ins>, Duc Long Vu, Minh Tuan Nguyen, and Hai-Chau Le, “Recognition of human faces and temperatures based on automatically intelligent algorithms”, *Journal of Science and Technology on Information and Communications*, ISSN 2525-2224, vol.01 (CS.01), pp. 4-9, 2022.
 
-0. <ins>**Nguyen Thanh Linh**</ins>, Vu Duc Long, Nguyen Duc Hieu, and Le Hai Chau, “Development of Face Recognition and Temperature Measurement IoT system using Machine Learning”, The 24th National Conference on Electronics, Communications and Information Technology (REV-ECIT 2021), 18-12-2021, Hanoi, Vietnam, pp.426- 431. ISBN: 978- 604-80-5958-3. (In Vietnamese)
+0. <ins>**Nguyen Thanh Linh**</ins>, Vu Duc Long, Nguyen Duc Hieu, and Le Hai Chau, “Development of Face Recognition and Temperature Measurement IoT system using Machine Learning”, *The 24th National Conference on Electronics, Communications and Information Technology* (REV-ECIT 2021), 18-12-2021, Hanoi, Vietnam, pp.426- 431. ISBN: 978- 604-80-5958-3. (In Vietnamese)
 {: reversed="reversed"}
 
 ## Conference Papers

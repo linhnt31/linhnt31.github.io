@@ -5,7 +5,22 @@ permalink: /blog/
 published: true
 ---
 
-## Blogs
+## Technical things
 
-#### 2021
-1. Lorenzo Carnevale. "[Why Edge Computing is so important for AI](https://towardsdatascience.com/why-edge-computing-is-so-important-for-ai-e4695d4e7960?sk=bbcdf4e0a8820f4e458e36debc8a7bba)". Towards Data Science, Medium (May 2021)
+#### 2023
+
+0. Linh Thanh Nguyen, "[Key takeaways and quiz solutions in the Blockchain Specialization offered by The University at Buffalo and The State University of New York and Many useful Blockchain-related knowledge](https://github.com/linhnt31/Blockchain_Specialization_Coursera)", Github repository (March 2023)
+
+{: reversed="reversed"}
+
+## Study
+
+0. How to study effectively
+- A detailed plan for a working day and a week
+- Pomodoro method: studying for 45 minutes and taking a 5-minute break
+- Feynman technique: explaining complicated problems in a simple way
+- Spaced repetition and Making connections
+
+## Life in Ireland
+
+Will be updated soon! Stay tuned!
