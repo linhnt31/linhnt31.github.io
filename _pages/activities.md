@@ -5,6 +5,14 @@ permalink: /activities/
 published: true
 ---
 
+#### Work Experience
+0. DevOps Engineer, <a href="https://fptsoftware.com/">FPT Software</a>, FPT Corporation, May. 2022 - Nov. 2022
+
+0. Cloud Computing Internship, Bizfly Cloud Department, <a href="https://vccorp.vn/">VCCorp Corporation</a>, Apr. 2020 - Jul. 2020
+
+0. Cloud Computing Internship, <a href="https://hadtech.vn/en_US/">HADTech Joint Stock Company</a>, Oct. 2019 - Mar. 2020
+{: reversed="reversed"}
+
 #### Honors and Awards
 0. **Runner-up Prize** in Science-A-Thon Award, <a href="https://www.truonghekhoahoc.com/2022/">*9th Vietnam Summer School of Science*</a>, Aug. 2022
 
