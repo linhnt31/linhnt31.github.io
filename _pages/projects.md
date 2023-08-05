@@ -6,10 +6,13 @@ published: true
 ---
 
 ## Projects
-The following is a not exhaustive list of projects where I have been involved. It includes international and national fund projects, as well as personal (not fund) software projects.
 
-#### MicroPython Libraries and Drivers Series
-<img src="https://img.shields.io/badge/project-software-green">
+0. "Research MAC protocols to ensure QoS in multi-event environments" project funded by SWITCH SEA project, APNIC Foundation (Southeast Asia). 
+**Supervisor**: Dr. Nguyen Thi Thu Hang and Assoc. Prof Le Hai Chau.
 
-The *upy-series* (read it as micropy series) is a collection of libraries and drivers built for MicroPython-based boards (i.e., ESP32, RP2040, etc.). It includes, i.e., drivers for YL-69 or HL-69 resistive soil moisture sensor, relays, etc.<br>
-Resources: <a href="https://github.com/lcarnevale/upy-series">repository</a>
+0. "Develop a face recognition and body temperature system for detecting fever symptoms based on Deep Learning techniques in the COVID-19 pandemic" project funded by NAVER AI Research Center (NAVER Corporation). 
+**Supervisor**: Assoc. Prof. Le Hai Chau.
+
+0. "Vietnam National Independent Program for Space Technology" project sponsored by Vietnam Academy of Science and Technology.
+**Supervisor**: Assoc. Prof. Ngoc Dang and Assoc. Prof. Le Hai Chau.
+{: reversed="reversed"}
