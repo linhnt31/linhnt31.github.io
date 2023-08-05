@@ -23,4 +23,4 @@ I have been teacher of several subjects, among which Computer Networks and Algor
 
 #### News
 
-- [07/2023] I just got the acceptance to attend the 6th DTU Summer Research School, which will be organized by <a href="https://scholar.google.com/citations?user=PwsDdmEAAAAJ&hl=vi">Prof. Duong Quang Trung</a> and <a href="https://duytan.edu.vn/">Duy Tan University</a> from July 7–9, 2023, in Da Nang City, Vietnam.  
+- **[07/2023]** I just got the acceptance to attend the 6th DTU Summer Research School, which will be organized by <a href="https://scholar.google.com/citations?user=PwsDdmEAAAAJ&hl=vi">Prof. Duong Quang Trung</a> and <a href="https://duytan.edu.vn/">Duy Tan University</a> from July 7–9, 2023, in Da Nang City, Vietnam.  
