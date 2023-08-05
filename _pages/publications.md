@@ -7,7 +7,7 @@ published: true
 
 ## Journal Papers
 
-#### 2020
+#### 2023
 0. Lorenzo Carnevale and Antonio Celesti and Giacomo Fiumara and Antonino Galletta and Massimo Villari. "*Investigating classification supervised learning approaches for the identification of critical patients' posts in a healthcare social network*". Applied Soft Computing, Elsevier, vol. 90, pp. 106155, ISSN: 1568-4946 (May 2020) (doi: [10.1016/j.asoc.2020.106155](https://doi.org/10.1016/j.asoc.2020.106155)) [[bibtex](https://github.com/lcarnevale/publications/blob/main/bibtex/202005-paper-journal-elsevier-applied_soft_computing.bib)]
 
 0. Sandra Schüssler and Julia Zuschnegg and Lucas Paletta and Maria Fellner and Gerald Lodron and Josef Steiner and Sandra Pansy-Resch and Lara Lammer and Dimitrios Prodromou and Sebastian Brunsch and Magdalena Holter and Lorenzo Carnevale and Silvia Russegger. "*The Effects of a Humanoid Socially Assistive Robot Versus Tablet Training on Psychosocial and Physical Outcomes of Persons With Dementia: Protocol for a Mixed Methods Study*". JMIR Research Protocols, JMIR Publications, vol. 9-2, pp. 14927, ISSN: 1929-0748 (February 2020) (doi: [10.2196/14927](https://doi.org/10.2196/14927)) [[bibtex](https://github.com/lcarnevale/publications/blob/main/bibtex/202002-paper-journal-jmir-research_protocols.bib)]
@@ -16,7 +16,6 @@ published: true
 {: reversed="reversed"}
 
 
-#### 2019
 0. Antonio Celesti and Davide Mulfari and Antonino Galletta and Maria Fazio and Lorenzo Carnevale and Massimo Villari. "*A study on container virtualization for guarantee quality of service in Cloud-of-Things*". Future Generation Computer Systems, Elsevier, vol. 99, pp. 356-364, ISSN: 0167-739X (October 2019) (doi: [10.1016/j.future.2019.03.055](https://doi.org/10.1016/j.future.2019.03.055)) [[bibtex](https://github.com/lcarnevale/publications/blob/main/bibtex/201910-paper-journal-elsevier-future_generation_computer_systems.bib)]
 
 0. Lorenzo Carnevale and Antonio Celesti and Antonino Galletta and Schahram Dustdar and Massimo Villari. "*Osmotic computing as a distributed multi-agent system: The Body Area Network scenario*". Internet of Things, Elsevier, vol. 5, pp. 130-139, ISSN: 2542-6605 (March 2019) (doi: [10.1016/j.iot.2019.01.001](https://doi.org/10.1016/j.iot.2019.01.001)) [[bibtex](https://github.com/lcarnevale/publications/blob/main/bibtex/201903-paper-journal-elsevier-internet_of_things.bib)]
