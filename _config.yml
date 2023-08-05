@@ -16,7 +16,7 @@ markdown: kramdown
 
 # Social media links in footer
 # facebook: "#"
-# twitter: "#"
+twitter: "linhnt31"
 linkedin: "linhnt31"
 github: "linhnt31"
 # researchgate: "#"
@@ -24,7 +24,7 @@ github: "linhnt31"
 google_analytics: "G-V0TBR5PTVH"
 # scopus: ""
 # google_scholar: ""
-flickr: ""
+# flickr: ""
 
 
 # highlighter: rouge

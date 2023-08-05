@@ -3,7 +3,7 @@ layout: about
 permalink: /
 profile:
   align: right
-  image: linhnt.jpg
+  image: homepage.jpg
 published: true
 ---
 
@@ -12,6 +12,8 @@ As enhanced devices at the edge of the network exploit artificial intelligence, 
 
 #### Short Biography
 I graduated from <a href="https://portal.ptit.edu.vn/eng/">Posts and Telecommunications Institute of Technology (PTIT)</a>, Hanoi, Vietnam with an engineer's degree from the Faculty of Electronics and Telecommunications and was a member of InNet research group of Data and Intelligent Systems Lab from 2019 to 2023 under the supervision of Assoc. Prof. Le Hai Chau and Dr. Nguyen Thi Thu Hang. 
+
+In addition to doing research, I enjoy designing, implementing, and deploying academic ideas into practical products.
 
 <!-- I am an assistant professor in the <a href="https://fcrlab.unime.it/">Future Computing Research Laboratory</a> at the Department of Mathematics, Computer Science, Physics and Hearth Sciences of the <a href="https://international.unime.it/">University of Messina</a>. I was research fellow in the same university and I earned my Ph.D. in the Department of Engineering at <a href="https://www.unirc.it/en/">University of Reggio Calabria</a> in May 2020 under the supervision of <a href="https://www.scopus.com/authid/detail.uri?authorId=12645423500">Massimo Villari</a>.
 
