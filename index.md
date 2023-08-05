@@ -29,7 +29,7 @@ I have been teacher of several subjects, among which Computer Networks and Algor
 
 - **[07/2023]** I just got the acceptance to attend the 6th DTU Summer Research School, which will be organized by <a href="https://scholar.google.com/citations?user=PwsDdmEAAAAJ&hl=vi">Prof. Duong Quang Trung</a> and <a href="https://duytan.edu.vn/">Duy Tan University</a> from July 7–9, 2023, in Da Nang City, Vietnam.  
 
-- **[08/2022]** I just got the acceptance to attend the 9th Vietnam Summer School of Science (VSSS09), which was sponsored and organised by the <a href="https://rencontresduvietnam.org/">Recontres du Vietnam Foundation</a>, <a href="https://www.icisequynhon.com/">ICISE</a> and <a href="https://viasm.edu.vn/en/home/">Vietnam Institute for Advanced Study in Mathematics</a> (VIASM). Out of 700 applicants, 150 Vietnamese students and scientists were chosen for this cohort. I am so proud to be here with warm-hearted and talented people! You can find some images of mine in VSSS09 ![here]({{site.baseurl}}/misc)!
+- **[08/2022]** I just got the acceptance to attend the 9th Vietnam Summer School of Science (VSSS09), which was sponsored and organised by the <a href="https://rencontresduvietnam.org/">Recontres du Vietnam Foundation</a>, <a href="https://www.icisequynhon.com/">ICISE</a> and <a href="https://viasm.edu.vn/en/home/">Vietnam Institute for Advanced Study in Mathematics</a> (VIASM). Out of 700 applicants, 150 Vietnamese students and scientists were chosen for this cohort. I am so proud to be here with warm-hearted and talented people! You can find some images of mine in VSSS09 [here]({{site.baseurl}}/misc)!
 
 
 
