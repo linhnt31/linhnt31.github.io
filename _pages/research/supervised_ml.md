@@ -118,7 +118,7 @@ $$
 *Cost function*, denoted as $J$, is to determine how well the model (or *the line* or the choice of adjusting $w$ and $b$) fits the training data. The example below is the *cost function* (i.e. mean squared error - MSE) of *linear regression model*.
 
 $$
-J(w,b)={{1\over{2m}}{\sum\limits_{i=1}^{m}{\underbrace{(\hat y^{(i)} - y^{(i)})}_\text{error}}^2}}={{1\over{2m}}{\sum\limits_{i=1}^{m}{( f_{w,b}{(x^{(i)})} - y^{(i)})}^2}}
+J(w,b)= \frac{1}{2m}\sum\limits_{i=1}^{m}{\underbrace{(\hat y^{(i)} - y^{(i)})}_\text{error}}^2=\frac{1}{2m}\sum\limits_{i=1}^{m}{( f_{w,b}{(x^{(i)})} - y^{(i)})}^2
 $$
 
 where $i$ represents the $i^{th}$ training example, and $b$ and $w$ are *training parameters* which will be adjusted during the training process.
@@ -142,10 +142,10 @@ $$
 
 + Step 1: Choose an appropriate $\alpha$ and Randomly initialize $w$ and $b$ parameters
 + Step 2: Repeat until convergence {
-    $$
-    w=w-\alpha{d \over dw}J(w,b)$$ 
-    $$b=b-\alpha{d \over db}J(w,b)
-    $$ 
+
+    $$w=w-\alpha{d \over dw}J(w,b)$$ 
+
+    $$b=b-\alpha{d \over db}J(w,b)$$ 
     }
 
 
@@ -165,13 +165,13 @@ $$
     + *Mean normalization technique*
 
     $$
-        X_i={{X_i-\mu_{i}} \over {\max_{(X_i)} - \min_{(X_i)}}}
+    X_i = \frac{X_i-\mu_{i}}{\max_{(X_i)} - \min_{(X_i)}}
     $$
 
     + Z-score normalization method
 
     $$
-        X_i={{X_i-\mu_{i}} \over {\sigma_{i}}}
+    X_i=\frac{X_i-\mu_{i}}{\sigma_{i}}
     $$
 
 > If we do not apply **feature scaling**, features that have larger values than other ones will have a larger impact on the ***cost function***. This is because any small change in the *weight* value in the former leading to big impact on the value of cost function (these *weight* values are multiplied with big values of features).
@@ -268,8 +268,9 @@ $$
 z = WX + b$$
 
 and 
+
 $$
-f_{W,b}{(X)} = \hat y = g(z) = {1 \over 1 + e ^ {-(WX+b)}} = {1 \over 1 + e ^ {-z}}  = P(y=1 | X; W, b) $$
+f_{W,b}{(X)} = \hat y = g(z) = {1 \over 1 + e ^ {-(WX+b)}} = {1 \over 1 + e ^ {-z}}  = P(y=1 | X; W, b)$$
 
 where 
 
