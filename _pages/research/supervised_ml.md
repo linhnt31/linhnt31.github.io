@@ -40,6 +40,7 @@ published: true
 Given the input $X$ (or *labeled data*) which associated with output labels $y$, our algorithms will learn from them to make an *answer* or prediction $\hat{y}$. 
 
 ![](https://static.javatpoint.com/tutorial/machine-learning/images/supervised-machine-learning.png)
+
 `Figure 1: The workflow of supervised machine learning`
 
 <div id='term'/>
@@ -123,6 +124,7 @@ $$
 where $i$ represents the $i^{th}$ training example, and $b$ and $w$ are *training parameters* which will be adjusted during the training process.
 
 ![](https://res.cloudinary.com/practicaldev/image/fetch/s--OmQqkAcP--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c8xvp5hnpmg375il4p1x.png)
+
 `Figure 2: The error between the predicted value and the actual label`
 
 
@@ -241,6 +243,7 @@ $$f_{W,b}(X)=f(X)=\hat y=W{X}+b$$
 
 
 ![](https://serokell.io/files/ka/kawer8rc.5_(5).png)
+
 `Figure 3: Linear regression vs. Polynomial regression`
 
 <div id='classification'/>
@@ -254,6 +257,7 @@ $$f_{W,b}(X)=f(X)=\hat y=W{X}+b$$
 <span style="color:blue">*Sigmoid function*</span>
 
 ![](https://machinelearningmastery.com/wp-content/uploads/2021/08/sigmoid.png)
+
 `Figure 4: The sigmoid function and its derivative (The axis of x in the figure will be the axis of z for below formulation.)`
 
 <span style="color:blue">*Formulation*</span>
