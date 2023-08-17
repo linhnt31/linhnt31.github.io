@@ -6,15 +6,23 @@ published: true
 ---
 
 # Table of contents
+
 1. [Fundamentals](#fundamentals)
+
     1.1. [Definition](#definition)
+
     1.2. [Terminology and Notation](#term)
+
     1.3. [Cost Function](#costfunc)
+
     1.4. [Types of supervised learning](#types)
 2. [Regression Model](#regression)
+
     2.1. [Linear Regression Model](#linearregression)
+
     2.2. [Polynomial Regression Model](#polyregression)
 3. [Classification Model](#classification)
+
     3.1. [Logistic Regression](#logisticregress)
 
 > It has been a while since I started to learn fundmentals of Machine Learning. In this post, I will re-study and take some note of useful concepts, formulas, and practical tips related to ***supervised learning*** to reduce the searching time in the future. 

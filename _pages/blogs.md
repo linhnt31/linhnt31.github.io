@@ -20,6 +20,7 @@ published: true
     - Feynman technique: explaining complicated problems in a simple way
     - Active Recall & Spaced
 {: reversed="reversed"}
+
 ## Life in Ireland
 
 Will be updated soon! Stay tuned!
