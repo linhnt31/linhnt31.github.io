@@ -27,5 +27,5 @@ Will be updated soon! Stay tuned!
 
 ## Philosophy
 
-0. [Stoicism]({{site.baseurl}}/research/Stoicism)
+0. [Stoicism]({{site.baseurl}}/misc/Stoicism)
 {: reversed="reversed"}
