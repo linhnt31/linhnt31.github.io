@@ -381,7 +381,7 @@ Here are few ways to address overfitting:
 In practice, it is hard to choose which features we can regularize. Therefore, we will penalize all of them by adding ***regularization term*** to the [cost function](#cost-function) to keep $w_j$ small and fit data. 
 
 $$
-J(w,b)= \frac{1}{2m}\sum\limits_{i=1}^{m}{\underbrace{(f_{W,b}(x^{(i)})- y^{(i)})}_\text{MSE}}^2 + \underbrace{\frac{\lambda}{2m}\sum\limits_{j=1}^{n}{{w_j}^2}}_\text{regularization term}
+J(w,b)= \frac{1}{2m}\sum\limits_{i=1}^{m}{\underbrace{(f_{W,b}(x^{(i)})- y^{(i)})}_\text{MSE}}^2 + \underbrace{\frac{\lambda}{2m}\sum\limits_{j=1}^{n}{w_j}^2}_\text{regularization term}
 $$
 
 > **NOTE**: Because regularizing $b$ only makes a trivial impact, I only consider regularizing of $w$.
