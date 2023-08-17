@@ -242,7 +242,7 @@ $$f_{w,b}(x)=f(x)=\hat y=w{x}+b$$
 
 where $W$ and $b$ are parameters learned during the training process. Please refer to terminology [here](#term).
 
-Here is the example of using [sklearn](https://scikit-learn.org/) to implement *linear regression*. [[code link]]({{site.baseurl}}/research/code/SKLearn_Linear_regression.ipynb)
+Here is the example of using [sklearn](https://scikit-learn.org/) to implement *linear regression*. [[code link]](https://github.com/linhnt31/linhnt31.github.io/blob/master/_pages/research/code/SKLearn_Linear_regression.ipynb)
 
 <div id='polyregression'/>
 
@@ -405,4 +405,4 @@ $$
     $$b=b-\alpha{d \over db}J(w,b)=b-\alpha[\frac{1}{m}\sum\limits_{i=1}^{m}{(f_{W,b}(x^{(i)})- y^{(i)})}]$$
     }
 
-You can find the fully-detailed implementation of *logistic regression* using sigmoid function, cost function, and *regularization* in the [code link]({{site.baseurl}}/research/code/Logistic_Regression.ipynb).
+You can find the fully-detailed implementation of *logistic regression* using sigmoid function, cost function, and *regularization* in the [code link](https://github.com/linhnt31/linhnt31.github.io/blob/master/_pages/research/code/Logistic_Regression.ipynb).
