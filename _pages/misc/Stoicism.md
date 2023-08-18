@@ -17,16 +17,18 @@ published: true
 
 - Justice
 
-    > Doing the right thing [2]
+    > Treating people with fairness even when they have done something wrong [3]
 
 - Wisdom
 
-    > The knowing. The learning. The experience required to navigate the world [2] 
+    > The ability to navigate complex situations in a logical, informed, and calm manner [3]
 
 #### Two types of Stoicism
 
 - Things we cannot control
 - Things we can control
+
+> We suffer not from the events in our lives, but from our judgement about them! ***Epictetus***
 
 
 
@@ -35,3 +37,5 @@ published: true
 [1]. https://www.youtube.com/watch?v=wX8trc6d8V0
 
 [2]. https://dailystoic.com/what-is-stoicism-a-definition-3-stoic-exercises-to-get-you-started/
+
+[3]. https://www.youtube.com/watch?v=R9OCA6UFE-0&ab_channel=TED-Ed
