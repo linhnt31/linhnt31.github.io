@@ -11,7 +11,7 @@ published: true
 As enhanced devices at the edge of the network exploit artificial intelligence, even novel computing challenges are raised. In my current research agenda, I investigate all aspects related to distributed intelligent systems for supporting cities and communities, with a strong focus on optimizing decentralized and self-organized infrastructures. My research finds application in several domains, among which smart city, mobility, healthcare, and cultural heritage. -->
 
 #### Short Biography
-I graduated from <a href="https://portal.ptit.edu.vn/eng/">Posts and Telecommunications Institute of Technology (PTIT)</a>, Hanoi, Vietnam with an engineer's degree from the Faculty of Electronics and Telecommunications and was a member of InNet research group of Data and Intelligent Systems Lab from 2019 to 2023 under the supervision of Assoc. Prof. Le Hai Chau and Dr. Nguyen Thi Thu Hang. 
+I am currently a PhD student in the fields of Blockchain, Federated Learning, and Internet of Things at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. Previously, I graduated from <a href="https://portal.ptit.edu.vn/eng/">Posts and Telecommunications Institute of Technology (PTIT)</a>, Hanoi, Vietnam with an engineer's degree from the Faculty of Electronics and Telecommunications and was a member of InNet research group of Data and Intelligent Systems Laboratory from 2019 to 2023 under the supervision of Assoc. Prof. Le Hai Chau and Dr. Nguyen Thi Thu Hang. 
 
 In addition to doing research, I enjoy designing, implementing, and deploying academic ideas into practical products. Here is my tech stacks: 
 
@@ -26,6 +26,7 @@ I led activities related to the technical area for the EU project "FLIWARE" and 
 I have been teacher of several subjects, among which Computer Networks and Algorithms, and teacher's guide of Bio-Inspired Artificial Intelligence. I am reviewer of respected Springer, IEEE and Elsevier Journals, coordinator of the University of Messina's node for the <a href="https://www.consorzio-cini.it/index.php/it/lab-infolife">CINI InfoLife</a> Laboratory, Associate Editor for <a href="https://www.frontiersin.org/journals/robotics-and-ai/sections/smart-sensor-networks-and-autonomy">Frontiers in Robotics and AI</a>, member of the <a href="http://www.ifiptc12.org/component/tags/tag/41-wg-12-9">IFIP Working Group 12.9 about Computational Intelligence</a>, co-chairs of IEEE Workshops (<a href="https://fcrlab.unime.it/calls/distinsys2022">DistInSys</a>, <a href="https://fcrlab.unime.it/calls/mriche2021">MrICHE</a>, and <a href="https://www.ai4health.icar.cnr.it/">AI4Health</a>) and co-author of more than 30 manuscripts. -->
 
 #### News
+- **[09/2023]** I started studying PhD in Computer Science at [Trinity College Dublin, The University of Dublin](https://www.tcd.ie/) in Ireland, fully funded by [Science Foundation Ireland](https://www.sfi.ie/).
 
 - **[07/2023]** I just got the acceptance to attend the 6th DTU Summer Research School, which will be organized by <a href="https://scholar.google.com/citations?user=PwsDdmEAAAAJ&hl=vi">Prof. Duong Quang Trung</a> and <a href="https://duytan.edu.vn/">Duy Tan University</a> from July 7–9, 2023, in Da Nang City, Vietnam.  
 
