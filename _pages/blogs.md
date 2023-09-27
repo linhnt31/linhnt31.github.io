@@ -12,6 +12,11 @@ published: true
 0. Linh Thanh Nguyen, "[Key takeaways and quiz solutions in the Blockchain Specialization offered by The University at Buffalo and The State University of New York and Many useful Blockchain-related knowledge](https://github.com/linhnt31/Blockchain_Specialization_Coursera)", Github repository (March 2023)
 {: reversed="reversed"}
 
+##  State-of-the-art research topics
+
+0. McKinsey & Company, "[The state of AI in 2023: Generative AI’s breakout year]({{site.baseurl}}/research/GenerativeAI)" (August 2023)
+{: reversed="reversed"}
+
 ## Study
 
 0. How to study effectively
@@ -20,10 +25,6 @@ published: true
     - Feynman technique: explaining complicated problems in a simple way
     - Active Recall & Spaced
 {: reversed="reversed"}
-
-## Life in Ireland
-
-Will be updated soon! Stay tuned!
 
 ## Philosophy
 
