@@ -14,6 +14,9 @@ published: true
 {: reversed="reversed"}
 
 #### Honors and Awards
+
+0. **Fully-funded PhD Scholarship**, Trinity College Dublin, Sep. 2023-Aug. 2027
+
 0. **Runner-up Prize** in Science-A-Thon Award, <a href="https://www.truonghekhoahoc.com/2022/">*9th Vietnam Summer School of Science*</a>, Aug. 2022
 
 0. **Consolation Prize** for excellent students, *Honda Award 2021*, Mar. 2022
