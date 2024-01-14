@@ -5,9 +5,9 @@ permalink: /misc/
 published: true
 ---
 
-## Life in Ireland
+## 5th cohort Science Foundation Ireland ADVANCE CRT Induction, Jan. 2024
 
-Will be updated soon! Stay tuned!
+[Here are my thoughts about the event.]({{site.baseurl}}/misc/AdvanceCRT_Induction_2024)
 
 ## Science Foundation Ireland ADVANCE CRT Workshop, Nov. 2023
 
