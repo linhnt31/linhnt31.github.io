@@ -19,7 +19,7 @@ published: true
 
 ## Events
 
-0. Here are my thoughts about the event, "[5th cohort Science Foundation Ireland ADVANCE CRT Induction"]({{site.baseurl}}/misc/AdvanceInduction2024) (Jan. 2024)
+0. Here are my thoughts about the event, "[5th cohort Science Foundation Ireland ADVANCE CRT Induction"]({{site.baseurl}}/blog/AdvanceInduction24) (Jan. 2024)
 {: reversed="reversed"}
 
 ## Philosophy

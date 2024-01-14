@@ -1,7 +1,7 @@
 ---
 title:
 layout: default
-permalink: /misc/AdvanceCrtInduction24
+permalink: /blog/AdvanceInduction24
 published: true
 ---
 
@@ -9,17 +9,17 @@ published: true
 
 > In the early of 2024, my fellowship body, i.e., [SFI ADVANCE CRT](https://www.advance-crt.ie/), organized induction event for the 5th cohort at [University College Cork](https://www.ucc.ie/en/) (UCC), Cork, Ireland. This was a great opportunity for the new cohort to connect, study, and plan for next steps in their PhD journey in Ireland. 
 
-##### I. Traveling from Dublin to Cork - Day 1 (09/01/2024)
+### I. Traveling from Dublin to Cork - Day 1 (09/01/2024)
 
 I started by going to Dublin Pearse station by Dart at 07:20, then took the No.26 bus to Dublin Heuston, and went to Cork Kent station by train at 09:00. After arriving at Cork Kent station around 12:00, I took the No.215 bus to go to [Blarney Castle & Gardens](https://blarneycastle.ie/), which is a beautiful and attractive place for tourists. No wonder, the nature is always the most attractive part of Ireland for me. You can find more pictures I took of this place [here](). 
 
 After 3 hours of walking around, I went back to the [Kingsley Hotel](https://www.thekingsley.ie/?gad_source=1&gclid=CjwKCAiA-vOsBhAAEiwAIWR0TZH4N4x6T3s6syCxmXEq7f4hEkChI2hXGBLpZRgqm3USX_m5LYJSOBoCcOIQAvD_BwE), where the organisers had booked rooms for us from the 9th to the 13th (The scholarship agent is so generous. They also booked us a 4 star hotel in Clayton for the Limerick trip ^^).
 
-##### II. Induction - Day 2 (10/01/2024)
+### II. Induction - Day 2 (10/01/2024)
 
 This day was all about information about our PhD training process, e.g. responsibilities, benefits,... and then each PhD student gave a short presentation about themselves, their research topics and hobbies. Finally, we had the opportunity to listen to the experiences of the veterans of the 1st cohort.
 
-##### III. Personal Development Training - Day 3 (11/01/2024)
+### III. Personal Development Training - Day 3 (11/01/2024)
 
 The third day was the day I feel I gained the most from this event, where we were introduced to the [Vitae Researcher Development Framework](https://www.vitae.ac.uk/vitae-publications/vitae-library-of-resources/about-vitae-researcher-development-programmes/effective-researcher) (RDF). This was the time where I had to revisit the reasons why I chose to do a PhD, know the skills needed to become an independent researcher, and understand the role of the supervisor in my career and professional development by listening to the opinions of professors and peers. In addition, [**STAR**](https://nationalcareers.service.gov.uk/careers-advice/interview-advice/the-star-method) and [**SMARTER**](https://solocom.ca/en/smarter-method/#:~:text=The%20SMART%20concept%20to%20achieving,evaluate%20and%20revise%20your%20goals.) techniques are also introduced to us for *self-assessment* and *research topic/career goal finding*.
 
@@ -89,11 +89,11 @@ Here are few key takeaways condensed from these two techniques:
 
 In the evening, we drank beer and went bowling with another guy at the [Mardyke Entertainment Complex](https://www.google.ie/maps/place/Mardyke+Bowl/@51.8981628,-8.4837204,17z/data=!4m14!1m7!3m6!1s0x48449017a7759863:0xdaa03b25dc975d26!2sMardyke+Bowl!8m2!3d51.8981628!4d-8.4811455!16s%2Fg%2F11gfp52wqb!3m5!1s0x48449017a7759863:0xdaa03b25dc975d26!8m2!3d51.8981628!4d-8.4811455!16s%2Fg%2F11gfp52wqb?entry=ttu). I also caught up with trying *chicken ball, spring roll, braised beef noodle and Chicken Yakitori rice* at [Noodle-UCC restaurant](https://maps.app.goo.gl/1KuxdNfubXK9vkij8) (You know I am obssed with noodles, so I always want to try every kind of noodle wherever I visit ^^). 
 
-##### IV. Systems Thinking - Day 4 (12/01/2024)
+### IV. Systems Thinking - Day 4 (12/01/2024)
 
 Systems Thinking
 
-##### V. Coming back to Dublin - Day 5 (13/01/2024)
+### V. Coming back to Dublin - Day 5 (13/01/2024)
 
 After breakfast at 09:00, I checked out and walked to some places, i.e. the [Glucksman Gallery](https://www.glucksman.org/) in UCC and the [English Market](https://www.corkcity.ie/en/english-market/) in the city centre, before going to Cork Kent Station. Finally, I went home at 16:00 and official ending my journey to theADVANCE CRT Induction event. 
 
