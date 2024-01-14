@@ -5,6 +5,8 @@ permalink: /misc/Stoicism
 published: true
 ---
 
+<span style="color: red;"><u>**Publication date</u>**</span>:: Aug. 14, 2023
+
 ## Stoicism
 
 #### Cardinal virtues for each action in your life 

@@ -5,10 +5,6 @@ permalink: /misc/
 published: true
 ---
 
-## 5th cohort Science Foundation Ireland ADVANCE CRT Induction, Jan. 2024
-
-[Here are my thoughts about the event.]({{site.baseurl}}/misc/AdvanceCRT_Induction_2024)
-
 ## Science Foundation Ireland ADVANCE CRT Workshop, Nov. 2023
 
 <p float="middle">
@@ -27,3 +23,12 @@ published: true
   <img src="../../assets/images/VSSS09/3.jpg" width="350" height="300" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
   <img src="../../assets/images/VSSS09/4.jpg" width="450" height="300" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
 </p>
+
+## Study
+
+0. How to study effectively
+    - A detailed plan for a working day and a week
+    - Pomodoro method: studying for 45 minutes and taking a 5-minute break
+    - Feynman technique: explaining complicated problems in a simple way
+    - Active Recall & Spaced
+{: reversed="reversed"}

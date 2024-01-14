@@ -17,13 +17,9 @@ published: true
 0. McKinsey & Company, "[The state of AI in 2023: Generative AI’s breakout year]({{site.baseurl}}/research/GenerativeAI)" (August 2023)
 {: reversed="reversed"}
 
-## Study
+## Events
 
-0. How to study effectively
-    - A detailed plan for a working day and a week
-    - Pomodoro method: studying for 45 minutes and taking a 5-minute break
-    - Feynman technique: explaining complicated problems in a simple way
-    - Active Recall & Spaced
+0. Here are my thoughts about the event, "[5th cohort Science Foundation Ireland ADVANCE CRT Induction"]({{site.baseurl}}/misc/AdvanceInduction2024) (Jan. 2024)
 {: reversed="reversed"}
 
 ## Philosophy
