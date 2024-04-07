@@ -30,7 +30,7 @@ published: true
 
     4.2. [Regularization](#regular)
 
-> It has been a while since I started to learn fundmentals of Machine Learning. In this post, I will re-study and take some note of useful concepts, formulas, and practical tips related to ***supervised learning*** to reduce the searching time in the future. 
+> It has been a while since I started to learn fundamentals of Machine Learning. In this post, I will re-study and take some note of useful concepts, formulas, and practical tips related to ***supervised learning*** to reduce the searching time in the future. 
 
 ## Supervised Learning
 
