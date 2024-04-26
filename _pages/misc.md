@@ -11,7 +11,7 @@ We had great time of Research Colloquium event organized by SFI ADVANCE CRT in T
 
 <p float="middle">
   <img src="../../assets/images/Tralee2024/ADVANCE_CRT_Cohorts.jpg" width="700" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-
+</p>
 
 ## SFI ADVANCE CRT Induction, Jan. 2024
 
