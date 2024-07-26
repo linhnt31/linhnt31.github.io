@@ -11,9 +11,9 @@ published: true
 
 ## Journal Papers
 
-0. <ins>**Linh T. Nguyen**</ins>, Lam Duc Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, Petar Popovski, and Shiping Chen, ”<a href="https://arxiv.org/abs/2303.06546">Blockchain-Empowered Trustworthy Data Sharing: Fundamentals, Applications, and Challenges</a>”. submitted to *IEEE Communications Surveys & Tutorials* - ***Under review***  (in collaboration with CSIRO).
+0. <ins>**Linh T. Nguyen**</ins>, Lam Duc Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, Petar Popovski, and Shiping Chen, ”<a href="https://arxiv.org/abs/2303.06546">Blockchain-Empowered Trustworthy Data Sharing: Fundamentals, Applications, and Challenges</a>”. submitted to *ACM Computing Surveys* - ***Under review***  (in collaboration with CSIRO Data61).
 
-0. <ins>**Linh T. Nguyen**</ins>,, et al., ”Designing Industrial Blockchain-based Industrial IoT systems: An Engineering Tutorial”. Target to IEEE Internet of Things Journal (Work-In-Progress, in collaboration with CSIRO).
+0. Et al, <ins>**Linh T. Nguyen**</ins>, et al., ”BlockFed: A Benchmarking Framework for Trusted Learning in Heterogeneous Environments”. submitted to *ACM Transactions on Modeling and Performance Evaluation of Computing Systems* - ***Under review*** (in collaboration with CSIRO Data61).
 
 0. <ins>**Linh T. Nguyen**</ins>, Duc Long Vu, Minh Tuan Nguyen, and Hai-Chau Le, “Recognition of human faces and temperatures based on automatically intelligent algorithms”, *Journal of Science and Technology on Information and Communications*, ISSN 2525-2224, vol.01 (CS.01), pp. 4-9, 2022.
 
@@ -21,6 +21,8 @@ published: true
 {: reversed="reversed"}
 
 ## Conference Papers
+
+0. <ins>**Linh T. Nguyen**</ins>, Viet Pham, INFOCOM 2025 (Details Will be updated soon due to the policy of double-blind review process.)
 
 0. Thi-Mien Nguyen, <ins>**Linh T. Nguyen**</ins>, Khac-Tuan Nguyen, and Hai-Chau Le. 2022. Performance Analysis of Short-Packet Communications in Multi-RIS-based Uplink Systems. In *The 11th International Symposium on Information and Communication Technology* (SoICT 2022). Association for Computing Machinery, New York, NY, USA, 180–185.
 
