@@ -10,7 +10,7 @@ published: true
 From June 10 to 14, I had the privilege of attending a remarkable 5-day summer school organized by SFI ADVANCE CRT in the picturesque town of Killarney, County Kerry, Ireland. This intensive program offered two training tracks for PhD students: Social and STEM. What made this experience truly enriching was the interdisciplinary collaboration, where we formed groups with members from both tracks to propose case studies.
 
 <p float="middle">
-  <img src="../../assets/images/Killarney2024/allteam.jpeg" width="700" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
+  <img src="../../assets/images/Killarney2024/allteam.jpeg" width="750" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
 </p>
 
 **Day-by-Day Learning Journey:**
