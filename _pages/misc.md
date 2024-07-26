@@ -9,6 +9,10 @@ published: true
 
 From June 10 to 14, I had the privilege of attending a remarkable 5-day summer school organized by SFI ADVANCE CRT in the picturesque town of Killarney, County Kerry, Ireland. This intensive program offered two training tracks for PhD students: Social and STEM. What made this experience truly enriching was the interdisciplinary collaboration, where we formed groups with members from both tracks to propose case studies.
 
+<p float="middle">
+  <img src="../../assets/images/Killarney2024/allteam.jpeg" width="700" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
+</p>
+
 **Day-by-Day Learning Journey:**
 
 + Day #0: I travel with my friend in the Trinity College Dublin to Killarney. After lunch at [Muckross Park Hotel & Spa](https://www.muckrosspark.com/?gad_source=1&gclid=CjwKCAjw1K-zBhBIEiwAWeCOF6OjC_EYqY2k8kVrOaSTvzFu0Phe3tJeZCifI0FOoGw5NRNGvwPF6hoCxCUQAvD_BwE), we have two keynote speakers talking about impacts of AI on Networking and society.
