@@ -7,6 +7,8 @@ published: true
 
 ## Technical things
 
+0. Linh Thanh Nguyen, "[Diffusion models]({{site.baseurl}}/research/diffusion_model)" (v1. July 2024)
+
 0. Linh Thanh Nguyen, "[Precision, Recall and F1 Score - All we need to know]({{site.baseurl}}/research/classification_problems)" (v1. April 2024)
 
 0. Linh Thanh Nguyen, "[Key takeaways about supervised learning in Supervised Machine Learning: Regression and Classification course, Deep Learning AI]({{site.baseurl}}/research/supervised_ml)" (August 2023)
