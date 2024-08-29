@@ -38,7 +38,7 @@ In AI, we assume to have a set of parameters $\theta$ of a statistical machine l
 
 > **Maximum Likelihood Estimation (MLE)** is one of 2 ways of parameter estimation. The estimation is conducted *using only the training data*.
 
-\- **Definition**: The joint probability of $p(x_1, x_2,...,x_N| \theta)$ is called ***likelihood*** where $x_1, x_2,...,x_N$ are input data and we know their distribution represented the model $\theta$. ***Maximum likelihood*** is to find $\theta$ to maximize the joint probability, as shown as follows
+\- **Definition**: The joint probability of $p(x_1, x_2,...,x_N | \theta)$ is called ***likelihood*** where $x_1, x_2,...,x_N$ are input data and we know their distribution represented the model $\theta$. ***Maximum likelihood*** is to find $\theta$ to maximize the joint probability, as shown as follows
 
 $$\theta = \max_{\theta}{p(x_1, x_2,...,x_N| \theta)}.\;\;\;\;\; (1)$$ 
 
@@ -55,6 +55,7 @@ Also, optimization of a product is more challenging than that of a summation, th
 $$\theta = \max_{\theta}{\sum_{i=1}^{N} log(p(x_i | \theta))}.\;\;\;\;\; (3)$$
 
 > **NOTE**: MLE specifies the objective function, while optimization algorithms (e.g., Stochastic Gradient Descent) is a method to find the optimal solution for our objective function.
+
 ## 2. What is Diffusion Model? [1-3]
 
 <div id='1concept'/>
