@@ -39,13 +39,7 @@ published: true
   + Handle tasks requiring less concentration in batches, while doing required-concentration tasks individually.
   + Seriously invest an amount of time on learning skills which are seemed to used repeatedly in the future (e.g., Using and knowing in details Pytorch/Tensorflow/Ethereum frameworks for coding and blockchain system configurations).
   + Abandon your own rules sometimes and allow for serendipity (Actually, I like this statement a lot and I actually found some interesting ideas during the time talking with my friends and colleagues, instead of a loop thought that I must work I must finish this I must finish that now).
-**0. How to present and identify a significant research question?**
-- The way we present the research question:
-  + Clearly defined and using non-technical language.
-  + 
-- The way we identify the research question:
-  + 
-  + 
+
 {: reversed="reversed"}
 
 ## Events
