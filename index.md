@@ -11,7 +11,7 @@ published: true
 As enhanced devices at the edge of the network exploit artificial intelligence, even novel computing challenges are raised. In my current research agenda, I investigate all aspects related to distributed intelligent systems for supporting cities and communities, with a strong focus on optimizing decentralized and self-organized infrastructures. My research finds application in several domains, among which smart city, mobility, healthcare, and cultural heritage. -->
 
 #### Short Biography
-I am currently a 2nd-year PhD student in the fields of Blockchain and Federated Learning at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. Previously, I graduated from <a href="https://portal.ptit.edu.vn/eng/">Posts and Telecommunications Institute of Technology (PTIT)</a>, Hanoi, Vietnam with an engineer's degree from the Faculty of Electronics and Telecommunications and was a member of InNet research group of Data and Intelligent Systems Laboratory from 2019 to 2023 under the supervision of Assoc. Prof. Le Hai Chau and Dr. Nguyen Thi Thu Hang. 
+I am currently a 2nd-year PhD student in the fields of Federated Learning, Blockchain, and Incentivization at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>.
 
 In addition to doing research, I enjoy designing, modelling, and implementing academic ideas into practical products. Here is my tech stacks: 
 
