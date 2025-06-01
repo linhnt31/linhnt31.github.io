@@ -7,6 +7,8 @@ published: true
 
 ## Projects
 
+0. "[Evolution in Security and Privacy for 6G Networks - ENSURE-6G](https://ensure-6g.eu/)" project funded by the European Union’s Horizon Europe MSCA Staff Exchange research and innovation programme.
+
 0. "Research MAC protocols to ensure QoS in multi-event environments" project funded by SWITCH SEA project, *APNIC Foundation* (Southeast Asia). 
 **Supervisor**: Dr. Nguyen Thi Thu Hang and Assoc. Prof Le Hai Chau.
 
