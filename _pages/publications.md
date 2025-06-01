@@ -24,9 +24,9 @@ published: true
 
 ## Conference Papers
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning” , submitted to the *IEEE Global Communications Conference 2025* (IEEE Globecom 2025).
+0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning” , submitted to the *IEEE Global Communications Conference 2025* (IEEE Globecom 2025).
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Critical Learning Period-Aware Incentive Mechanism for Federated Learning” , *Accepted in the 2025 IEEE 101st Vehicular Technology Conference: VTC2025-Spring*, Oslo, Norway.
+0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Critical Learning Period-Aware Incentive Mechanism for Federated Learning” , *accepted in the 2025 IEEE 101st Vehicular Technology Conference: VTC2025-Spring*, Oslo, Norway.
 
 0. Thi-Mien Nguyen, <ins>**Linh T. Nguyen**</ins>, Khac-Tuan Nguyen, and Hai-Chau Le. 2022. Performance Analysis of Short-Packet Communications in Multi-RIS-based Uplink Systems. In *The 11th International Symposium on Information and Communication Technology* (SoICT 2022). Association for Computing Machinery, New York, NY, USA, 180–185.
 
