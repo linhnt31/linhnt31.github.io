@@ -33,6 +33,8 @@ I have been teacher of several subjects, among which Computer Networks and Algor
 
 - **[03/2025]** I got my first research paper on Critical Learning periods and Federated Learning accepted in a semi-annual flagship [2025 IEEE 101st Vehicular Technology Conference: VTC2025-Spring](https://events.vtsociety.org/vtc2025-spring/), help in Oslo, Norway.
 
+- **[03/2025]** I got my first SoK article on Blockchain, Federated Learning, and Data Sharing accepted in a prestigious journal [ACM Computing Surveys](https://dl.acm.org/journal/csur)  [<span style="color:red">**IF: 28**</span>].
+
 - **[11/2024]** My team secured 3rd place in the [Balbriggan Innovation Challenge - The EcoCore Hackathon](https://www.fingal.ie/news/balbriggan-innovation-challenge-project-ecocore) (Here is [Media news](https://smartdublin.ie/hackathon-balbriggan-innovation-challenge/)). We conceptualized and pitched "BART," a transformative model aimed at overhauling transport systems in and around Balbriggan while fostering a circular economy.
 
 - **[09/2023]** I started studying PhD in Computer Science at [Trinity College Dublin, The University of Dublin](https://www.tcd.ie/) in Ireland, fully funded by [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Science Foundation Ireland](https://www.sfi.ie/).

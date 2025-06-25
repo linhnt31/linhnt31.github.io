@@ -13,7 +13,8 @@ published: true
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Dinh Thai Hoang, Diep N. Nguyen, Quoc-Viet Pham, ”<a href="https://arxiv.org/abs/2503.07869#:~:text=By%20providing%20the%20right%20reward,more%20economically%20effective%20than%20benchmarks.">Right Reward Right Time for Federated Learning</a>”, submitted to *IEEE Transactions on Mobile Computing (IEEE TMC)* - ***Under review*** (in collaboration with UTS, Australia).
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Lam Duc Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, Petar Popovski, and Shiping Chen, ”<a href="https://dl.acm.org/doi/10.1145/3718082">Blockchain-Empowered Trustworthy Data Sharing: Fundamentals, Applications, and Challenges</a>”, *ACM Computing Surveys* - ***Accepted*** (in collaboration with CSIRO Data61, Australia).
+0. <ins>**Thanh Linh Nguyen**</ins>, Lam Duc Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, Petar Popovski, and Shiping Chen, ”<a href="https://dl.acm.org/doi/10.1145/3718082">Blockchain-Empowered Trustworthy Data Sharing: Fundamentals, Applications, and Challenges</a>”, *ACM Computing Surveys* [<span style="color:red">**IF: 28**</span>]
+ - ***Accepted*** (in collaboration with CSIRO Data61, Australia).
 
 0. Et al, <ins>**Linh T. Nguyen**</ins>, et al., ”BlockFed: A Benchmarking Framework for Trusted Learning in Heterogeneous Environments”. submitted to *ACM Transactions on Modeling and Performance Evaluation of Computing Systems* - ***Under review*** (in collaboration with CSIRO Data61).
 
@@ -26,7 +27,7 @@ published: true
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning” , submitted to the *IEEE Global Communications Conference 2025* (IEEE Globecom 2025).
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Critical Learning Period-Aware Incentive Mechanism for Federated Learning” , *accepted in the 2025 IEEE 101st Vehicular Technology Conference: VTC2025-Spring*, Oslo, Norway.
+0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Critical Learning Period-Aware Incentive Mechanism for Federated Learning” , *accepted in the 2025 IEEE 101st Vehicular Technology Conference: VTC2025-Spring*, Oslo, Norway [<span style="color:red">**CORE: B**</span>].
 
 0. Thi-Mien Nguyen, <ins>**Linh T. Nguyen**</ins>, Khac-Tuan Nguyen, and Hai-Chau Le. 2022. Performance Analysis of Short-Packet Communications in Multi-RIS-based Uplink Systems. In *The 11th International Symposium on Information and Communication Technology* (SoICT 2022). Association for Computing Machinery, New York, NY, USA, 180–185.
 
