@@ -27,7 +27,7 @@ I have been teacher of several subjects, among which Computer Networks and Algor
 
 #### News
 
-- **[06-09/2025]** I have started my research secondment at TU Delft, Netherlands, the [European Union’s Horizon Europe MSCA Staff Exchange - ENSURE-6G](https://ensure-6g.eu/) project.
+- **[06-09/2025]** I have started my research secondment at [TU Delft, Netherlands](https://www.tudelft.nl/), the [European Union’s Horizon Europe MSCA Staff Exchange - ENSURE-6G](https://ensure-6g.eu/) project.
 
 - **[05/2025]** I attended 2025 [CONNECT](https://connectcentre.ie/) plenary to showcase my research, help in Trinity College Dublin, The University of Dublin, Ireland. You can find my poster [here](/assets/images/Posters/2025_Connect_Plenary.pdf).
 
