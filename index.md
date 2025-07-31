@@ -10,9 +10,9 @@ published: true
 <!-- #### Research Agenda
 As enhanced devices at the edge of the network exploit artificial intelligence, even novel computing challenges are raised. In my current research agenda, I investigate all aspects related to distributed intelligent systems for supporting cities and communities, with a strong focus on optimizing decentralized and self-organized infrastructures. My research finds application in several domains, among which smart city, mobility, healthcare, and cultural heritage. -->
 
-<div class="highlight-paragraph">
-  Welcome to my personal space! This webpage is not only dedicated to my academic pursuits, but also serves as a place where I share technical posts, memorable travel experiences, and the wonderful people I’ve met along the way.
-</div>
+<p style="background:#f5faff; border-left:4px solid #2196f3; padding:1em; font-style:italic;">
+Welcome to my personal space! This webpage is not only dedicated to my academic pursuits, but also serves as a place where I share technical posts, memorable travel experiences, and the wonderful people I’ve met along the way.
+</p>
 
 #### Short Biography
 I am **Linh**. I am currently a 2nd-year PhD student in the fields of Federated Learning, Blockchain, and Incentivization at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>.

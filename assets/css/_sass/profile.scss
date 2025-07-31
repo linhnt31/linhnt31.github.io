@@ -16,15 +16,6 @@
     float: right;
 }
 
-.highlight-paragraph {
-  background: #f5faff;
-  border-left: 4px solid #2196f3;
-  padding: 1em;
-  margin: 1em 0;
-  font-style: italic;
-  font-size: 1.1em;
-}
-
 // adjust tile sizes on smaller screens
 @include media-query($on-phone) {
   @media screen and (max-width: $on-phone){
