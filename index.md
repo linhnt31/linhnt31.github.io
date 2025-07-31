@@ -31,7 +31,7 @@ I have been teacher of several subjects, among which Computer Networks and Algor
 
 #### News
 
-- **[07/2025]** My work on Federated Learning and Coopetition got accepted in the flagship [IEEE Global Communications Conference 2025](https://globecom2025.ieee-globecom.org/).
+- **[07/2025]** My work on Federated Learning and Coopetition got accepted in the flagship [IEEE Global Communications Conference 2025](https://globecom2025.ieee-globecom.org/), Taipei, Taiwan.
 
 - **[06-09/2025]** I have started my research secondment at [TU Delft, Netherlands](https://www.tudelft.nl/), the [European Union’s Horizon Europe MSCA Staff Exchange - ENSURE-6G](https://ensure-6g.eu/) project.
 
