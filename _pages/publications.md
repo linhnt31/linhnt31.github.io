@@ -24,7 +24,7 @@ published: true
 
 ## Conference Papers
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning” , submitted to the *IEEE Global Communications Conference 2025* (IEEE Globecom 2025) [<span style="color:red">**CORE: B**</span>].
+0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning” , *accepted in the IEEE Global Communications Conference 2025* (IEEE Globecom 2025) [<span style="color:red">**CORE: B**</span>].
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Critical Learning Period-Aware Incentive Mechanism for Federated Learning” , *accepted in the 2025 IEEE 101st Vehicular Technology Conference: VTC2025-Spring*, Oslo, Norway [<span style="color:red">**CORE: B**</span>].
 

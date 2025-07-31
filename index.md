@@ -10,6 +10,8 @@ published: true
 <!-- #### Research Agenda
 As enhanced devices at the edge of the network exploit artificial intelligence, even novel computing challenges are raised. In my current research agenda, I investigate all aspects related to distributed intelligent systems for supporting cities and communities, with a strong focus on optimizing decentralized and self-organized infrastructures. My research finds application in several domains, among which smart city, mobility, healthcare, and cultural heritage. -->
 
+> Welcome to my personal space! This webpage is not only dedicated to my academic pursuits, but also serves as a place where I share technical posts, memorable travel experiences, and the wonderful people I’ve met along the way.
+
 #### Short Biography
 I am **Linh**. I am currently a 2nd-year PhD student in the fields of Federated Learning, Blockchain, and Incentivization at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>.
 
@@ -26,6 +28,8 @@ I led activities related to the technical area for the EU project "FLIWARE" and 
 I have been teacher of several subjects, among which Computer Networks and Algorithms, and teacher's guide of Bio-Inspired Artificial Intelligence. I am reviewer of respected Springer, IEEE and Elsevier Journals, coordinator of the University of Messina's node for the <a href="https://www.consorzio-cini.it/index.php/it/lab-infolife">CINI InfoLife</a> Laboratory, Associate Editor for <a href="https://www.frontiersin.org/journals/robotics-and-ai/sections/smart-sensor-networks-and-autonomy">Frontiers in Robotics and AI</a>, member of the <a href="http://www.ifiptc12.org/component/tags/tag/41-wg-12-9">IFIP Working Group 12.9 about Computational Intelligence</a>, co-chairs of IEEE Workshops (<a href="https://fcrlab.unime.it/calls/distinsys2022">DistInSys</a>, <a href="https://fcrlab.unime.it/calls/mriche2021">MrICHE</a>, and <a href="https://www.ai4health.icar.cnr.it/">AI4Health</a>) and co-author of more than 30 manuscripts. -->
 
 #### News
+
+- **[07/2025]** My work on Federated Learning and Coopetition got accepted in the flagship [IEEE Global Communications Conference 2025](https://globecom2025.ieee-globecom.org/).
 
 - **[06-09/2025]** I have started my research secondment at [TU Delft, Netherlands](https://www.tudelft.nl/), the [European Union’s Horizon Europe MSCA Staff Exchange - ENSURE-6G](https://ensure-6g.eu/) project.
 
