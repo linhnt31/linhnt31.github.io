@@ -15,7 +15,7 @@ Welcome to my personal space! This webpage is not only dedicated to my academic 
 </p>
 
 #### Short Biography
-I am **Linh**. I am currently a 3rd-year PhD candidate in the fields of Federated Learning, Blockchain, and Incentivization at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). I has been fortunate to do a 3-month internship from June to September, 2025 at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/)
+I am **Linh**. I am currently a 3rd-year PhD candidate in the fields of Federated Learning, Blockchain, and Incentivization at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). I has been fortunate to do a 3-month internship on the topics of Incentivization for Federated Unlearning from June to September, 2025 at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/).
 
 In addition to doing research, I enjoy designing, modelling, and implementing academic ideas into practical products. Here is my tech stacks: 
 
