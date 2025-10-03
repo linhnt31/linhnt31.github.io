@@ -25,7 +25,7 @@ Especially, I’m always looking to collaborate on researching Blockchain and Fe
 
 #### News
 
-- **[10/2025]** My joint work on Verifiable Federated Unlearning (FUL) with TU Delft is available on ![arXiv](https://arxiv.org/abs/2510.00833). This work recasts the FUL paradigm as verifiable FUL, grounded by the trust-by-design principle. Particularly, we presents a trust-by-design reference framework for verifiable federated unlearning, called ***veriFUL***, that upholds both the right to be forgotten and the right to verify for clients (i.e., data owners) thereby strengthening client trust and privacy control in modern AI systems.
+- **[10/2025]** My joint work on Verifiable Federated Unlearning (FUL) with TU Delft is available on [arXiv](https://arxiv.org/abs/2510.00833). This work recasts the FUL paradigm as verifiable FUL, grounded by the trust-by-design principle. Particularly, we presents a trust-by-design reference framework for verifiable federated unlearning, called ***veriFUL***, that upholds both the right to be forgotten and the right to verify for clients (i.e., data owners) thereby strengthening client trust and privacy control in modern AI systems.
 
 - **[07/2025]** My work on Federated Learning and Coopetition got accepted in the flagship [IEEE Global Communications Conference 2025](https://globecom2025.ieee-globecom.org/), Taipei, Taiwan.
 
