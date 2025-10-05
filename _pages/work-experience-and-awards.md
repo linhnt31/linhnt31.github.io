@@ -1,7 +1,7 @@
 ---
-title:
+title: Work Experience and Awards
 layout: default
-permalink: /activities/
+permalink: /work-experience-and-awards/
 published: true
 ---
 
