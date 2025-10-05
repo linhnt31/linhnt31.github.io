@@ -14,7 +14,7 @@ published: true
 {: reversed="reversed"}
 
 #### Honors and Awards
-0.   \item  <a href="https://ensure-6g.eu/">The European Union’s Horizon Europe MSCA Staff Exchange award</a>, Jun.-Aug. 2025
+0. <a href="https://ensure-6g.eu/">The European Union’s Horizon Europe MSCA Staff Exchange award</a>, Jun.-Aug. 2025
 
 0. **Third Prize** in  <a href="https://www.fingal.ie/news/balbriggan-innovation-challenge-project-ecocore">*Balbriggan Innovation Challenge - The EcoCore Hackathon* </a>, Nov. 2024
 
