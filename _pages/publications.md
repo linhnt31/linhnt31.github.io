@@ -11,7 +11,9 @@ published: true
 
 ## Journal Papers
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Dinh Thai Hoang, Diep N. Nguyen, Quoc-Viet Pham, ”<a href="https://arxiv.org/abs/2503.07869#:~:text=By%20providing%20the%20right%20reward,more%20economically%20effective%20than%20benchmarks.">Right Reward Right Time for Federated Learning</a>”, submitted to *IEEE Transactions on Mobile Computing (IEEE TMC)* - ***Under review*** (in collaboration with UTS, Australia).
+0. <ins>**Thanh Linh Nguyen**</ins>, Marcela Tuler de Oliveira, An Braeken, Aaron Yi Ding, Quoc-Viet Pham, “<a href="https://arxiv.org/abs/2510.00833">Towards Verifiable Federated Unlearning: Framework, Challenges, and The Road Ahead”, submitted to *IEEE Internet Computing* (IEEE IC) - ***Under review*** (in collaboration with TU Delft, The Netherlands).
+
+0. <ins>**Thanh Linh Nguyen**</ins>, Dinh Thai Hoang, Diep N. Nguyen, Quoc-Viet Pham, ”<a href="https://arxiv.org/abs/2503.07869">Right Reward Right Time for Federated Learning</a>”, submitted to *IEEE Transactions on Mobile Computing (IEEE TMC)* - ***Under review*** (in collaboration with UTS, Australia).
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Lam Duc Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, Petar Popovski, and Shiping Chen, ”<a href="https://dl.acm.org/doi/10.1145/3718082">Blockchain-Empowered Trustworthy Data Sharing: Fundamentals, Applications, and Challenges</a>”, ***accepted*** at *ACM Computing Surveys* [<span style="color:red">**IF: 28**</span>]. (In collaboration with CSIRO Data61, Australia).
 
@@ -24,7 +26,7 @@ published: true
 
 ## Conference Papers
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning” , ***accepted*** *in the flagship IEEE Global Communications Conference 2025* (IEEE Globecom 2025).
+0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning” , ***accepted*** *in the flagship IEEE Global Communications Conference 2025* (IEEE GLOBECOM 2025).
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Critical Learning Period-Aware Incentive Mechanism for Federated Learning” ,  ***accepted*** *in the flagship 2025 IEEE 101st Vehicular Technology Conference: VTC2025-Spring*, Oslo, Norway.
 
