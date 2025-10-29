@@ -5,6 +5,24 @@ permalink: /misc/
 published: true
 ---
 
+## Research Ireland ADVANCE CRT 3rd Cohort Celebration, Oct. 2025
+
+It has been such a long time I have not spent time writing something about activities outside research. This year 2025 has been so busy so far with paper submissions, confirmation report after 18 months of PhD, placement at TU Delft (I did some dairies and reflections for this period actually but I kept it personally in Notion, I will release it in the near future). 
+
+The current moment sitting there in Waterford Planket train station, I want to write down some of my thoughts over the event on 28th and 29th October in Waterford at which we celebrated the graduation of 3rd Cohort from my funding body Research Ireland ADVANCE CRT. Waterford is the oldest city in Ireland, situated on the River Suir.
+
+<p float="middle">
+  <img src="../../assets/images/Waterford2025/waterford1.jpg" width="750" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
+</p>
+
+It’s always a joy to meet people who share the same mindset and the same struggles of a PhD journey. With them, you don’t need to explain much about your work, challenges, or little moments of happiness; they simply understand. Over 2 days, here are few things I heard from my peers and talks from keynote speakers and 3rd and 2nd cohorts. 
+
++ I am happy to see people doing well and keeping passion with their research, and maintaining good relationships with their supervisors.
+
++ Many also shared their struggles with loneliness and how they’ve learned to cope with it, e.g., working in the park, resting, traveling around, calling the family,... while most people like working from home due to constraints like living far from the office, transportation,..., I also met people where their office is the same like us, where people like coming to the office and talking to people ^^. 
+
++ Your success often depends on having a kind supervisor, someone who treats you with mutual respect, listens, is patient, and truly cares about your growth.
+
 ## SFI ADVANCE CRT Research Summer School, Jun. 2024
 
 From June 10 to 14, I had the privilege of attending a remarkable 5-day summer school organized by SFI ADVANCE CRT in the picturesque town of Killarney, County Kerry, Ireland. This intensive program offered two training tracks for PhD students: Social and STEM. What made this experience truly enriching was the interdisciplinary collaboration, where we formed groups with members from both tracks to propose case studies.
