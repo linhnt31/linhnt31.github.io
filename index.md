@@ -21,9 +21,11 @@ In addition to doing research, I enjoy designing, modelling, and implementing ac
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E) ![Solidity](https://img.shields.io/badge/Solidity-e6e6e6?style=flat&logo=solidity&logoColor=black) ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white) ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat&logo=Ethereum&logoColor=white) ![Hyperledger Fabric](https://img.shields.io/badge/hyperledger-2F3134?style=flat&logo=hyperledger&logoColor=white) ![Amazon AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
 
-Especially, I’m always looking to collaborate on researching Blockchain and Federated Learning.
+Especially, I'm always looking to collaborate on researching topics of Blockchain, Federated Learning, and game theoretic based network economics.
 
 #### News
+
+- **[01/2026]** ***veriFUL*** has been accepted in [IEEE Internet Computing](https://www.computer.org/csdl/magazine/ic). 
 
 - **[10/2025]** My joint work on Verifiable Federated Unlearning (FUL) with TU Delft is available on [arXiv](https://arxiv.org/abs/2510.00833). This work recasts the FUL paradigm as verifiable FUL, grounded by the trust-by-design principle. Particularly, we presents a trust-by-design reference framework for verifiable federated unlearning, called ***veriFUL***, that upholds both the right to be forgotten and the right to verify for clients (i.e., data owners) thereby strengthening client trust and privacy control in modern AI systems.
 
