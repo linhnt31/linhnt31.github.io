@@ -25,7 +25,7 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 #### News
 
-- **[01/2026]** Our work ***6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G*** with multiple partners has been accepted in [IEEE Communications Surveys & Tutorials](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739) [<span style="color:red">**IF: 46.7**</span>].. 
+- **[01/2026]** Our work ***6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G*** with multiple partners has been accepted in [IEEE Communications Surveys & Tutorials](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739) [<span style="color:red">**IF: 46.7**</span>].
 
 - **[01/2026]** ***veriFUL*** has been accepted in [IEEE Internet Computing](https://www.computer.org/csdl/magazine/ic). 
 

@@ -13,7 +13,7 @@ published: true
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Marcela Tuler de Oliveira, An Braeken, Aaron Yi Ding, Quoc-Viet Pham, “<a href="https://arxiv.org/abs/2510.00833">Towards Verifiable Federated Unlearning: Framework, Challenges, and The Road Ahead</a>”, *IEEE Internet Computing*, early access. (in collaboration with TU Delft, The Netherlands).
 
-0. et al., <ins>**Thanh Linh Nguyen**</ins>, et al., “6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G”,*IEEE Communications Surveys and Tutorials (IEEE COMST)*, early access.
+0. et al., <ins>**Thanh Linh Nguyen**</ins>, et al., “6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G”, *IEEE Communications Surveys and Tutorials (IEEE COMST)*, early access.
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Dinh Thai Hoang, Diep N. Nguyen, Quoc-Viet Pham, ”<a href="https://arxiv.org/abs/2503.07869">Right Reward Right Time for Federated Learning</a>”, submitted to *IEEE Transactions on Mobile Computing (IEEE TMC)* - ***Under review*** (in collaboration with UTS, Australia).
 
