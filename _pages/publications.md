@@ -11,13 +11,13 @@ published: true
 
 ## Journal Papers
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Marcela Tuler de Oliveira, An Braeken, Aaron Yi Ding, Quoc-Viet Pham, “<a href="https://arxiv.org/abs/2510.00833">Towards Verifiable Federated Unlearning: Framework, Challenges, and The Road Ahead</a>”, submitted to *IEEE Internet Computing* (IEEE IC) - ***Under review*** (in collaboration with TU Delft, The Netherlands).
+0. <ins>**Thanh Linh Nguyen**</ins>, Marcela Tuler de Oliveira, An Braeken, Aaron Yi Ding, Quoc-Viet Pham, “<a href="https://arxiv.org/abs/2510.00833">Towards Verifiable Federated Unlearning: Framework, Challenges, and The Road Ahead</a>”, *IEEE Internet Computing*, early access. (in collaboration with TU Delft, The Netherlands).
 
 0. et al., <ins>**Thanh Linh Nguyen**</ins>, et al., “6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G”,*IEEE Communications Surveys and Tutorials (IEEE COMST)*, early access.
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Dinh Thai Hoang, Diep N. Nguyen, Quoc-Viet Pham, ”<a href="https://arxiv.org/abs/2503.07869">Right Reward Right Time for Federated Learning</a>”, submitted to *IEEE Transactions on Mobile Computing (IEEE TMC)* - ***Under review*** (in collaboration with UTS, Australia).
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Lam Duc Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, Petar Popovski, and Shiping Chen, ”<a href="https://dl.acm.org/doi/10.1145/3718082">Blockchain-Empowered Trustworthy Data Sharing: Fundamentals, Applications, and Challenges</a>”, ***accepted*** at *ACM Computing Surveys* [<span style="color:red">**IF: 28**</span>]. (In collaboration with CSIRO Data61, Australia).
+0. <ins>**Thanh Linh Nguyen**</ins>, Lam Duc Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, Petar Popovski, and Shiping Chen, ”<a href="https://dl.acm.org/doi/10.1145/3718082">Blockchain-Empowered Trustworthy Data Sharing: Fundamentals, Applications, and Challenges</a>”, *ACM Computing Surveys* [<span style="color:red">**IF: 28**</span>]. (In collaboration with CSIRO Data61, Australia).
 
 0. Et al, <ins>**Linh T. Nguyen**</ins>, et al., ”BlockFed: A Benchmarking Framework for Trusted Learning in Heterogeneous Environments”. submitted to *ACM Transactions on Modeling and Performance Evaluation of Computing Systems* - ***Under review*** (in collaboration with CSIRO Data61).
 
