@@ -13,7 +13,7 @@ published: true
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Marcela Tuler de Oliveira, An Braeken, Aaron Yi Ding, Quoc-Viet Pham, “<a href="https://arxiv.org/abs/2510.00833">Towards Verifiable Federated Unlearning: Framework, Challenges, and The Road Ahead</a>”, submitted to *IEEE Internet Computing* (IEEE IC) - ***Under review*** (in collaboration with TU Delft, The Netherlands).
 
-0. et al., <ins>**Thanh Linh Nguyen**</ins>, et al., “Ensure-6G: 6G AI Security survey”, submitted to *IEEE Communications Surveys and Tutorials* (IEEE COMST) - ***Under review***.
+0. et al., <ins>**Thanh Linh Nguyen**</ins>, et al., “6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G”,*IEEE Communications Surveys and Tutorials (IEEE COMST)*, early access.
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Dinh Thai Hoang, Diep N. Nguyen, Quoc-Viet Pham, ”<a href="https://arxiv.org/abs/2503.07869">Right Reward Right Time for Federated Learning</a>”, submitted to *IEEE Transactions on Mobile Computing (IEEE TMC)* - ***Under review*** (in collaboration with UTS, Australia).
 
@@ -28,9 +28,9 @@ published: true
 
 ## Conference Papers
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning” , ***accepted*** *in the flagship IEEE Global Communications Conference 2025* (IEEE GLOBECOM 2025).
+0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning”, *IEEE Global Communications Conference 2025 (IEEE GLOBECOM 2025)*, early access.
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Critical Learning Period-Aware Incentive Mechanism for Federated Learning” ,  ***accepted*** *in the flagship 2025 IEEE 101st Vehicular Technology Conference: VTC2025-Spring*, Oslo, Norway.
+0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham,"A Critical Learning Period-Aware Incentive Mechanism for Federated Learning," *2025 IEEE 101st Vehicular Technology Conference (VTC2025-Spring)*, Oslo, Norway, 2025, pp. 1-6.
 
 0. Thi-Mien Nguyen, <ins>**Linh T. Nguyen**</ins>, Khac-Tuan Nguyen, and Hai-Chau Le. 2022. Performance Analysis of Short-Packet Communications in Multi-RIS-based Uplink Systems. In *The 11th International Symposium on Information and Communication Technology* (SoICT 2022). Association for Computing Machinery, New York, NY, USA, 180–185.
 
