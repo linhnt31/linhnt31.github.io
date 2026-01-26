@@ -27,7 +27,7 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 - **[01/2026]** Our work ***6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G*** with multiple partners has been accepted in [IEEE Communications Surveys & Tutorials](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739) [<span style="color:red">**IF: 46.7**</span>].
 
-- **[01/2026]** ***veriFUL*** has been accepted in [IEEE Internet Computing](https://www.computer.org/csdl/magazine/ic) [<span style="color:red">**IF: 4.4**</span>]. 
+- **[01/2026]** [***veriFUL***](https://ieeexplore.ieee.org/document/11359714) has been accepted in [IEEE Internet Computing](https://www.computer.org/csdl/magazine/ic) [<span style="color:red">**IF: 4.4**</span>]. 
 
 - **[10/2025]** My joint work on Verifiable Federated Unlearning (FUL) with TU Delft is available on [arXiv](https://arxiv.org/abs/2510.00833). This work recasts the FUL paradigm as verifiable FUL, grounded by the trust-by-design principle. Particularly, we presents a trust-by-design reference framework for verifiable federated unlearning, called ***veriFUL***, that upholds both the right to be forgotten and the right to verify for clients (i.e., data owners) thereby strengthening client trust and privacy control in modern AI systems.
 
