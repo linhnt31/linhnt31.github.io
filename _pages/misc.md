@@ -19,7 +19,7 @@ Here are a few lessons I personally observed and conceived from this event, natu
 
 
 <p float="middle">
-  <img src="../assets/images/Portlaoise2026/2.jpeg" width="850" height="350" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
+  <img src="../assets/images/Portlaoise2026/2.jpeg" width="850" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
   <small style="color:#666;">
   Photo taken from the talk of [Dr. Seán McCarthy](http://www.hyperion.ie/seanmccarthy.htm) in our event.</small>
 </p>
@@ -32,7 +32,8 @@ At this moment, sitting in the Waterford Plunkett train station, I want to write
 
 <p float="middle">
   <img src="../../assets/images/Waterford2025/waterford1.jpg" width="750" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <small style="color:#666;">Photo taken from the talk of [Dr. Sam Gregson](https://www.badboyofscience.com/about) in our event.</small>
+  <small style="color:#666;">
+  Photo taken from the talk of [Dr. Sam Gregson](https://www.badboyofscience.com/about) in our event.</small>
 </p>
 
 It’s always a joy to meet people who share the same mindset and the same struggles of a PhD journey. With them, you don’t need to explain much about your work, challenges, or little moments of happiness; they simply understand. Over 2 days, here are a few things I heard from my peers, as well as talks from keynote speakers and the 3rd and 2nd cohorts.
