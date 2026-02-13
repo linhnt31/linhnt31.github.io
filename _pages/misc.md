@@ -19,8 +19,9 @@ Here are a few lessons I personally observed and conceived from this event, natu
 
 
 <p float="middle">
-  <img src="/assets/images/Portlaoise2026/2.jpg" width="750" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <small style="color:#666;">Photo taken from the talk of [Dr. Seán McCarthy](http://www.hyperion.ie/seanmccarthy.htm) in our event.</small>
+  <img src="../assets/images/Portlaoise2026/2.jpeg" width="850" height="350" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
+  <small style="color:#666;">
+  Photo taken from the talk of [Dr. Seán McCarthy](http://www.hyperion.ie/seanmccarthy.htm) in our event.</small>
 </p>
 
 ## Research Ireland ADVANCE CRT 3rd Cohort Celebration, Oct. 2025
