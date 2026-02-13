@@ -25,7 +25,7 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 #### News
 
-- **[02/2026]** I attended the Research Ireland ADVANCE CRT Research Colloquium on how to prepare and write a competitive Horizon Europe proposal. Read more about my takeaways [here]({{site.baseurl}}/misc/#advance-colloquium-2026).
+- **[02/2026]** I attended the training organized by Research Ireland ADVANCE CRT Research Colloquium on how to prepare and write a competitive Horizon Europe proposal. Read more about my takeaways [here]({{site.baseurl}}/misc/#advance-colloquium-2026).
 
 - **[01/2026]** Our work ***6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G*** with multiple partners has been accepted in [IEEE Communications Surveys & Tutorials](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739) [<span style="color:red">**IF: 46.7**</span>].
 
