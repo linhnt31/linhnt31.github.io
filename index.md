@@ -25,7 +25,7 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 ### News
 
-<div style="height: 400px; overflow-y: auto; text-align: justify;">
+<div style="height: 400px; overflow-y: auto; text-align: justify;" markdown="1">
 
 - **[02/2026]** I attended the Research Ireland ADVANCE CRT Research Colloquium for specialized training on developing competitive Horizon Europe proposals. You can read my key takeaways and insights [here]({{site.baseurl}}/misc/#advance-colloquium-2026).
 
