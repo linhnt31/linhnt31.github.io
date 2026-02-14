@@ -14,8 +14,8 @@ As enhanced devices at the edge of the network exploit artificial intelligence, 
 Welcome to my personal space! This webpage is not only dedicated to my academic pursuits, but also serves as a place where I share technical posts, memorable travel experiences, and the wonderful people I’ve met along the way.
 </p>
 
-#### Short Biography
-I am **Linh**. I am currently a 3rd-year PhD candidate in the fields of Federated Learning, Blockchain, and Network Economics at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). I has been fortunate to do a 3-month internship on the topics of Incentivization for Federated Unlearning from June to September, 2025 at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/).
+### Short Biography
+I am **Linh**. I am currently a 3rd-year PhD candidate in the fields of Federated Learning/Unlearning, Network Economics, and Blockchain at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). I has been fortunate to do a 3-month internship on the topics of Incentivization for Federated Unlearning from June to September, 2025 at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/).
 
 In addition to doing research, I enjoy designing, modelling, and implementing academic ideas into practical products. Here is my tech stacks: 
 
@@ -23,13 +23,15 @@ In addition to doing research, I enjoy designing, modelling, and implementing ac
 
 Especially, I'm always looking to collaborate on researching topics of Blockchain, Federated Learning, and game theoretic based network economics.
 
-#### News
+### News
 
-- **[02/2026]** I attended the training organized by Research Ireland ADVANCE CRT Research Colloquium on how to prepare and write a competitive Horizon Europe proposal. Read more about my takeaways [here]({{site.baseurl}}/misc/#advance-colloquium-2026).
+<div style="height: 400px; overflow-y: auto; text-align: justify;">
+
+- **[02/2026]** I attended the Research Ireland ADVANCE CRT Research Colloquium for specialized training on developing competitive Horizon Europe proposals. You can read my key takeaways and insights [here]({{site.baseurl}}/misc/#advance-colloquium-2026).
 
 - **[01/2026]** Our work ***6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G*** with multiple partners has been accepted in [IEEE Communications Surveys & Tutorials](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739) [<span style="color:red">**IF: 46.7**</span>].
 
-- **[01/2026]** [***veriFUL***](https://ieeexplore.ieee.org/document/11359714) has been accepted in [IEEE Internet Computing](https://www.computer.org/csdl/magazine/ic) [<span style="color:red">**IF: 4.4**</span>]. 
+- **[01/2026]** [***veriFUL***](https://ieeexplore.ieee.org/document/11359714) has been accepted in [IEEE Internet Computing](https://www.computer.org/csdl/magazine/ic) [<span style="color:red">**IF: 4.5**</span>]. 
 
 - **[10/2025]** My joint work on Verifiable Federated Unlearning (FUL) with TU Delft is available on [arXiv](https://arxiv.org/abs/2510.00833). This work recasts the FUL paradigm as verifiable FUL, grounded by the trust-by-design principle. Particularly, we presents a trust-by-design reference framework for verifiable federated unlearning, called ***veriFUL***, that upholds both the right to be forgotten and the right to verify for clients (i.e., data owners) thereby strengthening client trust and privacy control in modern AI systems.
 
@@ -51,6 +53,13 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 - **[08/2022]** I just got the acceptance to attend the 9th Vietnam Summer School of Science (VSSS09), which was sponsored and organised by the <a href="https://rencontresduvietnam.org/">Recontres du Vietnam Foundation</a>, <a href="https://www.icisequynhon.com/">ICISE</a> and <a href="https://viasm.edu.vn/en/home/">Vietnam Institute for Advanced Study in Mathematics</a> (VIASM). Out of 700 applicants, 150 Vietnamese students and scientists were chosen for this cohort. I am so proud to be here with warm-hearted and talented people! You can find some images of mine in VSSS09 [here]({{site.baseurl}}/misc)!
 
+</div>
+
+### Professional Activities
+
+#### Invited Reviewer
+
+- **2026**: The 2026 IEEE 103rd Vehicular Technology Conference (VTC2026-Spring) 
 
 
 <p style="text-align:center;">
