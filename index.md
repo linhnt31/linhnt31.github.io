@@ -25,7 +25,7 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 ### News
 
-<div style="height: 400px; overflow-y: auto; text-align: justify;" markdown="1">
+<div style="height: 400px; overflow-y: auto; text-align: justify; margin-bottom: 15px;" markdown="1">
 
 - **[02/2026]** I attended the Research Ireland ADVANCE CRT Research Colloquium for specialized training on developing competitive Horizon Europe proposals. You can read my key takeaways and insights [here]({{site.baseurl}}/misc/#advance-colloquium-2026).
 
@@ -53,8 +53,10 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 - **[08/2022]** I just got the acceptance to attend the 9th Vietnam Summer School of Science (VSSS09), which was sponsored and organised by the <a href="https://rencontresduvietnam.org/">Recontres du Vietnam Foundation</a>, <a href="https://www.icisequynhon.com/">ICISE</a> and <a href="https://viasm.edu.vn/en/home/">Vietnam Institute for Advanced Study in Mathematics</a> (VIASM). Out of 700 applicants, 150 Vietnamese students and scientists were chosen for this cohort. I am so proud to be here with warm-hearted and talented people! You can find some images of mine in VSSS09 [here]({{site.baseurl}}/misc)!
 
+
 </div>
 
+---
 ### Professional Activities
 
 #### Invited Reviewer
