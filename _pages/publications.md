@@ -11,15 +11,15 @@ published: true
 
 ## Journal Papers
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Marcela Tuler de Oliveira, An Braeken, Aaron Yi Ding, Quoc-Viet Pham, “<a href="https://arxiv.org/abs/2510.00833">Towards Verifiable Federated Unlearning: Framework, Challenges, and The Road Ahead</a>”, *IEEE Internet Computing*, early access. (in collaboration with TU Delft, The Netherlands).
+0. <ins>**Thanh Linh Nguyen**</ins>, Marcela Tuler de Oliveira, An Braeken, Aaron Yi Ding, Quoc-Viet Pham, “<a href="https://ieeexplore.ieee.org/abstract/document/11359714">Towards Verifiable Federated Unlearning: Framework, Challenges, and The Road Ahead</a>,” in *IEEE Internet Computing*, vol. 30, no. 1, pp. 59-70, Jan.-Feb. 2026. (in collaboration with TU Delft, The Netherlands).
 
-0. et al., <ins>**Thanh Linh Nguyen**</ins>, et al., “6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G”, *IEEE Communications Surveys and Tutorials (IEEE COMST)*, early access.
+0. et al., <ins>**Thanh Linh Nguyen**</ins>, et al., “<a href="https://ieeexplore.ieee.org/abstract/document/11368903">6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G</a>,” in *IEEE Communications Surveys and Tutorials (IEEE COMST)*, vol. 28, pp. 4765-4799, 2026.
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Dinh Thai Hoang, Diep N. Nguyen, Quoc-Viet Pham, ”<a href="https://arxiv.org/abs/2503.07869">Right Reward Right Time for Federated Learning</a>”, submitted to *IEEE Transactions on Mobile Computing (IEEE TMC)* - ***Under review*** (in collaboration with UTS, Australia).
+0. <ins>**Thanh Linh Nguyen**</ins>, Dinh Thai Hoang, Diep N. Nguyen, Quoc-Viet Pham, "<a href="https://arxiv.org/abs/2503.07869">Right Reward Right Time for Federated Learning</a>”, submitted to *IEEE Transactions on Network Science and Engineering (IEEE TNSE)* [<span style="color:red">**IF: 7.9**</span>] - ***Under review*** (in collaboration with UTS, Australia).
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Lam Duc Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, Petar Popovski, and Shiping Chen, ”<a href="https://dl.acm.org/doi/10.1145/3718082">Blockchain-Empowered Trustworthy Data Sharing: Fundamentals, Applications, and Challenges</a>”, *ACM Computing Surveys* [<span style="color:red">**IF: 28**</span>]. (In collaboration with CSIRO Data61, Australia).
+0. <ins>**Thanh Linh Nguyen**</ins>, Lam Duc Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, Petar Popovski, and Shiping Chen, "<a href="https://dl.acm.org/doi/10.1145/3718082">Blockchain-Empowered Trustworthy Data Sharing: Fundamentals, Applications, and Challenges</a>", *ACM Computing Surveys* [<span style="color:red">**IF: 28**</span>]. (In collaboration with CSIRO Data61, Australia).
 
-0. Et al, <ins>**Linh T. Nguyen**</ins>, et al., ”BlockFed: A Benchmarking Framework for Trusted Learning in Heterogeneous Environments”. submitted to *ACM Transactions on Modeling and Performance Evaluation of Computing Systems* - ***Under review*** (in collaboration with CSIRO Data61).
+0. Et al, <ins>**Linh T. Nguyen**</ins>, et al., "BlockFed: A Benchmarking Framework for Trusted Learning in Heterogeneous Environments". submitted to *ACM Transactions on Modeling and Performance Evaluation of Computing Systems* - ***Under review*** (in collaboration with CSIRO Data61).
 
 0. <ins>**Linh T. Nguyen**</ins>, Duc Long Vu, Minh Tuan Nguyen, and Hai-Chau Le, “Recognition of human faces and temperatures based on automatically intelligent algorithms”, *Journal of Science and Technology on Information and Communications*, ISSN 2525-2224, vol.01 (CS.01), pp. 4-9, 2022.
 
@@ -28,9 +28,9 @@ published: true
 
 ## Conference Papers
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, “A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning”, *IEEE Global Communications Conference 2025 (IEEE GLOBECOM 2025)*, early access.
+0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, "<a href="https://ieeexplore.ieee.org/document/11432061">A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning</a>,” *GLOBECOM 2025 - 2025 IEEE Global Communications Conference*, Taipei, Taiwan, 2025, pp. 1950-1955.
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham,"A Critical Learning Period-Aware Incentive Mechanism for Federated Learning," *2025 IEEE 101st Vehicular Technology Conference (VTC2025-Spring)*, Oslo, Norway, 2025, pp. 1-6.
+0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, "<a href="https://ieeexplore.ieee.org/abstract/document/11174880">A Critical Learning Period-Aware Incentive Mechanism for Federated Learning</a>," *2025 IEEE 101st Vehicular Technology Conference (VTC2025-Spring)*, Oslo, Norway, 2025, pp. 1-6.
 
 0. Thi-Mien Nguyen, <ins>**Linh T. Nguyen**</ins>, Khac-Tuan Nguyen, and Hai-Chau Le. 2022. Performance Analysis of Short-Packet Communications in Multi-RIS-based Uplink Systems. In *The 11th International Symposium on Information and Communication Technology* (SoICT 2022). Association for Computing Machinery, New York, NY, USA, 180–185.
 
