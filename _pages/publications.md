@@ -11,6 +11,9 @@ published: true
 
 ## Journal Papers
 
+0. <ins>**Thanh Linh Nguyen**</ins>, Nguyen Van Huynh, Quoc-Viet Pham, "<a href="https://arxiv.org/abs/2604.14886">Cooperate to Compete: Strategic Data Generation and Incentivization Framework for Coopetitive Cross-Silo Federated Learning
+</a>”, submitted to *IEEE Transactions on Mobile Computing (IEEE TMC)* [<span style="color:red">**IF: 9.2**</span>] - ***Under review*** (in collaboration with University of Liverpool, UK).
+
 0. <ins>**Thanh Linh Nguyen**</ins>, Marcela Tuler de Oliveira, An Braeken, Aaron Yi Ding, Quoc-Viet Pham, “<a href="https://ieeexplore.ieee.org/abstract/document/11359714">Towards Verifiable Federated Unlearning: Framework, Challenges, and The Road Ahead</a>,” in *IEEE Internet Computing*, vol. 30, no. 1, pp. 59-70, Jan.-Feb. 2026. (in collaboration with TU Delft, The Netherlands).
 
 0. et al., <ins>**Thanh Linh Nguyen**</ins>, et al., “<a href="https://ieeexplore.ieee.org/abstract/document/11368903">6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G</a>,” in *IEEE Communications Surveys and Tutorials (IEEE COMST)*, vol. 28, pp. 4765-4799, 2026.

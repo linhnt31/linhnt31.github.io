@@ -27,6 +27,8 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 <div style="height: 400px; overflow-y: auto; text-align: justify; margin-bottom: 15px;" markdown="1">
 
+- **[04/2026]** My joint work ***CoCoGen+*** on Coopetition (see [Definition](https://en.wikipedia.org/wiki/Coopetition)) and Federated Learning with University of Liverpool is available on [arXiv](https://arxiv.org/abs/2604.14886) and featured on [Linkedin post](https://www.linkedin.com/posts/activity-7452695216417013760-CMh7?utm_source=share&utm_medium=member_desktop&rcm=ACoAACVYvScBOdCBsv-ufxI6935rPLOBFF0k6u0). This work models the joint effects of inter-organizational competition and data heterogeneity on organizational decision making process and social welfare. With a payoff redistribution-based incentive mechanism, ***CoCoGen+*** mitigates [competitive externalities](https://en.wikipedia.org/wiki/Externality) to sustain long-term collaborations between strategic and competitive organizations. 
+
 - **[02/2026]** I attended the Research Ireland ADVANCE CRT Research Colloquium for specialized training on developing competitive Horizon Europe proposals. You can read my key takeaways and insights [here]({{site.baseurl}}/misc/#advance-colloquium-2026).
 
 - **[01/2026]** Our work ***6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G*** with multiple partners has been accepted in [IEEE Communications Surveys & Tutorials](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739) [<span style="color:red">**IF: 46.7**</span>].
