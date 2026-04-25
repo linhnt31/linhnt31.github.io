@@ -67,5 +67,5 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 
 <p style="text-align:center;">
-<a href="http://s05.flagcounter.com/more/iQlX"><img src="https://s05.flagcounter.com/count/iQlX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_20/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Free counters!" border="0"></a>
+<a href="http://s05.flagcounter.com/more/iQlX"><img src="https://s05.flagcounter.com/count/iQlX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_50/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Free counters!" border="0"></a>
 </p>
