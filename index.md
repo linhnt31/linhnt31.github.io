@@ -21,11 +21,13 @@ In addition to doing research, I enjoy designing, modelling, and implementing ac
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E) ![Solidity](https://img.shields.io/badge/Solidity-e6e6e6?style=flat&logo=solidity&logoColor=black) ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white) ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat&logo=Ethereum&logoColor=white) ![Hyperledger Fabric](https://img.shields.io/badge/hyperledger-2F3134?style=flat&logo=hyperledger&logoColor=white) ![Amazon AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
 
-Especially, I'm always looking to collaborate on researching topics of Blockchain, Federated Learning, and game theoretic based network economics.
+Especially, I'm always looking to collaborate on researching topics of Blockchain, Federated Learning, game theoretic based network economics, recently LLMs.
 
 ### News
 
 <div style="height: 400px; overflow-y: auto; text-align: justify; margin-bottom: 15px;" markdown="1">
+
+- **[07-09/2026]** I have started my research secondment at [Montimage, Paris](https://www.montimage.com/), which specializes in Cybersecurity for next generation networks.
 
 - **[04/2026]** My joint work ***CoCoGen+*** on Coopetition (see [Definition](https://en.wikipedia.org/wiki/Coopetition)) and Federated Learning with University of Liverpool is available on [arXiv](https://arxiv.org/abs/2604.14886) and featured on [a LinkedIn post by Flowers](https://www.linkedin.com/posts/activity-7452695216417013760-CMh7?utm_source=share&utm_medium=member_desktop&rcm=ACoAACVYvScBOdCBsv-ufxI6935rPLOBFF0k6u0). This work models the joint effects of inter-organizational competition and data heterogeneity on organizational decision making process and social welfare. With a payoff redistribution-based incentive mechanism, ***CoCoGen+*** mitigates [competitive externalities](https://en.wikipedia.org/wiki/Externality) to sustain long-term collaborations between strategic and competitive organizations. 
 
