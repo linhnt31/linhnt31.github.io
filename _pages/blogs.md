@@ -7,6 +7,10 @@ published: true
 
 ## Technical things
 
+0. Linh Thanh Nguyen, "[Retrieval-Augmented Generation (RAG): Embeddings and Semantic Search]({{site.baseurl}}/research/rag)" (v1. June 2026)
+
+0. Linh Thanh Nguyen, "[Diffusion models]({{site.baseurl}}/research/diffusion_model)" (v1. July 2024)
+
 0. Linh Thanh Nguyen, "[Diffusion models]({{site.baseurl}}/research/diffusion_model)" (v1. July 2024)
 
 0. Linh Thanh Nguyen, "[Precision, Recall and F1 Score - All we need to know]({{site.baseurl}}/research/classification_problems)" (v1. April 2024)
