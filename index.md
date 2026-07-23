@@ -25,17 +25,19 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 ### News
 
-<div style="height: 400px; overflow-y: auto; text-align: justify; margin-bottom: 15px;" markdown="1">
+<div style="height: 500px; overflow-y: auto; text-align: justify; margin-bottom: 15px;" markdown="1">
 
-- **[07-09/2026]** I have started my research secondment at [Montimage, Paris](https://www.montimage.com/), which specializes in Cybersecurity for next generation networks.
+- **[07-09/2026]** I have started my research secondment at [Montimage, Paris](https://www.montimage.com/), where I will develop robust and resilient solution for FL-based applications for next generation networks.
+
+- **[07/2026]** My work "***Carpe Diem: Critical Learning Period-Aware Contract-Based Incentives for Federated Learning***" on Incentivization for Federated Learning utilizing the concept of neural network plasticity, contract theory, and blockchain has been accepted for publication in [IEEE Transactions on Network Science and Engineering](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488902) [<span style="color:red">**IF: 7.3**</span>]. In this work, we addressed the challenges of information asymmetry between clients and service provider to coordinate the training and incentivization processes while improving the final shared global model performance for downstream tasks by attracting clients to join and contribute resources (i.e., data) in the early training phase under constraints of budget and strategic behaviors of clients (e.g., [Individual rationality](https://umbrex.com/resources/economics-concepts/microeconomic-theory/individual-rationality-ir/) and [Incentive compatibility](https://umbrex.com/resources/economics-concepts/microeconomic-theory/incentive-compatibility-ic/)).  
 
 - **[04/2026]** My joint work ***CoCoGen+*** on Coopetition (see [Definition](https://en.wikipedia.org/wiki/Coopetition)) and Federated Learning with University of Liverpool is available on [arXiv](https://arxiv.org/abs/2604.14886) and featured on [a LinkedIn post by Flowers](https://www.linkedin.com/posts/activity-7452695216417013760-CMh7?utm_source=share&utm_medium=member_desktop&rcm=ACoAACVYvScBOdCBsv-ufxI6935rPLOBFF0k6u0). This work models the joint effects of inter-organizational competition and data heterogeneity on organizational decision making process and social welfare. With a payoff redistribution-based incentive mechanism, ***CoCoGen+*** mitigates [competitive externalities](https://en.wikipedia.org/wiki/Externality) to sustain long-term collaborations between strategic and competitive organizations. 
 
 - **[02/2026]** I attended the Research Ireland ADVANCE CRT Research Colloquium for specialized training on developing competitive Horizon Europe proposals. You can read my key takeaways and insights [here]({{site.baseurl}}/misc/#advance-colloquium-2026).
 
-- **[01/2026]** Our work ***6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G*** with multiple partners has been accepted in [IEEE Communications Surveys & Tutorials](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739) [<span style="color:red">**IF: 46.7**</span>].
+- **[01/2026]** Our work ***6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G*** with multiple partners has been accepted in [IEEE Communications Surveys & Tutorials](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9739) [<span style="color:red">**IF: 50.6**</span>].
 
-- **[01/2026]** [***veriFUL***](https://ieeexplore.ieee.org/document/11359714) has been accepted in [IEEE Internet Computing](https://www.computer.org/csdl/magazine/ic) [<span style="color:red">**IF: 4.5**</span>]. 
+- **[01/2026]** [***veriFUL***](https://ieeexplore.ieee.org/document/11359714) has been accepted in [IEEE Internet Computing](https://www.computer.org/csdl/magazine/ic) [<span style="color:red">**IF: 3.3**</span>]. 
 
 - **[10/2025]** My joint work on Verifiable Federated Unlearning (FUL) with TU Delft is available on [arXiv](https://arxiv.org/abs/2510.00833). This work recasts the FUL paradigm as verifiable FUL, grounded by the trust-by-design principle. Particularly, we presents a trust-by-design reference framework for verifiable federated unlearning, called ***veriFUL***, that upholds both the right to be forgotten and the right to verify for clients (i.e., data owners) thereby strengthening client trust and privacy control in modern AI systems.
 
@@ -47,7 +49,7 @@ Especially, I'm always looking to collaborate on researching topics of Blockchai
 
 - **[03/2025]** I got my first research paper on Critical Learning periods and Federated Learning accepted in a semi-annual flagship [2025 IEEE 101st Vehicular Technology Conference: VTC2025-Spring](https://events.vtsociety.org/vtc2025-spring/), help in Oslo, Norway.
 
-- **[03/2025]** I got my first SoK article on Blockchain, Federated Learning, and Data Sharing accepted at a prestigious journal [ACM Computing Surveys](https://dl.acm.org/journal/csur)  [<span style="color:red">**IF: 28**</span>].
+- **[03/2025]** I got my first SoK article on Blockchain, Federated Learning, and Data Sharing accepted at a prestigious journal [ACM Computing Surveys](https://dl.acm.org/journal/csur)  [<span style="color:red">**IF: 30.4**</span>].
 
 - **[11/2024]** My team secured 3rd place in the [Balbriggan Innovation Challenge - The EcoCore Hackathon](https://www.fingal.ie/news/balbriggan-innovation-challenge-project-ecocore) (Here is [Media news](https://smartdublin.ie/hackathon-balbriggan-innovation-challenge/)). We conceptualized and pitched "BART," a transformative model aimed at overhauling transport systems in and around Balbriggan while fostering a circular economy.
 

@@ -18,7 +18,7 @@ published: true
 
 0. et al., <ins>**Thanh Linh Nguyen**</ins>, et al., “<a href="https://ieeexplore.ieee.org/abstract/document/11368903">6G AI Security: From Fundamentals to Offensive and Defensive Landscape in 6G</a>,” in *IEEE Communications Surveys and Tutorials (IEEE COMST)*, vol. 28, pp. 4765-4799, 2026.
 
-0. <ins>**Thanh Linh Nguyen**</ins>, Dinh Thai Hoang, Diep N. Nguyen, Quoc-Viet Pham, "<a href="https://arxiv.org/abs/2503.07869">Right Reward Right Time for Federated Learning</a>”, submitted to *IEEE Transactions on Network Science and Engineering (IEEE TNSE)* [<span style="color:red">**IF: 7.9**</span>] - ***Under review*** (in collaboration with UTS, Australia).
+0. <ins>**Thanh Linh Nguyen**</ins>, Dinh Thai Hoang, Diep N. Nguyen, Quoc-Viet Pham, "<a href="https://arxiv.org/abs/2503.07869">Carpe Diem: Critical Learning Period-Aware Contract-Based Incentives for Federated Learning</a>”, in *IEEE Transactions on Network Science and Engineering (IEEE TNSE)*, 2026 (Early access). [<span style="color:red">**IF: 7.3**</span>] (in collaboration with UTS, Australia).
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Lam Duc Nguyen, Thong Hoang, Dilum Bandara, Qin Wang, Qinghua Lu, Xiwei Xu, Liming Zhu, Petar Popovski, and Shiping Chen, "<a href="https://dl.acm.org/doi/10.1145/3718082">Blockchain-Empowered Trustworthy Data Sharing: Fundamentals, Applications, and Challenges</a>", *ACM Computing Surveys* [<span style="color:red">**IF: 28**</span>]. (In collaboration with CSIRO Data61, Australia).
 
