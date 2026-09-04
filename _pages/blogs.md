@@ -21,6 +21,8 @@ published: true
 0. McKinsey & Company, "[The state of AI in 2023: Generative AI’s breakout year]({{site.baseurl}}/research/GenerativeAI)" (August 2023)
 {: reversed="reversed"}
 
+---
+
 ## Scientific Research
 
 0. Best practices in paper writing
@@ -37,13 +39,15 @@ published: true
 
 - What can we do for each section in a paper: 
 
-  + Introduction: a) What problem we want to solve, b) why is it important and interesting, and c) what is/isn't new in our paper?
+  + Introduction: a) What problem we want to solve, b) why is it important and interesting, and c) what is/isn't new in our paper? (***claims***, ***problems***, ***novelty***, ***significance***)
 
-  + Related work: surveys and discusses what have been done/have not done from the big to narrow pictures of the topic.
+  + Related work: surveys and discusses how these work are related, what have been done/have not done from the big to narrow pictures of the targeting topic (***context***).
 
-  + Main idea & Algorithm: can be foundational conceptual framework (e.g., underlying model/theory which can be theoretical or systemic) and methodology (e.g., structured, strategic and procedure,...). This part can be better with a toy example or a figure to illustrate components, how they work and interact with others.
+  + Main idea & Algorithm: can be foundational conceptual framework (e.g., underlying model/theory which can be theoretical or systemic) and methodology (e.g., structured, strategic and procedure,...). This part can be better with a toy example or a figure to illustrate components, how they work and interact with others. Besides, the paper should explicitly state the technical assumptions/limitations (***honesty***).
 
-  + Experiments: are the place we need to show the feasibility and efficiency of the proposed solution, comparing with existing SOTAs, under some (controlled) settings?
+  + Experiments: are the place we need to show the feasibility and efficiency of the proposed solution, comparing with existing SOTAs, under some (controlled) settings. On the other hands, we need to show the ***soundness***: results need to substantiate the claims/contributions.
+
+    + *If the paper improves results compared to SOTAs, the paper clearly explains the reason of what made this improvement possible, or where it is coming from: What is improved in the algorithm/analysis?*
 
   + Discussion: is to end with a conclusion/summary, or to show what our contributions open up and how the proposed solution changes the way we approach the current problem.
 
@@ -64,10 +68,10 @@ published: true
   + Is the writing poor?
 
 **References**
+
 [1]. [Paper Writing Best Practices](https://icml.cc/Conferences/2022/BestPractices)
 
 [2]. [Bill Freeman's slides](https://drive.google.com/file/d/1sE4ZCHkU65J6ZFjOK4dWGIiuPygkM6ZW/view)
-
 
 0. Sebastian Ruder, "[10* Tips for Research and a PhD](https://www.ruder.io/10-tips-for-research-and-a-phd/)" (Collected in January 2024)
 
@@ -75,19 +79,32 @@ published: true
 0. Linh Thanh Nguyen, "[How to develop your writing skills in the science: Myths and Lessons]({{site.baseurl}}/blog/scientific_writing)" (January 2024)
 {: reversed="reversed"}
 
+---
+
 ## Study
 
 **0. How to study/work and manage time effectively?**
+
 - A detailed plan for a working day and a week
+
 - Pomodoro method: studying for 45 minutes and taking a 5-minute break
+
 - Feynman technique: explaining complicated problems in a simple way
+
 - Active Recall & Spaced
+
 - Regarding time management, I have got some key takeaways from [Terence Tao's blog post](https://terrytao.wordpress.com/2008/08/07/on-time-management/), which are shown/quoted as follows
+
   + Evaluate your work potential (a function of your location, your current level of motivation and energy, your upcoming duties and commitments, availability of resources, and the expected level of distraction) for a given period of time into the future.
+
   + Avoid to drop a task when it is only partially finished, without any good ***closure***; it then either gets lost, or weighs on one’s mind and prevents one from fully thinking about something else.
+
     + ***Closure*** here is the desirability of being able to chop up an extremely long task into smaller, self-contained ones, ideally each with its own immediate “payoff”. 
+
   + Handle tasks requiring less concentration in batches, while doing required-concentration tasks individually.
+
   + Seriously invest an amount of time on learning skills which are seemed to used repeatedly in the future (e.g., Using and knowing in details Pytorch/Tensorflow/Ethereum frameworks for coding and blockchain system configurations).
+
   + Abandon your own rules sometimes and allow for serendipity (Actually, I like this statement a lot and I actually found some interesting ideas during the time talking with my friends and colleagues, instead of a loop thought that I must work I must finish this I must finish that now).
 
 {: reversed="reversed"}
