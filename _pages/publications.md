@@ -31,6 +31,8 @@ published: true
 
 ## Conference Papers
 
+0. et al.,<ins>**Thanh Linh Nguyen**</ins>, et al., "XAI-Driven Runtime Validation for Zero-Touch Security Management in AI-Native 6G,” *Next Generation Communications (NextGCom) conference*, Kefalonia, Greece, 2026.
+
 0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, "<a href="https://ieeexplore.ieee.org/document/11432061">A Coopetitive-Compatible Data Generation Framework for Cross-silo Federated Learning</a>,” *GLOBECOM 2025 - 2025 IEEE Global Communications Conference*, Taipei, Taiwan, 2025, pp. 1950-1955.
 
 0. <ins>**Thanh Linh Nguyen**</ins>, Quoc-Viet Pham, "<a href="https://ieeexplore.ieee.org/abstract/document/11174880">A Critical Learning Period-Aware Incentive Mechanism for Federated Learning</a>," *2025 IEEE 101st Vehicular Technology Conference (VTC2025-Spring)*, Oslo, Norway, 2025, pp. 1-6.
