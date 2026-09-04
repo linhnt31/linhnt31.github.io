@@ -45,6 +45,8 @@ published: true
 
   + Main idea & Algorithm: can be foundational conceptual framework (e.g., underlying model/theory which can be theoretical or systemic) and methodology (e.g., structured, strategic and procedure,...). This part can be better with a toy example or a figure to illustrate components, how they work and interact with others. Besides, the paper should explicitly state the technical assumptions/limitations (***honesty***).
 
+    + *Workflow vs. Algorithm*: while workflow provides a marco-level conceptual understanding of the system model/theory but fail to show edge cases, stop conditions,..., algorithm can introduce micro-level implementation blueprint (e.g, how to implement the proposed solution: control flow, loop bounds,... with complexity).
+
   + Experiments: are the place we need to show the feasibility and efficiency of the proposed solution, comparing with existing SOTAs, under some (controlled) settings. On the other hands, we need to show the ***soundness***: results need to substantiate the claims/contributions.
 
     + *If the paper improves results compared to SOTAs, the paper clearly explains the reason of what made this improvement possible, or where it is coming from: What is improved in the algorithm/analysis?*
