@@ -27,6 +27,8 @@ In particular, I am always looking to collaborate on research topics in Blockcha
 
 <div style="height: 500px; overflow-y: auto; text-align: justify; font-size: 0.9rem; margin-bottom: 15px;" markdown="1">
 
+- **[09/2026]** I was invited to give a talk, ***Data Stays, Intelligence Unites: Designing Sustainable Incentives for Privacy-Preserving AI***, at the [ENSURE-6G Workshop on Privacy-Preserving Machine Learning (PPML)](https://lnkd.in/p/dh6cFX9z). The talk discussed why sustainable incentives, rather than algorithms alone, determine whether privacy-preserving AI systems such as Federated Learning are adopted and sustained in practice.
+
 - **[07-09/2026]** I have started my research secondment at [Montimage, Paris](https://www.montimage.com/), where I will develop robust and efficient unlearning solutions for FL-based applications in next-generation networks. The work I co-authored, 'XAI-Driven Runtime Validation for Zero-Touch Security Management in AI-Native 6G', was accepted at [NextGCom'2026](https://nextgcom.net/).
 
 - **[08/2026]** I participated in [From Zero to Hero: Federated AI in Healthcare Systems Workshop](https://luma.com/mm2ruxjk) and [Collaborative Agent Hackathon](https://flower.ai/events/collaborative-agent-hackathon), organized in Cambridge, UK. It was a brilliant opportunity to discuss the bottlenecks of deploying Federated Learning in practice, from regulatory to technical constraints. We also developed [Flower Seed](https://github.com/linhnt31/hackathon_floweai_team), a federated AI agent app built on Flower SuperGrid that improves post-operative outcomes for cataract surgery through federated insights across multiple facilities, without sharing patient records.
