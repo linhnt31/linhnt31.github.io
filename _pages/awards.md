@@ -1,17 +1,9 @@
 ---
-title: Work Experience and Awards
+title: Awards
 layout: default
-permalink: /work-experience-and-awards/
+permalink: /awards/
 published: true
 ---
-
-#### Work Experience
-0. DevOps Engineer, <a href="https://fptsoftware.com/">FPT Software</a>, FPT Corporation, May. 2022 - Nov. 2022
-
-0. Cloud Computing Internship, Bizfly Cloud Department, <a href="https://vccorp.vn/">VCCorp Corporation</a>, Apr. 2020 - Jul. 2020
-
-0. Cloud Computing Internship, <a href="https://hadtech.vn/en_US/">HADTech Joint Stock Company</a>, Oct. 2019 - Mar. 2020
-{: reversed="reversed"}
 
 #### Honors and Awards
 0. <a href="https://ensure-6g.eu/">The European Union’s Horizon Europe MSCA Staff Exchange award</a>, Jun.-Aug. 2025
