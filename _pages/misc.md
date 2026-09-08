@@ -5,6 +5,38 @@ permalink: /misc/
 published: true
 ---
 
+## [Federated Learning in Healthcare System Workshop](https://luma.com/mm2ruxjk) & [Flower Collaborative Agent Hackathon](https://flower.ai/events/collaborative-agent-hackathon), Cambridge, 23–26 August 2026 {#fl-cambridge-2026}
+
+From 23 to 26 August 2026, I had the chance to visit Cambridge, UK, to attend an FL hackathon and workshop. Cambridge is walkable, quiet, and full of academic atmosphere, with historic colleges, the beautiful [River Cam](https://en.wikipedia.org/wiki/River_Cam), and lovely bridges. It was a perfect place to pause, exchange ideas, and reflect on the current state and future of federated learning (FL).
+
+The workshop focused on applying FL in healthcare systems. Many of the projects presented appeared to operate through established consortia, where hospitals, universities, and other institutions collaborate to train a shared model while keeping their data local. Agreements govern participation, access to the model, and, in some cases, how commercial benefits are shared. My impression was that making FL work in practice depends as much on these arrangements as on the learning algorithms themselves.
+
+I was also interested in the campus applications presented, including [FedCampus 1.0 and 2.0](https://github.com/FedCampus), [FedKit](https://github.com/FedCampus/FedKit), and [ChatDKU](https://chatdku.com/). These examples prompted me to think about how FL and agentic AI could support students’ academic, administrative, and health needs while keeping sensitive data local. They also raised a question worth asking of such applications: where does collaborative learning happen, and where/how are agents simply coordinating queries or exchanging insights?
+
+Beyond individual projects, I saw a growing FL ecosystem, including [FLIP](https://github.com/londonaicentre/FLIP) (see the photo below). FLIP supports federated training and evaluation across healthcare institutions using FL engines such as Flower and NVIDIA FLARE. As described at the workshop, its architecture uses secure environments at client sites and limits the information retained centrally.
+
+<p float="middle">
+  <img src="../assets/images/FLworkshop26/flip.jpeg" width="850" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
+  <small style="color:#666;">
+  The FL platform landscape as presented at the workshop: deployed platforms, federated analytics, FL engines, and peer-to-peer approaches.</small>
+</p>
+
+These developments were encouraging, but they left me wondering how FL could become more accessible beyond established collaborations. Although FL already extends beyond healthcare and institutional consortia, many of the examples I encountered relied on agreements among a relatively small group of organizations. How could individuals and smaller organizations participate without first building such a consortium?
+
+> Can we create an FL-based marketplace where individuals and organizations are rewarded for useful contributions from their local data and computing resources, while retaining control over how those contributions are used?
+
+I imagine a platform where a buyer proposes a learning task, defines how model improvement will be evaluated, and invites eligible participants to contribute without transferring their raw data. In return, participants might receive payment, access to the trained model, or a share of the value it creates.
+
+However, computation and data contributions should not be valued in the same way. A participant may perform substantial computation while contributing little new information, whereas a small dataset may contain rare and valuable examples. Broader participation could improve coverage and generalization, but this is not automatic: contributions must be relevant, and differences in data quality and distribution must be handled carefully. The challenge is to make participation accessible while ensuring that contributions are useful and rewards are fair.
+
+These questions stayed with me during the hackathon organized by [Flower](https://flower.ai/), where we developed agent applications and deployed them on the [Flower SuperGrid](https://flower.ai/docs/framework/how-to-run-flower-apps-on-supergrid.html). It was exciting to team up with people from different backgrounds and build a prototype exploring how federated insights across facilities could support better post-operative outcomes for cataract surgery without sharing patient records across regions (see [Flower-Seed](https://github.com/linhnt31/hackathon_floweai_team) and the [Flower-Seed App](https://flower.ai/apps/linhnt/Flower-Seed)).
+
+The emphasis on agentic AI initially made me wonder whether FL was struggling to find its own position amid the attention given to AI agents and LLMs. It sometimes feels as though every project needs these keywords nowadays. On reflection, however, becoming the backbone of other applications could be a strong position for FL. Like microservices, it could become widely used without being visible to end users. What matters is whether it enables useful learning and collaboration that would otherwise be difficult to achieve.
+
+My vision is therefore an FL ecosystem that makes collaboration easier to enter, sustain, and leave. Participants should understand what they contribute, how they benefit, and what happens if they later withdraw. This connects directly to my research interests in incentives and federated unlearning: *if someone is rewarded for contributing and later requests the removal of their influence, who performs the unlearning, who pays for it, and how are the remaining participants affected?*
+
+For me, these are central questions for the future of FL. Better algorithms matter, but broader adoption also requires credible rewards, clear participation rules, and meaningful control over contributions throughout their lifecycle.
+
 ## Research Ireland ADVANCE CRT Research Colloquium, 10th & 11th February 2026 {#advance-colloquium-2026}
 
 I just had a wonderful time with my ADVANCE CRT friends and speakers during the Research Colloquium in the quiet city of [Portlaoise](https://maps.app.goo.gl/7pFsF2wcVbasgF4P7), where I had a chance to listen, learn, understand, and discuss Horizon Europe funding which is vital for the future careers of fresh PhDs in both academia and industry.
