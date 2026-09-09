@@ -1,9 +1,22 @@
 ---
-title:
+title: Misc
 layout: default
 permalink: /misc/
 published: true
 ---
+
+<nav class="toc" markdown="1">
+**On this page**
+
+- [Cambridge FL Workshop &amp; Flower Hackathon — Aug. 2026](#fl-cambridge-2026)
+- [ADVANCE CRT Research Colloquium — Feb. 2026](#advance-colloquium-2026)
+- [ADVANCE CRT 3rd Cohort Celebration — Oct. 2025](#advance-cohort3-2025)
+- [ADVANCE CRT Research Summer School — Jun. 2024](#advance-summer-school-2024)
+- [ADVANCE CRT Research Colloquium — Apr. 2024](#advance-colloquium-2024)
+- [ADVANCE CRT Induction — Jan. 2024](#advance-induction-2024)
+- [ADVANCE CRT Workshop — Nov. 2023](#advance-workshop-2023)
+- [9th Vietnam Summer School of Science — Aug. 2022](#vsss-2022)
+</nav>
 
 ## [Federated Learning in Healthcare System Workshop](https://luma.com/mm2ruxjk) & [Flower Collaborative Agent Hackathon](https://flower.ai/events/collaborative-agent-hackathon), Cambridge, 23–26 August 2026 {#fl-cambridge-2026}
 
@@ -15,11 +28,14 @@ I was also interested in the campus applications presented, including [FedCampus
 
 Beyond individual projects, I saw a growing FL ecosystem, including [FLIP](https://github.com/londonaicentre/FLIP) (see the photo below). FLIP supports federated training and evaluation across healthcare institutions using FL engines such as Flower and NVIDIA FLARE. As described at the workshop, its architecture uses secure environments at client sites and limits the information retained centrally.
 
-<p float="middle">
-  <img src="../assets/images/FLworkshop26/flip.jpeg" width="850" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <small style="color:#666;">
-  The FL platform landscape as presented at the workshop: deployed platforms, federated analytics, FL engines, and peer-to-peer approaches.</small>
-</p>
+<figure class="photo">
+  <a href="{{ site.baseurl }}/assets/images/FLworkshop26/flip.jpeg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/FLworkshop26/flip.jpeg"
+         width="2046" height="1130" loading="lazy" decoding="async"
+         alt="Workshop slide grouping federated learning tools into deployed platforms, federated analytics, FL engines, and peer-to-peer approaches.">
+  </a>
+  <figcaption>The FL platform landscape as presented at the workshop: deployed platforms, federated analytics, FL engines, and peer-to-peer approaches.</figcaption>
+</figure>
 
 These developments were encouraging, but they left me wondering how FL could become more accessible beyond established collaborations. Although FL already extends beyond healthcare and institutional consortia, many of the examples I encountered relied on agreements among a relatively small group of organizations. How could individuals and smaller organizations participate without first building such a consortium?
 
@@ -49,24 +65,29 @@ Here are a few lessons I personally observed and conceived from this event, natu
 
 + It is essential to choose the right partners with a proper matrix of skills, who can complement work packages and ***impacts*** from different perspectives that align with EU policies. 
 
+<figure class="photo">
+  <a href="{{ site.baseurl }}/assets/images/Portlaoise2026/2.jpeg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/Portlaoise2026/2.jpeg"
+         width="2048" height="1518" loading="lazy" decoding="async"
+         alt="Slide from the Horizon Europe funding talk at the ADVANCE CRT Research Colloquium in Portlaoise.">
+  </a>
+  <figcaption>Photo taken from the talk of <a href="http://www.hyperion.ie/seanmccarthy.htm">Dr. Seán McCarthy</a> in our event.</figcaption>
+</figure>
 
-<p float="middle">
-  <img src="../assets/images/Portlaoise2026/2.jpeg" width="850" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <small style="color:#666;">
-  Photo taken from the talk of [Dr. Seán McCarthy](http://www.hyperion.ie/seanmccarthy.htm) in our event.</small>
-</p>
-
-## Research Ireland ADVANCE CRT 3rd Cohort Celebration, Oct. 2025
+## Research Ireland ADVANCE CRT 3rd Cohort Celebration, Oct. 2025 {#advance-cohort3-2025}
 
 It has been a long time since I spent time writing about activities outside research. The year 2025 has been so busy so far with paper submissions, confirmation report after 18 months of PhD, and a placement at TU Delft (I actually wrote some diaries and reflections for this period, but I kept them private in Notion; I will release them in the near future).
 
 At this moment, sitting in the Waterford Plunkett train station, I want to write down some of my thoughts about the event on the 28th and 29th of October in Waterford, at which we celebrated the graduation of the 3rd Cohort from my funding body, Research Ireland ADVANCE CRT. Waterford is the oldest city in Ireland, situated on the River Suir.
 
-<p float="middle">
-  <img src="../../assets/images/Waterford2025/waterford1.jpg" width="750" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <small style="color:#666;">
-  Photo taken from the talk of [Dr. Sam Gregson](https://www.badboyofscience.com/about) in our event.</small>
-</p>
+<figure class="photo">
+  <a href="{{ site.baseurl }}/assets/images/Waterford2025/waterford1.jpg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/Waterford2025/waterford1.jpg"
+         width="2040" height="1148" loading="lazy" decoding="async"
+         alt="Speaker presenting to the ADVANCE CRT cohorts at the 3rd Cohort Celebration in Waterford.">
+  </a>
+  <figcaption>Photo taken from the talk of <a href="https://www.badboyofscience.com/about">Dr. Sam Gregson</a> in our event.</figcaption>
+</figure>
 
 It’s always a joy to meet people who share the same mindset and the same struggles of a PhD journey. With them, you don’t need to explain much about your work, challenges, or little moments of happiness; they simply understand. Over 2 days, here are a few things I heard from my peers, as well as talks from keynote speakers and the 3rd and 2nd cohorts.
 
@@ -78,13 +99,17 @@ It’s always a joy to meet people who share the same mindset and the same strug
 
 > Last but not least, everyone has their own challenges and struggles, so **none of us are alone in this interesting yet demanding journey**. Be brave, stay resilient, and don’t hesitate to open up to people you trust, to seek advice, support, or simply a few words of encouragement.
 
-## SFI ADVANCE CRT Research Summer School, Jun. 2024
+## SFI ADVANCE CRT Research Summer School, Jun. 2024 {#advance-summer-school-2024}
 
 From June 10 to 14, I had the privilege of attending a remarkable 5-day summer school organized by SFI ADVANCE CRT in the picturesque town of Killarney, County Kerry, Ireland. This intensive program offered two training tracks for PhD students: Social and STEM. What made this experience truly enriching was the interdisciplinary collaboration, where we formed groups with members from both tracks to propose case studies.
 
-<p float="middle">
-  <img src="../../assets/images/Killarney2024/allteam.jpeg" width="750" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-</p>
+<figure class="photo">
+  <a href="{{ site.baseurl }}/assets/images/Killarney2024/allteam.jpeg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/Killarney2024/allteam.jpeg"
+         width="800" height="450" loading="lazy" decoding="async"
+         alt="Group photo of all participants at the SFI ADVANCE CRT Research Summer School in Killarney.">
+  </a>
+</figure>
 
 **Day-by-Day Learning Journey:**
 
@@ -113,35 +138,68 @@ Unfortunately, I couldn’t visit the [Torc Waterfall](https://www.kerrygems.com
 
 Overall, this summer school was not only a great learning opportunity but also a chance to connect with amazing people and enjoy the breathtaking landscapes of Killarney.
 
-
-
-## SFI ADVANCE CRT Research Colloquium, Apr. 2024
+## SFI ADVANCE CRT Research Colloquium, Apr. 2024 {#advance-colloquium-2024}
 
 We had a great time at the Research Colloquium event organized by SFI ADVANCE CRT in Tralee, County Kerry. On the first day, we showcased our posters in a *presenters* and *hunters* format, where we could talk about research while receiving lots of advice and feedback from fellows. Besides, we participated in outdoor activities together, including pedalo boats, a climbing wall, and the Tower of Hanoi quizzes at [Tralee Bay Wetlands](https://traleebaywetlands.org/). On the second day, we had two sessions on entrepreneurship. I was quite impressed by the sharing on *how to think like an entrepreneur*, the mindset of *thinking ahead and focusing on scalability rather than just starting up*, and *insisting on doing hard/uncomfortable things* on the long-term road during the first session.
 
-<p float="middle">
-  <img src="../../assets/images/Tralee2024/ADVANCE_CRT_Cohorts.jpg" width="700" height="450" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-</p>
+<figure class="photo">
+  <a href="{{ site.baseurl }}/assets/images/Tralee2024/ADVANCE_CRT_Cohorts.jpg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/Tralee2024/ADVANCE_CRT_Cohorts.jpg"
+         width="1600" height="1200" loading="lazy" decoding="async"
+         alt="Group photo of the SFI ADVANCE CRT cohorts at the Research Colloquium in Tralee.">
+  </a>
+</figure>
 
-## SFI ADVANCE CRT Induction, Jan. 2024
+## SFI ADVANCE CRT Induction, Jan. 2024 {#advance-induction-2024}
 
 You can find more details about my experience in this event [here](https://linhnt31.github.io/blog/AdvanceInduction24).
 
-## SFI ADVANCE CRT Workshop, Nov. 2023
+## SFI ADVANCE CRT Workshop, Nov. 2023 {#advance-workshop-2023}
 
-<p float="middle">
-  <img src="../../assets/images/Limerick2023/1.jpg" width="400" height="300" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <img src="../../assets/images/Limerick2023/2.jpg" width="400" height="300" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <img src="../../assets/images/Limerick2023/3.jpg" width="400" height="300" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <img src="../../assets/images/Limerick2023/4.jpg" width="400" height="300" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-</p>
+<figure class="photo-grid">
+  <a href="{{ site.baseurl }}/assets/images/Limerick2023/1.jpg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/Limerick2023/1.jpg"
+         width="1000" height="750" loading="lazy" decoding="async"
+         alt="Photo from the SFI ADVANCE CRT workshop in Limerick, November 2023 (1 of 4).">
+  </a>
+  <a href="{{ site.baseurl }}/assets/images/Limerick2023/2.jpg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/Limerick2023/2.jpg"
+         width="750" height="1000" loading="lazy" decoding="async"
+         alt="Photo from the SFI ADVANCE CRT workshop in Limerick, November 2023 (2 of 4).">
+  </a>
+  <a href="{{ site.baseurl }}/assets/images/Limerick2023/3.jpg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/Limerick2023/3.jpg"
+         width="750" height="1000" loading="lazy" decoding="async"
+         alt="Photo from the SFI ADVANCE CRT workshop in Limerick, November 2023 (3 of 4).">
+  </a>
+  <a href="{{ site.baseurl }}/assets/images/Limerick2023/4.jpg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/Limerick2023/4.jpg"
+         width="750" height="1000" loading="lazy" decoding="async"
+         alt="Photo from the SFI ADVANCE CRT workshop in Limerick, November 2023 (4 of 4).">
+  </a>
+</figure>
 
+## 9th Vietnam Summer School of Science, Aug. 2022 {#vsss-2022}
 
-## 9th Vietnam Summer School of Science, Aug. 2022
-
-<p float="middle">
-  <img src="../../assets/images/VSSS09/1.jpg" width="500" height="300" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <img src="../../assets/images/VSSS09/2.jpg" width="300" height="300" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <img src="../../assets/images/VSSS09/3.jpg" width="350" height="300" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-  <img src="../../assets/images/VSSS09/4.jpg" width="450" height="300" loading="lazy" style="cursor: zoom-in;"/> &nbsp;
-</p>
+<figure class="photo-grid">
+  <a href="{{ site.baseurl }}/assets/images/VSSS09/1.jpg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/VSSS09/1.jpg"
+         width="1000" height="682" loading="lazy" decoding="async"
+         alt="Photo from the 9th Vietnam Summer School of Science, August 2022 (1 of 4).">
+  </a>
+  <a href="{{ site.baseurl }}/assets/images/VSSS09/2.jpg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/VSSS09/2.jpg"
+         width="1000" height="750" loading="lazy" decoding="async"
+         alt="Photo from the 9th Vietnam Summer School of Science, August 2022 (2 of 4).">
+  </a>
+  <a href="{{ site.baseurl }}/assets/images/VSSS09/3.jpg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/VSSS09/3.jpg"
+         width="750" height="1000" loading="lazy" decoding="async"
+         alt="Photo from the 9th Vietnam Summer School of Science, August 2022 (3 of 4).">
+  </a>
+  <a href="{{ site.baseurl }}/assets/images/VSSS09/4.jpg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/VSSS09/4.jpg"
+         width="1000" height="750" loading="lazy" decoding="async"
+         alt="Photo from the 9th Vietnam Summer School of Science, August 2022 (4 of 4).">
+  </a>
+</figure>
