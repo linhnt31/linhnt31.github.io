@@ -24,7 +24,7 @@ published: true
 
 ## Scientific Research
 
-**0. Best practices in paper writing**
+**Best practices in paper writing**
 
 - First thought, with Ted Adelson, for preparation of a paper:
 
@@ -84,7 +84,7 @@ published: true
 
 ## Study & Philosophy
 
-**0. How to study/work and manage time effectively?**
+**How to study/work and manage time effectively?**
 
 - A detailed plan for a working day and a week
 
@@ -108,7 +108,5 @@ published: true
 
   + Abandon your own rules sometimes and allow for serendipity (Actually, I like this statement a lot and I actually found some interesting ideas during the time talking with my friends and colleagues, instead of a loop thought that I must work I must finish this I must finish that now).
 
-{: reversed="reversed"}
 
-
-**0. [Stoicism]({{site.baseurl}}/misc/Stoicism)**
+**[Stoicism]({{site.baseurl}}/misc/Stoicism)**
