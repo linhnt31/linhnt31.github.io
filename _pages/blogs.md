@@ -25,7 +25,7 @@ published: true
 
 ## Scientific Research
 
-0. Best practices in paper writing
+**0. Best practices in paper writing**
 
 - First thought, with Ted Adelson, for preparation of a paper:
 
@@ -113,7 +113,7 @@ published: true
 
 ## Events
 
-0. Here are my thoughts about the event, "[5th cohort Science Foundation Ireland ADVANCE CRT Induction"]({{site.baseurl}}/blog/AdvanceInduction24) (Jan. 2024)
+0. Here are my thoughts about the event, "[5th cohort Science Foundation Ireland ADVANCE CRT Induction"]({{site.baseurl}}/misc/#advance-induction-2024) (Jan. 2024)
 {: reversed="reversed"}
 
 ## Philosophy
