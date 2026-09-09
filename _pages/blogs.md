@@ -74,10 +74,10 @@ published: true
 
 [2]. [Bill Freeman's slides](https://drive.google.com/file/d/1sE4ZCHkU65J6ZFjOK4dWGIiuPygkM6ZW/view)
 
-0. Sebastian Ruder, "[10* Tips for Research and a PhD](https://www.ruder.io/10-tips-for-research-and-a-phd/)" (Collected in January 2024)
+Sebastian Ruder, "[**10* Tips for Research and a PhD**](https://www.ruder.io/10-tips-for-research-and-a-phd/)" (Collected in January 2024)
 
 
-0. Linh Thanh Nguyen, "[How to develop your writing skills in the science: Myths and Lessons]({{site.baseurl}}/blog/scientific_writing)" (January 2024)
+Linh Thanh Nguyen, "[**How to develop your writing skills in the science: Myths and Lessons**]({{site.baseurl}}/blog/scientific_writing)" (January 2024)
 
 
 ---
