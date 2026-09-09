@@ -82,29 +82,65 @@ published: true
 
 ## Study & Philosophy
 
-**How to study/work and manage time effectively?**
+1. **How to study/work and manage time effectively?**
 
-- A detailed plan for a working day and a week
+    - A detailed plan for a working day and a week
 
-- Pomodoro method: studying for 45 minutes and taking a 5-minute break
+    - Pomodoro method: studying for 45 minutes and taking a 5-minute break
 
-- Feynman technique: explaining complicated problems in a simple way
+    - Feynman technique: explaining complicated problems in a simple way
 
-- Active Recall & Spaced
+    - Active Recall & Spaced
 
-- Regarding time management, I have got some key takeaways from [Terence Tao's blog post](https://terrytao.wordpress.com/2008/08/07/on-time-management/), which are shown/quoted as follows
+    - Regarding time management, I have got some key takeaways from [Terence Tao's blog post](https://terrytao.wordpress.com/2008/08/07/on-time-management/), which are shown/quoted as follows
 
-  + Evaluate your work potential (a function of your location, your current level of motivation and energy, your upcoming duties and commitments, availability of resources, and the expected level of distraction) for a given period of time into the future.
+      + Evaluate your work potential (a function of your location, your current level of motivation and energy, your upcoming duties and commitments, availability of resources, and the expected level of distraction) for a given period of time into the future.
 
-  + Avoid to drop a task when it is only partially finished, without any good ***closure***; it then either gets lost, or weighs on one’s mind and prevents one from fully thinking about something else.
+      + Avoid to drop a task when it is only partially finished, without any good ***closure***; it then either gets lost, or weighs on one’s mind and prevents one from fully thinking about something else.
 
-    + ***Closure*** here is the desirability of being able to chop up an extremely long task into smaller, self-contained ones, ideally each with its own immediate “payoff”. 
+        + ***Closure*** here is the desirability of being able to chop up an extremely long task into smaller, self-contained ones, ideally each with its own immediate “payoff”. 
 
-  + Handle tasks requiring less concentration in batches, while doing required-concentration tasks individually.
+      + Handle tasks requiring less concentration in batches, while doing required-concentration tasks individually.
 
-  + Seriously invest an amount of time on learning skills which are seemed to used repeatedly in the future (e.g., Using and knowing in details Pytorch/Tensorflow/Ethereum frameworks for coding and blockchain system configurations).
+      + Seriously invest an amount of time on learning skills which are seemed to used repeatedly in the future (e.g., Using and knowing in details Pytorch/Tensorflow/Ethereum frameworks for coding and blockchain system configurations).
 
-  + Abandon your own rules sometimes and allow for serendipity (Actually, I like this statement a lot and I actually found some interesting ideas during the time talking with my friends and colleagues, instead of a loop thought that I must work I must finish this I must finish that now).
+      + Abandon your own rules sometimes and allow for serendipity (Actually, I like this statement a lot and I actually found some interesting ideas during the time talking with my friends and colleagues, instead of a loop thought that I must work I must finish this I must finish that now).
 
 
-**[Stoicism]({{site.baseurl}}/misc/Stoicism)**
+2. **Stoicism**
+
+<span style="color: red;"><u>**Publication date**</u></span>: Aug. 14, 2023
+
+## Stoicism
+
+### Cardinal virtues for each action in your life 
+
+- Courage
+
+- Temperance or Moderation
+
+    > Doing the right thing in the right amount in the right way [2]
+
+- Justice
+
+    > Treating people with fairness even when they have done something wrong [3]
+
+- Wisdom
+
+    > The ability to navigate complex situations in a logical, informed, and calm manner [3]
+
+### Two types of Stoicism
+
+- Things we cannot control
+- Things we can control
+
+> We suffer not from the events in our lives, but from our judgement about them! ***Epictetus***
+
+
+### Reference
+
+[1]. https://www.youtube.com/watch?v=wX8trc6d8V0
+
+[2]. https://dailystoic.com/what-is-stoicism-a-definition-3-stoic-exercises-to-get-you-started/
+
+[3]. https://www.youtube.com/watch?v=R9OCA6UFE-0&ab_channel=TED-Ed
