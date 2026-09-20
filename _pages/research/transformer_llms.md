@@ -7,8 +7,10 @@ published: true
 
 # How Transformer LLMs Work
 
-> I have wanted to understand Transformers and related advances in a structured, in-depth way for a long time, but I struggled to find the right resources. I therefore decided to study the topic systematically. These notes synthesize the *How Transformer LLMs Work* and *Attention in Transformers: Concepts and Code in PyTorch* courses by DeepLearning.AI with material from other courses and readings. I hope they also help others build a clear understanding of Transformers, and I will continue updating them over time.
- 
+> I have wanted to understand Transformers and related advances in a structured, in-depth way for a long time, but I struggled to find the right resources. I therefore decided to study the topic systematically. These notes synthesize the *How Transformer LLMs Work* and *Attention in Transformers: Concepts and Code in PyTorch* courses by DeepLearning.AI with material from other courses and readings I did. I hope they also help others build a clear understanding of Transformers, and I will continue updating them over time. 
+
+> **NOTE**: At some points, you and (I) will find it difficult, but believe me, you will find the answer by reading further (I hide it from you and future me in later parts @@).  
+
 ## Table of Contents
 
 1. [Language Models: Evolution and Fundamentals](#language-model-evolution)
@@ -70,32 +72,41 @@ Neural methods such as **Word2Vec** learn dense vector embeddings that capture s
 
 ## 2. Transformer Architecture {#transformer-architecture}
 
-Transformers process input positions in parallel during training. During autoregressive generation, however, a decoder generates new tokens sequentially.
+A Transformer consists of a stack of \(N\) structurally identical layers with separate learned parameters. Each layer uses **attention** to incorporate/attend information from permitted token positions and a **position-wise feed-forward network** to transform each token representation independently. The original encoder–decoder Transformer has separate encoder and decoder stacks, with decoder layers additionally using cross-attention over encoder outputs.
 
 ![Transformer encoder-decoder architecture]({{ site.baseurl }}/assets/images/Research/transformer_arc.jpg)
 
 ### 2.1. Transformer Encoder {#transformer-encoder}
 
-The Transformer encoder converts token embeddings and positional information into contextualized representations. Each encoder layer contains:
+The Transformer encoder converts input token embeddings, which are incorporated with positional information, into contextualized representations. Each encoder layer contains:
 
 - **Positional embedding** represents the position of each token in a sequence. In models that use additive positional embeddings, each positional vector has the same dimension as the corresponding token embedding. Positional information is necessary because *self-attention does not inherently represent token order*.
 
-- **Multi-head self-attention**: allows each token to collect relevant information from other tokens in the input sequence.
+- **Multi-head self-attention**: we can have multiple heads, with different weight sets of queries, keys, and values (which will be shown in Section [4](#self-attention) given the same input token embeddings. With multi-head self-attention, Transformer let each token to collect relevant context information from other tokens in the input sequence.
 
-- **Position-wise feed-forward network (PFFN)**: applies the same nonlinear transformation to each contextualized token representation independently.
+- **Position-wise feed-forward network (PFFN)**: applies the same nonlinear transformation to *each contextualized token representation* independently.
+
+    + 
 
 
 ### 2.2. Transformer Decoder {#transformer-decoder}
 
-In the original encoder-decoder Transformer, the decoder generates the output sequence using previously available output tokens and the encoder's contextualized input representations. Each decoder layer contains:
+In the **original** encoder-decoder Transformer, the decoder generates the output sequence using previously available output tokens and the encoder's contextualized input representations. Each decoder layer contains:
 
 - **Masked self-attention**: applies a causal mask so that each position can attend only to itself and earlier positions.
 
-- **Cross-attention**: uses decoder representations as queries and encoder outputs as keys and values.
+- **Encoder-decoder attention** or **Cross-attention** (in traditional encoder-decoder transformer): *uses decoder representations* (i.e., output of the masked self-attention, which will be detailed in next sections) as **queries** and encoder outputs as **keys** and **values**. You can look at the sub-figure 4 below, where we have an example for using cross attention for *multimodal*.
+
+> Later, researchers have found out that using encoder-only and decoder-only can work well for different applications.
+
+<img src="{{ site.baseurl }}/assets/images/Research/cross-attention.jpg" alt="Source: https://www.linkedin.com/posts/cwolferesearch_cross-attention-is-a-fundamental-idea-that-activity-7310657138467446784-iyvV/">
 
 - **Position-wise feed-forward network**: applies a nonlinear transformation to each token representation independently.
 
 A final linear layer and softmax convert a decoder hidden state into a probability distribution over the vocabulary.
+
+
+> To avoid confusion among concepts of attention, we can remember them as follows: **Bidirectional self-attention** allows each token to attend to all unmasked tokens (e.g., BERT), **masked/causal self-attention** blocks each token to attend to future tokens (e.g., GPT), **encoder-decoder attention/cross-attention** lets decoder representations (i.e., *queries*) to attend to encoder outputs (*keys* and *values*) (e.g., multimodal).
 
 ### 2.3. Encoder-Only and Decoder-Only Transformers {#encoder-only-and-decoder-only}
 
@@ -153,23 +164,64 @@ Self-attention updates each token representation by combining information from o
 
 ![Workflow from tokenization to self-attention]({{ site.baseurl }}/assets/images/Research/attention.png)
 
-> The diagram shows additive positional information and unrestricted attention for simplicity. Some architectures instead apply position information to $Q$ and $K$; for example, RoPE rotates them before their dot products are calculated.
+> The diagram shows additive positional information and unrestricted attention for simplicity. Some architectures instead apply position information to $Q$ and $K$; for example, RoPE rotates them before their dot products are calculated. You can find an example for **single-head** (masked) self-attention class below:
+
+```python
+class MaskedSelfAttention(nn.Module):                     
+    def __init__(self, d_model=2, # dimension for each input token embedding 
+                 row_dim=0, # row and column indexes
+                 col_dim=1): 
+        
+        super().__init__()
+        
+        self.W_q = nn.Linear(in_features=d_model, out_features=d_model, bias=False)
+        self.W_k = nn.Linear(in_features=d_model, out_features=d_model, bias=False)
+        self.W_v = nn.Linear(in_features=d_model, out_features=d_model, bias=False)
+        
+        self.row_dim = row_dim
+        self.col_dim = col_dim
+
+    # This method is to calculate the (masked) self-attention values for each token    
+    def forward(self, token_encodings, mask=None):
+
+        q = self.W_q(token_encodings)
+        k = self.W_k(token_encodings)
+        v = self.W_v(token_encodings)
+
+        sims = torch.matmul(q, k.transpose(dim0=self.row_dim, dim1=self.col_dim))
+
+        scaled_sims = sims / torch.tensor(k.size(self.col_dim)**0.5)
+
+        if mask is not None:
+            ## Here we are masking out things we don't want to pay attention to
+            ##
+            ## We replace values we wanted masked out
+            ## with a very small negative number so that the SoftMax() function
+            ## will give all masked elements an output value (or "probability") of 0.
+            scaled_sims = scaled_sims.masked_fill(mask=mask, value=-1e9) # I've also seen -1e20 and -9e15 used in masking
+
+        attention_percents = F.softmax(scaled_sims, dim=self.col_dim)
+
+        attention_scores = torch.matmul(attention_percents, v)
+
+        return attention_scores
+```
 
 ### 4.1. From Hidden States to $Q$, $K$, and $V$ {#attention-head}
 
-At an attention layer, $X \in \mathbb{R}^{N \times d_{\text{model}}}$ contains one hidden-state vector per token. For the first layer, $X$ comes from *token embeddings, with positional information* incorporated according to the architecture. In later layers, it is the output of the preceding layer.
+At an attention layer, $X \in \mathbb{R}^{N \times d_{\text{model}}}$ contains one hidden-state vector per token. Particularly, $N$ is the sequence length and $d_{\text{model}}$ is the dimension of each token embedding and hidden representation. In standard multi-head attention with $h$ heads, this dimension is divided among the heads, so each head usually has $d_k = d_{\text{model}}/h$ query and key dimensions .For the first layer, $X$ comes from *token embeddings, with positional information* incorporated according to the architecture. In later layers, it is the output of the preceding layer.
 
-For one attention head, three learned linear projections produce:
+For ***each token*** in one attention head, three learned linear projections produce[^3]:
 
 $$Q = XW^Q, \qquad K = XW^K, \qquad V = XW^V$$
 
 where $W^Q,W^K \in \mathbb{R}^{d_{\text{model}} \times d_k}$ and $W^V \in \mathbb{R}^{d_{\text{model}} \times d_v}$. Therefore, $Q,K \in \mathbb{R}^{N \times d_k}$ and $V \in \mathbb{R}^{N \times d_v}$.
 
-- **Query ($Q$):** what each token is looking for.
-
-- **Key ($K$):** what each token can be matched on.
-
-- **Value ($V$):** the information each token can contribute.
+|  | The question it answers | Its role |
+|---|---|---|
+| **Query $Q$** | “What am I looking for?” | The token doing the looking |
+| **Key $K$** | “What am I?” | How a token advertises itself |
+| **Value $V$** | “What do I contribute if chosen?” | The content actually retrieved |
 
 Separate projections let the model learn different representations for matching and for transferring information. In particular, $QK^T$ can express directional relationships, whereas $XX^T$ is symmetric.
 
@@ -181,7 +233,9 @@ One attention head computes [^1]:
 
 $$S = \frac{QK^T}{\sqrt{d_k}} + M, \qquad A = \operatorname{softmax}(S), \qquad Z = AV$$
 
-- **Score:** $QK^T$ compares every query with every key. Dividing by $\sqrt{d_k}$ keeps large dot products from saturating the softmax function.
+- **Score:** $QK^T$ compares every query with every key, answering the question: **How relevant each token to the current token?**. Dividing by $\sqrt{d_k}$ keeps large dot products from saturating the softmax function.
+
+    + Why divide by $\sqrt{d_k}$ [^3]? **Answer**: Each raw attention logit is a dot product containing $d_k$ terms. Under the simplifying assumptions that the query and key components are independent, zero-centered, and have unit variance, the logit has variance $d_k$ and standard deviation $\sqrt{d_k}$. Without scaling, wider heads therefore produce larger gaps between logits, which can ***make the softmax overly concentrated and its gradients very small***. Dividing by $\sqrt{d_k}$ approximately normalizes the logit variance to $1$, ***keeping the softmax scale and gradients more consistent across head dimensions***. This does not make different heads or head counts equivalent; it only ***removes the unintended growth in score magnitude***, while each head can still learn distinct attention patterns.
 
 - **Mask:** $M$ is $0$ for allowed connections and a very large negative value for blocked ones, thereby after softmax function(), the token will have $0\%$ similarity to the token that came after it. It can be omitted when no positions are blocked - *self-attention*. For example, 
 
@@ -189,7 +243,7 @@ $$S = \frac{QK^T}{\sqrt{d_k}} + M, \qquad A = \operatorname{softmax}(S), \qquad 
 
 - **Normalize:** Row-wise softmax produces the **attention-weight** matrix $A$. Each row is nonnegative and sums to $1$. *It determines the percentages of influence each token has on other tokens*.
 
-- **Combine:** $AV$ produces $Z$, a weighted sum of value vectors for each query position.
+- **Combine:** $AV$ produces $Z$, a weighted sum of value vectors for each query position/token. For each token, relevant tokens get large weights, giving each token its answer [^3].
 
 For self-attention over $N$ tokens, $S,A \in \mathbb{R}^{N \times N}$ and $Z \in \mathbb{R}^{N \times d_v}$.
 
@@ -255,3 +309,5 @@ $$\operatorname{MultiHead}(X) = \operatorname{Concat}(\text{head}_1, \ldots, \te
 [^1]: [The Math Behind Multi-Head Attention in Transformers](https://medium.com/data-science/the-math-behind-multi-head-attention-in-transformers-c26cba15f625)
 
 [^2]: [A Visual Guide to Mixture of Experts (MoE)](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts)
+
+[^3]: [LLM Architecture Refresh: Inside a Transformer Block — Attention, Heads, and the FFN](https://bearbearyu1223.github.io/posts/llm-architectures-attention-and-rope/#taking-a-transformer-block-apart-one-measurement-at-a-time)
