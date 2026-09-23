@@ -86,8 +86,6 @@ The Transformer encoder converts input token embeddings, which are incorporated 
 
 - **Position-wise feed-forward network (PFFN)**: applies the same nonlinear transformation to *each contextualized token representation* independently.
 
-    + 
-
 
 ### 2.2. Transformer Decoder {#transformer-decoder}
 
@@ -256,9 +254,58 @@ Transformers normally run several attention heads in parallel. Each head can lea
 $$\operatorname{MultiHead}(X) = \operatorname{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O$$
 
 - **Multi-head attention (MHA):** gives each head its own query, key, and value projections.
+
+    + **Motivation:** a single attention head produces *only one attention distribution* for each query token. If several relationships are relevant at the same time, that head may have to combine them into one distribution. Multiple heads can instead learn complementary attention patterns. For example, one head may focus on a token's referent while another captures a descriptive or syntactic relationship.
+
+        + As a simplified illustration, consider **it** in the sentence "The **trophy** didn't fit in the **suitcase** because **it** was too big":
+
+            |                                      | trophy   | suitcase | big      |
+            |--------------------------------------|----------|----------|----------|
+            | Hypothetical reference score        | 4        | 0        | 0        |
+            | Hypothetical descriptive score      | 0        | 0        | 4        |
+            | **One combined distribution**       | 0.50     | 0.01     | 0.50     |
+            | **Reference-focused head**           | **0.96** | 0.02     | 0.02     |
+            | **Description-focused head**         | 0.02     | 0.02     | **0.96** |
+
+
+    + MHA therefore applies attention several times in parallel using different learned projections of the same input representations. The resulting head outputs are concatenated and mixed, allowing each token to gather complementary contextual information from other tokens.
+
+      > **Causal-attention note:** in a decoder-only LLM, **it** cannot attend to the later word **big**. The example above applies directly to bidirectional attention; in causal attention, a later token can still attend to both **it** and **trophy**.
+
 - **Multi-query attention (MQA):** lets all query heads share one key head and one value head, reducing the key-value cache and memory bandwidth during generation.
+
 - **Grouped-query attention (GQA):** lets groups of query heads share key and value heads, providing a compromise between MHA and MQA.
+
+    + **Llama 3 8B example:** the model has $d_{\text{model}}=4096$, $32$ query heads, and $8$ key-value heads. Each head has dimension $d_{\text{head}}=4096/32=128$, so each key-value head is shared by a group of $32/8=4$ query heads.
+
+        + **Step 1---project:** for a sequence representation $X\in\mathbb{R}^{N\times4096}$, the learned projections produce
+
+          $$Q=XW^Q\in\mathbb{R}^{N\times4096},\qquad
+          K=XW^K\in\mathbb{R}^{N\times1024},\qquad
+          V=XW^V\in\mathbb{R}^{N\times1024},$$
+
+          where $W^Q\in\mathbb{R}^{4096\times4096}$ and $W^K,W^V\in\mathbb{R}^{4096\times1024}$. Thus, unlike standard MHA, Llama 3 8B does **not** produce 4096-dimensional $K$ and $V$ tensors. See the [previous section](#attention-head) for more about these projection matrices.
+
+        + **Step 2---reshape into heads:** $Q$ is reshaped into $32$ query heads of width $128$, whereas $K$ and $V$ are each reshaped into $8$ heads of width $128$. These are slices of the **projected tensors**, not slices of the original input. Because the projection matrices are dense, every head can learn from all $4096$ coordinates of each input token representation.
+
+        + **Step 3---share key-value heads:** each group of four query heads uses the same key and value head. Every query head still computes its own attention distribution over the allowed token positions, but the four heads in a group attend using shared keys and retrieve information from shared values.
+
+        + **Step 4---combine the outputs:** the $32$ query-head outputs, each of width $128$, are concatenated into a $4096$-dimensional representation. The output projection $W^O\in\mathbb{R}^{4096\times4096}$ then mixes information across the heads. Using only $8$ key-value heads instead of $32$ reduces the attention key-value cache by a factor of four relative to MHA with the same head dimensions.
+
+    ![Inside one Llama 3 8B grouped-query attention module: projections, RoPE, KV cache and sharing, scaled dot-product attention, and output projection]({{ site.baseurl }}/assets/images/Research/llama3-8b-gqa.svg)
+
+    + Staying with **Llama 3 8B**, we can look at other components with concepts and workflows we have seen so far:
+
+        + **Token embeddings**: the vocabulary size is $128256$, each token is represented by $4096$ numbers.
+
+        + **RoPE**: Rotary position embeddings apply position-dependent rotations to the query and key vectors before computing their dot product. For a $Q$ at position $i$ and a $K$ at position $j$,
+
+          $$q_i'=R_iq_i,\qquad k_j'=R_jk_j,\qquad {q_i'}^Tk_j'=q_i^TR_{j-i}k_j.$$
+
+          Thus, position affects the attention score through the relative offset $j-i$. By comparison, traditional additive positional embeddings form $x_i=e_i+p_i$, mixing an absolute-position vector directly into the token representation, thereby *the model must then learn how positions relate through its projections*. For example, token pairs at positions $(5,4)$ and $(9,8)$ have different absolute positions but the same offset $-1$, so identical content produces the same positional relationship under RoPE. RoPE is not applied to $V$ because values carry the content retrieved after the attention weights are determined.
+
 - **Sparse attention:** restricts each query to selected positions, reducing the cost of long sequences.
+
 - **Ring Attention:** distributes long-sequence attention across devices by circulating blocks of keys and values.
 
 ---

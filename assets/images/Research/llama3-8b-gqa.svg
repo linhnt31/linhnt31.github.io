@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1240" viewBox="0 0 1400 1240" role="img" aria-labelledby="title desc">
+  <title id="title">Inside one Llama 3 8B grouped-query attention module</title>
+  <desc id="desc">The input is projected into 32 query heads and 8 key-value heads. Rotary position embeddings are applied to queries and keys. Keys and values are appended to the inference cache. Each key-value head is shared by four query heads. Scaled dot-product attention applies a causal mask and softmax, aggregates values, concatenates the 32 head outputs, and applies an output projection.</desc>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#64748b"/>
+    </marker>
+    <style>
+      .title { font: 700 31px Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 18px Arial, sans-serif; fill: #64748b; }
+      .section { font: 700 15px Arial, sans-serif; letter-spacing: 1.2px; fill: #475569; }
+      .label { font: 700 19px Arial, sans-serif; fill: #0f172a; }
+      .body { font: 17px Arial, sans-serif; fill: #334155; }
+      .small { font: 15px Arial, sans-serif; fill: #475569; }
+      .tiny { font: 13px Arial, sans-serif; fill: #64748b; }
+      .white { fill: #ffffff; }
+      .qfill { fill: #dbeafe; stroke: #3b82f6; }
+      .kfill { fill: #ccfbf1; stroke: #14b8a6; }
+      .vfill { fill: #ede9fe; stroke: #8b5cf6; }
+      .opfill { fill: #f8fafc; stroke: #94a3b8; }
+      .box { stroke-width: 2; }
+      .arrow { stroke: #64748b; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+      .guide { stroke: #94a3b8; stroke-width: 2; fill: none; stroke-dasharray: 7 6; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="1240" fill="#ffffff"/>
+  <text id="title-text" x="700" y="48" text-anchor="middle" class="title">Inside one Llama 3 8B grouped-query attention module</text>
+  <text x="700" y="78" text-anchor="middle" class="subtitle">32 query heads · 8 key-value heads · head dimension 128 · group size 4</text>
+
+  <rect x="35" y="103" width="1330" height="1087" rx="16" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="9 7"/>
+  <text x="62" y="132" class="section">ATTENTION MODULE</text>
+
+  <!-- Input -->
+  <rect x="430" y="152" width="540" height="68" rx="9" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+  <text x="700" y="181" text-anchor="middle" class="label">Input hidden states X</text>
+  <text x="700" y="207" text-anchor="middle" class="body">N new token positions × d_model 4096</text>
+
+  <!-- Fan-out -->
+  <path d="M650 220 L240 285" class="arrow"/>
+  <path d="M700 220 L700 285" class="arrow"/>
+  <path d="M750 220 L1160 285" class="arrow"/>
+  <text x="62" y="274" class="section">1 · LEARNED LINEAR PROJECTIONS</text>
+
+  <!-- Projections -->
+  <rect x="70" y="290" width="340" height="105" rx="9" class="qfill box"/>
+  <text x="240" y="323" text-anchor="middle" class="label">Query projection W<tspan baseline-shift="super" font-size="13">Q</tspan></text>
+  <text x="240" y="351" text-anchor="middle" class="body">4096 × 4096</text>
+  <text x="240" y="379" text-anchor="middle" class="body">Q: N × 32 × 128</text>
+
+  <rect x="530" y="290" width="340" height="105" rx="9" class="kfill box"/>
+  <text x="700" y="323" text-anchor="middle" class="label">Key projection W<tspan baseline-shift="super" font-size="13">K</tspan></text>
+  <text x="700" y="351" text-anchor="middle" class="body">4096 × 1024</text>
+  <text x="700" y="379" text-anchor="middle" class="body">K_new: N × 8 × 128</text>
+
+  <rect x="990" y="290" width="340" height="105" rx="9" class="vfill box"/>
+  <text x="1160" y="323" text-anchor="middle" class="label">Value projection W<tspan baseline-shift="super" font-size="13">V</tspan></text>
+  <text x="1160" y="351" text-anchor="middle" class="body">4096 × 1024</text>
+  <text x="1160" y="379" text-anchor="middle" class="body">V_new: N × 8 × 128</text>
+
+  <text x="700" y="423" text-anchor="middle" class="small">These are learned projections of all 4096 input coordinates—not slices of X.</text>
+
+  <!-- Position and cache -->
+  <path d="M240 395 L240 470" class="arrow"/>
+  <path d="M700 395 L700 470" class="arrow"/>
+  <path d="M1160 395 L1160 470" class="arrow"/>
+  <text x="62" y="461" class="section">2 · POSITION INFORMATION AND INFERENCE CACHE</text>
+
+  <rect x="70" y="478" width="340" height="74" rx="9" class="qfill box"/>
+  <text x="240" y="508" text-anchor="middle" class="label">Apply RoPE to Q</text>
+  <text x="240" y="535" text-anchor="middle" class="small">Q: N × 32 × 128</text>
+
+  <rect x="530" y="478" width="340" height="74" rx="9" class="kfill box"/>
+  <text x="700" y="508" text-anchor="middle" class="label">Apply RoPE to K_new</text>
+  <text x="700" y="535" text-anchor="middle" class="small">K_new: N × 8 × 128</text>
+
+  <rect x="990" y="478" width="340" height="74" rx="9" class="vfill box"/>
+  <text x="1160" y="508" text-anchor="middle" class="label">V is not rotated</text>
+  <text x="1160" y="535" text-anchor="middle" class="small">V_new: N × 8 × 128</text>
+
+  <path d="M700 552 L700 587" class="arrow"/>
+  <path d="M1160 552 L1160 587" class="arrow"/>
+  <rect x="505" y="595" width="390" height="82" rx="9" fill="#ecfeff" stroke="#0891b2" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="700" y="625" text-anchor="middle" class="label">Append K_new to key cache</text>
+  <text x="700" y="653" text-anchor="middle" class="body">K: T × 8 × 128</text>
+
+  <rect x="965" y="595" width="390" height="82" rx="9" fill="#faf5ff" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="1160" y="625" text-anchor="middle" class="label">Append V_new to value cache</text>
+  <text x="1160" y="653" text-anchor="middle" class="body">V: T × 8 × 128</text>
+
+  <text x="70" y="629" class="small">During training, cache append is omitted</text>
+  <text x="70" y="653" class="small">and typically T = N.</text>
+
+  <!-- Group sharing -->
+  <path d="M240 552 L240 727" class="arrow"/>
+  <path d="M700 677 L700 727" class="arrow"/>
+  <path d="M1160 677 L1160 727" class="arrow"/>
+  <text x="62" y="716" class="section">3 · GROUPED QUERY-TO-KV MAPPING</text>
+
+  <rect x="70" y="735" width="340" height="100" rx="9" class="qfill box"/>
+  <text x="240" y="770" text-anchor="middle" class="label">32 query heads</text>
+  <text x="240" y="799" text-anchor="middle" class="body">Q₀ … Q₃₁</text>
+  <text x="240" y="823" text-anchor="middle" class="small">each produces its own scores</text>
+
+  <rect x="530" y="735" width="340" height="100" rx="9" class="opfill box"/>
+  <text x="700" y="770" text-anchor="middle" class="label">4 query heads per KV pair</text>
+  <text x="700" y="799" text-anchor="middle" class="body">Q₀–Q₃ → K₀,V₀ · …</text>
+  <text x="700" y="823" text-anchor="middle" class="small">logical sharing; copying is unnecessary</text>
+
+  <rect x="990" y="735" width="340" height="100" rx="9" fill="#f0fdfa" stroke="#14b8a6" stroke-width="2"/>
+  <text x="1160" y="770" text-anchor="middle" class="label">8 shared KV pairs</text>
+  <text x="1160" y="799" text-anchor="middle" class="body">(K₀,V₀) … (K₇,V₇)</text>
+  <text x="1160" y="823" text-anchor="middle" class="small">fourfold smaller KV cache than MHA</text>
+
+  <path d="M410 785 L520 785" class="arrow"/>
+  <path d="M990 785 L880 785" class="arrow"/>
+
+  <!-- Attention math -->
+  <path d="M700 835 L700 876" class="arrow"/>
+  <text x="62" y="871" class="section">4 · SCALED DOT-PRODUCT ATTENTION, PER QUERY HEAD</text>
+
+  <rect x="70" y="890" width="250" height="92" rx="9" class="opfill box"/>
+  <text x="195" y="925" text-anchor="middle" class="label">Scores</text>
+  <text x="195" y="954" text-anchor="middle" class="body">QK<tspan baseline-shift="super" font-size="13">T</tspan> / √128</text>
+  <text x="195" y="974" text-anchor="middle" class="tiny">shape N × T per head</text>
+
+  <rect x="365" y="890" width="250" height="92" rx="9" class="opfill box"/>
+  <text x="490" y="925" text-anchor="middle" class="label">Causal mask</text>
+  <text x="490" y="954" text-anchor="middle" class="body">block future positions</text>
+
+  <rect x="660" y="890" width="250" height="92" rx="9" fill="#fff7ed" stroke="#f97316" stroke-width="2"/>
+  <text x="785" y="925" text-anchor="middle" class="label">Softmax</text>
+  <text x="785" y="954" text-anchor="middle" class="body">A = softmax(scores + M)</text>
+
+  <rect x="955" y="890" width="375" height="92" rx="9" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="1142" y="925" text-anchor="middle" class="label">Weighted value sum</text>
+  <text x="1142" y="954" text-anchor="middle" class="body">Z_head = AV</text>
+  <text x="1142" y="974" text-anchor="middle" class="tiny">N × 128 for each of 32 query heads</text>
+
+  <path d="M320 936 L355 936" class="arrow"/>
+  <path d="M615 936 L650 936" class="arrow"/>
+  <path d="M910 936 L945 936" class="arrow"/>
+
+  <!-- Combine -->
+  <path d="M1142 982 L1142 1010 L400 1010 L400 1037" class="arrow"/>
+  <text x="62" y="1030" class="section">5 · COMBINE HEAD OUTPUTS</text>
+
+  <rect x="190" y="1045" width="420" height="78" rx="9" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+  <text x="400" y="1077" text-anchor="middle" class="label">Concatenate Z₀ … Z₃₁</text>
+  <text x="400" y="1105" text-anchor="middle" class="body">N × (32 · 128) = N × 4096</text>
+
+  <path d="M610 1084 L665 1084" class="arrow"/>
+
+  <rect x="675" y="1045" width="340" height="78" rx="9" fill="#1e3a8a"/>
+  <text x="845" y="1077" text-anchor="middle" class="label white">Output projection W<tspan baseline-shift="super" font-size="13">O</tspan></text>
+  <text x="845" y="1105" text-anchor="middle" class="body white">4096 × 4096</text>
+
+  <path d="M1015 1084 L1070 1084" class="arrow"/>
+
+  <rect x="1080" y="1045" width="250" height="78" rx="9" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <text x="1205" y="1077" text-anchor="middle" class="label">Attention output</text>
+  <text x="1205" y="1105" text-anchor="middle" class="body">N × 4096</text>
+
+  <text x="700" y="1160" text-anchor="middle" class="small">N = number of new query positions · T = available context length after cache append · batch dimension omitted</text>
+  <text x="700" y="1182" text-anchor="middle" class="tiny">RMSNorm and the residual connection belong to the surrounding Transformer block and are not shown.</text>
+</svg>
