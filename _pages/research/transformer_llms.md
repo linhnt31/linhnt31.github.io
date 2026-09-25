@@ -84,7 +84,9 @@ The Transformer encoder converts input token embeddings, which are incorporated 
 
 - **Multi-head self-attention**: we can have multiple heads, with different weight sets of queries, keys, and values (which will be shown in Section [4](#self-attention) given the same input token embeddings. With multi-head self-attention, Transformer let each token to collect relevant context information from other tokens in the input sequence.
 
-- **Position-wise feed-forward network (PFFN)**: applies the same nonlinear transformation to *each contextualized token representation* independently.
+- **Layer Norm** [^4]: normalizes the features of each token representation separately, helping stabilize training. Its placement within a Transformer block depends on the architecture.
+
+- **Position-wise feed-forward network (Position-wise FFN)**: applies the same nonlinear transformation to *each contextualized token representation* independently.
 
 
 ### 2.2. Transformer Decoder {#transformer-decoder}
@@ -136,13 +138,18 @@ Tokens:    ["Transform", "ers", "are", "useful"]
 Token IDs: [5812, 1047, 389, 7421]
 ```
 
-Each tokenizer has a fixed **vocabulary size**, which determines how many distinct tokens it can represent.
+Each tokenizer has a fixed **vocabulary size** of $v_{\text{tab}}$, which determines how many distinct tokens it can represent.
 
 > A larger vocabulary can represent common words or phrases using fewer tokens. However, it also increases the size of the embedding table and, in a language model, the vocabulary-output layer.
 
 ### 3.2. Embeddings {#embeddings}
 
-The model uses each token ID to retrieve a learned vector from its embedding table. It then incorporates positional information to distinguish the order of the tokens.
+After tokenization, the model uses each ***token ID*** to look up a learned vector, called a ***token embedding***, in an embedding table of shape $v_{\text{tab}} \times d_{\text{model}}$, where $v_{\text{tab}}$ is the vocabulary size. For ***a sequence of $n$ tokens***, the lookup produces a matrix of token embeddings in $\mathbb{R}^{n \times d_{\text{model}}}$. Each row is one token's embedding, and each column is one embedding feature across the tokens.
+
+*The transformer also needs positional information to distinguish token order*. In models that use additive positional information, the model adds one position vector to each token embedding. For $n$ tokens, the position vectors form a matrix in $\mathbb{R}^{n \times d_{\text{model}}}$, so the resulting **input embeddings** have the same shape. *Other models, such as those using RoPE, apply positional information within the attention mechanism.*
+
+> **Token embeddings are learned during training.** Position vectors can be learned too, or they can be fixed. For example, the original Transformer in [*Attention Is All You Need*](https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf) used fixed positional encodings: sine and cosine functions produce a vector for each position, which is added to the token embedding and does not change during training.
+
 
 ### 3.3. Transformer Processing {#transformer-processing}
 
@@ -154,11 +161,22 @@ Transformer layers convert the input embeddings into contextualized token repres
 
 <img src="{{ site.baseurl }}/assets/images/Research/decoder-only.png" alt="Source: Attention in Transformers: Concepts and Code in PyTorch - deeplearning.ai">
 
+
+### 3.4. Layer Norm {#layer-norm}
+
+- **Layer normalization (LayerNorm)** uses the mean and variance across the features of each token representation to normalize that token's vector. *Updates to model parameters such as the embedding table and attention and FFN weights can change the scale of token representations. LayerNorm reduces these shifts, giving the following operations more consistently scaled inputs and making optimization more stable.* Its placement depends on the architecture.
+
+    + In a **pre-norm** block such as [nanoGPT](https://github.com/karpathy/nanoGPT/blob/master/model.py), LayerNorm is applied before self-attention and again before the feed-forward network (FFN). nanoGPT also applies a final LayerNorm once after all Transformer blocks.
+
+    + In the original **post-norm** Transformer shown in the architecture diagram, each **Add & Norm** box means: add a sublayer's input to its output (a **residual connection**), then apply LayerNorm to the sum. The encoder has an Add & Norm after self-attention and another after the FFN. The decoder has three: one after masked self-attention, one after cross-attention, and one after the FFN. The top Add & Norm in the diagram is therefore a normalization after the FFN **inside each decoder layer**.
+
+- **LayerNorm operation**: For each token representation $x$, calculate the mean $\mu_x$ and variance $\sigma_x^2$ across its features, then compute $\operatorname{LayerNorm}(x)=\gamma\odot\frac{x-\mu_x}{\sqrt{\sigma_x^2+\epsilon}}+\beta$. Here $\gamma$ and $\beta$ are LayerNorm's own trainable scale and shift parameters; they act on the normalized vector. The earlier weight updates refer to parameters that produce $x$, such as the embedding, attention, and FFN weights. In a pre-norm block, the result is passed to the attention or FFN.
+
 ---
 
 ## 4. Self-Attention {#self-attention}
 
-Self-attention updates each token representation by combining information from other **permitted** positions in the same sequence. Which positions are permitted depends on the attention mask: **bidirectional models** (e.g., BERT) can usually use both earlier and later tokens, while **causal models** (e.g., GPT) cannot use/attend future tokens.
+Self-attention updates each token representation (one row of the input matrix $X$) by combining information from other **permitted** positions in the same sequence. Which positions are permitted depends on the attention mask: **bidirectional models** (e.g., BERT) can usually use both earlier and later tokens, while **causal models** (e.g., GPT) cannot use/attend future tokens.
 
 ![Workflow from tokenization to self-attention]({{ site.baseurl }}/assets/images/Research/attention.png)
 
@@ -207,7 +225,7 @@ class MaskedSelfAttention(nn.Module):
 
 ### 4.1. From Hidden States to $Q$, $K$, and $V$ {#attention-head}
 
-At an attention layer, $X \in \mathbb{R}^{N \times d_{\text{model}}}$ contains one hidden-state vector per token. Particularly, $N$ is the sequence length and $d_{\text{model}}$ is the dimension of each token embedding and hidden representation. In standard multi-head attention with $h$ heads, this dimension is divided among the heads, so each head usually has $d_k = d_{\text{model}}/h$ query and key dimensions .For the first layer, $X$ comes from *token embeddings, with positional information* incorporated according to the architecture. In later layers, it is the output of the preceding layer.
+In **self-attention**, $X \in \mathbb{R}^{N \times d_{\text{model}}}$ contains one token representation per sequence position, where $N$ is the sequence length and $d_{\text{model}}$ is the representation size. In the first Transformer block, $X$ is derived from token embeddings plus any positional vectors added at the input. In later blocks, it is derived from the preceding block's representations. In a pre-norm block, $X$ is the LayerNorm output of those representations. Thus, $Q$, $K$, and $V$ are projections of the representations entering the current self-attention layer. Methods such as RoPE apply positional information to $Q$ and $K$ after the projections. In standard multi-head attention with $h$ heads, each head usually has $d_k=d_{\text{model}}/h$ query and key dimensions. See [^4] for a visualization.
 
 For ***each token*** in one attention head, three learned linear projections produce[^3]:
 
@@ -231,15 +249,15 @@ One attention head computes [^1]:
 
 $$S = \frac{QK^T}{\sqrt{d_k}} + M, \qquad A = \operatorname{softmax}(S), \qquad Z = AV$$
 
-- **Score:** $QK^T$ compares every query with every key, answering the question: **How relevant each token to the current token?**. Dividing by $\sqrt{d_k}$ keeps large dot products from saturating the softmax function.
+- **Score:** $QK^T$ compares every query with every key, answering the question: **How relevant is each key token to this query token?** Dividing by $\sqrt{d_k}$ keeps large dot products from saturating the softmax function.
 
     + Why divide by $\sqrt{d_k}$ [^3]? **Answer**: Each raw attention logit is a dot product containing $d_k$ terms. Under the simplifying assumptions that the query and key components are independent, zero-centered, and have unit variance, the logit has variance $d_k$ and standard deviation $\sqrt{d_k}$. Without scaling, wider heads therefore produce larger gaps between logits, which can ***make the softmax overly concentrated and its gradients very small***. Dividing by $\sqrt{d_k}$ approximately normalizes the logit variance to $1$, ***keeping the softmax scale and gradients more consistent across head dimensions***. This does not make different heads or head counts equivalent; it only ***removes the unintended growth in score magnitude***, while each head can still learn distinct attention patterns.
 
-- **Mask:** $M$ is $0$ for allowed connections and a very large negative value for blocked ones, thereby after softmax function(), the token will have $0\%$ similarity to the token that came after it. It can be omitted when no positions are blocked - *self-attention*. For example, 
+- **Mask:** $M$ is $0$ for allowed query-key pairs and $-\infty$ (or a very large negative value) for blocked pairs. In causal self-attention, it blocks access to future tokens; after softmax, blocked positions receive zero or effectively zero attention weight. A causal mask is unnecessary in bidirectional self-attention, although a padding mask may still be used. For example:
 
 <img src="{{ site.baseurl }}/assets/images/Research/attention-mask.jpg" alt="Attention matrix mask (Source: https://krypticmouse.hashnode.dev/attention-is-all-you-need)">
 
-- **Normalize:** Row-wise softmax produces the **attention-weight** matrix $A$. Each row is nonnegative and sums to $1$. *It determines the percentages of influence each token has on other tokens*.
+- **Normalize:** Apply softmax to each row of the scaled, masked score matrix $S$. For query position $i$, $A_{ij}=e^{S_{ij}}/\sum_k e^{S_{ik}}$ gives the weight assigned to key position $j$. The weights in each row are nonnegative and sum to $1$, and they determine how much each corresponding value vector contributes to that query's output.
 
 - **Combine:** $AV$ produces $Z$, a weighted sum of value vectors for each query position/token. For each token, relevant tokens get large weights, giving each token its answer [^3].
 
@@ -358,3 +376,5 @@ $$\operatorname{MultiHead}(X) = \operatorname{Concat}(\text{head}_1, \ldots, \te
 [^2]: [A Visual Guide to Mixture of Experts (MoE)](https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts)
 
 [^3]: [LLM Architecture Refresh: Inside a Transformer Block — Attention, Heads, and the FFN](https://bearbearyu1223.github.io/posts/llm-architectures-attention-and-rope/#taking-a-transformer-block-apart-one-measurement-at-a-time)
+
+[^4]: [LLM Visualization](https://bbycroft.net/llm)
