@@ -26,10 +26,16 @@ published: true
     1. [Tokenization](#tokenization)
     2. [Embeddings](#embeddings)
     3. [Transformer Processing](#transformer-processing)
+    4. [Layer Norm](#layer-norm)
 4. [Self-Attention](#self-attention)
     1. [From Hidden States to Q, K, and V](#attention-head)
     2. [Scaled Dot-Product Attention](#attention-math)
     3. [Multi-Head Attention and Efficient Variants](#attention-variants)
+        1. [Projection](#attention-projection)
+        2. [Residual Connections](#residual-connections)
+        3. [Feed-Forward Network (FFN)](#feed-forward-network)
+        4. [Output](#attention-output)
+        5. [Variants](#attention-variants-types)
 5. [Mixture of Experts](#mixture-of-experts)
     1. [Experts and Routers](#experts-and-routers)
     2. [Total and Active Parameters](#total-and-active-parameters)
@@ -82,7 +88,7 @@ The Transformer encoder converts input token embeddings, which are incorporated 
 
 - **Positional embedding** represents the position of each token in a sequence. In models that use additive positional embeddings, each positional vector has the same dimension as the corresponding token embedding. Positional information is necessary because *self-attention does not inherently represent token order*.
 
-- **Multi-head self-attention**: we can have multiple heads, with different weight sets of queries, keys, and values (which will be shown in Section [4](#self-attention) given the same input token embeddings. With multi-head self-attention, Transformer let each token to collect relevant context information from other tokens in the input sequence.
+- **Multi-head self-attention**: multiple heads can use different learned projections for queries, keys, and values from the same input token representations (see Section [4.3.5](#attention-variants-types)). This lets each token gather different kinds of context from other tokens in the input sequence.
 
 - **Layer Norm** [^4]: normalizes the features of each token representation separately, helping stabilize training. Its placement within a Transformer block depends on the architecture.
 
@@ -95,7 +101,7 @@ In the **original** encoder-decoder Transformer, the decoder generates the outpu
 
 - **Masked self-attention**: applies a causal mask so that each position can attend only to itself and earlier positions.
 
-- **Encoder-decoder attention** or **Cross-attention** (in traditional encoder-decoder transformer): *uses decoder representations* (i.e., output of the masked self-attention, which will be detailed in next sections) as **queries** and encoder outputs as **keys** and **values**. You can look at the sub-figure 4 below, where we have an example for using cross attention for *multimodal*.
+- **Encoder-decoder attention** or **Cross-attention** (in traditional encoder-decoder transformer): *uses decoder representations* (i.e., output of the masked self-attention described in Section [4.2](#attention-math)) as **queries** and encoder outputs as **keys** and **values**. You can look at the sub-figure 4 below, where we have an example for using cross attention for *multimodal*.
 
 > Later, researchers have found out that using encoder-only and decoder-only can work well for different applications.
 
@@ -267,9 +273,62 @@ For self-attention over $N$ tokens, $S,A \in \mathbb{R}^{N \times N}$ and $Z \in
 
 ### 4.3. Multi-Head Attention and Efficient Variants {#attention-variants}
 
-Transformers normally run several attention heads in parallel. Each head can learn different relationships; their outputs are concatenated and mixed through an output projection $W^O$:
+Transformers run several attention heads in parallel. Each head produces an output $Z$ as described in Section [4.2](#attention-math) and can learn different relationships.
 
-$$\operatorname{MultiHead}(X) = \operatorname{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O$$
+
+#### 4.3.1. Projection {#attention-projection}
+
+For each token, the head outputs are concatenated along the feature dimension, then mixed by the output projection $W^O$:
+
+$$\operatorname{MultiHead}(X) = \operatorname{Concat}(\text{head}_1, \ldots, \text{head}_h)W^O.$$
+
+#### 4.3.2. Residual Connections {#residual-connections}
+
+We now *have the output of the multi-head self-attention sublayer*. We add it element-wise to **the sublayer's input**, i.e., the token representations entering the layer (for the first layer, these are the input embeddings). This is called a **residual (skip) connection**. It is also why $W^O$ projects the concatenated heads back to $d_{\text{model}}$: both terms of the sum must have the same shape.
+
+- **Pre-norm** (e.g., GPT-2, nanoGPT): $x' = x + \operatorname{MultiHead}(\operatorname{LayerNorm}(x))$.
+- **Post-norm** (original Transformer, *Add & Norm*): $x' = \operatorname{LayerNorm}(x + \operatorname{MultiHead}(x))$.
+
+> ***Why do we need residual connections*** [^5]?
+>
+> - **Gradient flow (backward pass):** by the chain rule, the gradient reaching an early layer is a product of the Jacobians of all later layers (weight matrices, activation derivatives, normalization, softmax). If many of these factors shrink the gradient, their product can become very small (***vanishing gradients***). With a residual connection $y = x + F(x)$, the Jacobian (e..g, which is a set of derivatives using for vectors) becomes $\frac{\partial y}{\partial x} = I + \frac{\partial F}{\partial x}$, so $\frac{\partial \mathcal{L}}{\partial x} = \frac{\partial \mathcal{L}}{\partial y} + \frac{\partial \mathcal{L}}{\partial y}\frac{\partial F}{\partial x}$. The identity term passes the gradient back ***unchanged***, even when $\frac{\partial F}{\partial x}$ is small. Stacking blocks gives $x_L = x_l + \sum_{i=l}^{L-1} F_i(x_i)$, so every earlier layer, including the embedding table, receives a direct gradient signal from the output [^7].
+>
+> - **Preserving token information (forward pass):** within each head, $AV$ makes every token's output a weighted average of the value vectors of the tokens it attends to. This lets tokens share context, but it also *dilutes* each token's own information and ***pulls token representations toward each other***. Concatenating the heads and applying $W^O$ cannot undo this, because they only mix features *within* each token's concatenated head outputs, not across tokens. So when many attention layers are applied one after another *without* residual connections, token representations become increasingly similar. The residual connection keeps each token's own representation in the sum, so each layer *adds* context instead of overwriting it [^8].
+>
+> **Note:** the clean identity path above holds for **pre-norm** blocks. In **post-norm** blocks, LayerNorm sits on the residual path after every addition, so the gradient must also pass through each LayerNorm; deep post-norm Transformers are harder to train and usually rely on learning-rate warm-up [^9].
+
+#### 4.3.3. Feed-Forward Network (FFN) {#feed-forward-network}
+
+Let $h$ be the output of the attention sublayer after its residual connection. The **position-wise FFN** (Section [2.1](#transformer-encoder)) is a small multi-layer perceptron (MLP): a linear layer expands each token's vector (typically to $4\,d_{\text{model}}$), a nonlinear activation $\phi$ is applied, and a second linear layer projects it back to $d_{\text{model}}$:
+
+$$\operatorname{FFN}(x) = \phi(xW_1 + b_1)\,W_2 + b_2.$$
+
+The original Transformer uses ReLU for $\phi$; BERT and GPT-2 use GELU; many recent LLMs, such as Llama, use a gated variant (SwiGLU). The FFN is wrapped with LayerNorm and a residual connection in the same way as attention (Section [4.3.2](#residual-connections)), which gives the output of the Transformer block, i.e., the input to the next block:
+
+- **Pre-norm:** $\text{out} = h + \operatorname{FFN}(\operatorname{LayerNorm}(h))$.
+- **Post-norm:** $\text{out} = \operatorname{LayerNorm}(h + \operatorname{FFN}(h))$.
+
+#### 4.3.4. Output {#attention-output}
+
+In a decoder-only LLM, only the output of the **last** Transformer block, $H \in \mathbb{R}^{n \times d_{\text{model}}}$ (one row $h_i$ per position), is converted into next-token predictions. A pre-norm model first applies a final LayerNorm (Section [3.4](#layer-norm)). The **LM head**, a single linear layer (not an MLP), then maps each row to $v_{\text{tab}}$ scores called **logits**, one per vocabulary token:
+
+$$\text{logits} = H\,W_{\text{LM}} \in \mathbb{R}^{n \times v_{\text{tab}}}, \qquad W_{\text{LM}} \in \mathbb{R}^{d_{\text{model}} \times v_{\text{tab}}}.$$
+
+Many models, such as GPT-2, reuse the token embedding table $E \in \mathbb{R}^{v_{\text{tab}} \times d_{\text{model}}}$ (Section [3.2](#embeddings)) as this matrix, i.e., $W_{\text{LM}} = E^T$ (*weight tying*). The logit of token $k$ at position $i$ is then simply the dot product $h_i \cdot e_k$ between the hidden state and token $k$'s embedding, so a token scores high when the hidden state is aligned with its embedding. Other models, such as Llama 3 8B, learn a separate $W_{\text{LM}}$ of the same shape.
+
+Softmax is applied to each position's logits separately, giving $n$ probability distributions over the vocabulary. The distribution at position $i$ predicts token $i+1$: **training** uses all $n$ of them, while **generation** uses only the last one (Section [3.3](#transformer-processing)).
+
+**Example** (weight tying, $v_{\text{tab}} = 4$, $d_{\text{model}} = 2$): for the input "the cat", suppose the final hidden state at the last position is $h_2 = [1, 2]$. Each logit is the dot product of $h_2$ with one row of $E$:
+
+| Token $k$ | the | cat | sat | mat |
+|---|---|---|---|---|
+| Embedding $e_k$ (row of $E$) | $[1, 0]$ | $[0, 1]$ | $[1, 1]$ | $[-1, 0]$ |
+| Logit $h_2 \cdot e_k$ | $1$ | $2$ | $\mathbf{3}$ | $-1$ |
+| Probability (softmax) | $0.09$ | $0.24$ | $\mathbf{0.66}$ | $0.01$ |
+
+The model therefore predicts **sat** as the next token. Computing all four dot products at once is exactly the matrix product $h_2 E^T$.
+
+#### 4.3.5. Variants {#attention-variants-types}
 
 - **Multi-head attention (MHA):** gives each head its own query, key, and value projections.
 
@@ -302,7 +361,7 @@ $$\operatorname{MultiHead}(X) = \operatorname{Concat}(\text{head}_1, \ldots, \te
           K=XW^K\in\mathbb{R}^{N\times1024},\qquad
           V=XW^V\in\mathbb{R}^{N\times1024},$$
 
-          where $W^Q\in\mathbb{R}^{4096\times4096}$ and $W^K,W^V\in\mathbb{R}^{4096\times1024}$. Thus, unlike standard MHA, Llama 3 8B does **not** produce 4096-dimensional $K$ and $V$ tensors. See the [previous section](#attention-head) for more about these projection matrices.
+          where $W^Q\in\mathbb{R}^{4096\times4096}$ and $W^K,W^V\in\mathbb{R}^{4096\times1024}$. Thus, unlike standard MHA, Llama 3 8B does **not** produce 4096-dimensional $K$ and $V$ tensors. See Section [4.1](#attention-head) for more about these projection matrices.
 
         + **Step 2---reshape into heads:** $Q$ is reshaped into $32$ query heads of width $128$, whereas $K$ and $V$ are each reshaped into $8$ heads of width $128$. These are slices of the **projected tensors**, not slices of the original input. Because the projection matrices are dense, every head can learn from all $4096$ coordinates of each input token representation.
 
@@ -377,4 +436,14 @@ $$\operatorname{MultiHead}(X) = \operatorname{Concat}(\text{head}_1, \ldots, \te
 
 [^3]: [LLM Architecture Refresh: Inside a Transformer Block — Attention, Heads, and the FFN](https://bearbearyu1223.github.io/posts/llm-architectures-attention-and-rope/#taking-a-transformer-block-apart-one-measurement-at-a-time)
 
-[^4]: [LLM Visualization](https://bbycroft.net/llm)
+[^4]: [LLM Visualization - For inference but highly recommend to check](https://bbycroft.net/llm)
+
+[^5]: [StackExchange: Why are residual connections needed in transformer architectures?](https://stats.stackexchange.com/a/565203)
+
+[^6]: [He et al., 2016. Deep Residual Learning for Image Recognition](https://arxiv.org/abs/1512.03385)
+
+[^7]: [He et al., 2016. Identity Mappings in Deep Residual Networks](https://arxiv.org/abs/1603.05027)
+
+[^8]: [Dong et al., 2021. Attention Is Not All You Need: Pure Attention Loses Rank Doubly Exponentially with Depth](https://arxiv.org/abs/2103.03404)
+
+[^9]: [Xiong et al., 2020. On Layer Normalization in the Transformer Architecture](https://arxiv.org/abs/2002.04745)
