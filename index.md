@@ -31,7 +31,7 @@ In particular, I am always looking to collaborate on research topics in Blockcha
 
 <div style="height: 500px; overflow-y: auto; text-align: justify; font-size: 0.9rem; margin-bottom: 15px;" markdown="1">
 
-- **[10/2026]** My work on path-dependent client selection for Federated Unlearning has been accepted at the [NewInML](https://newinml.github.io/NewInML2026NeurIPS/) workshop @ NeurIPS 2026. We take a new, [path-dependent](https://en.wikipedia.org/wiki/Path_dependence) view of client selection: which clients are selected for unlearning depends on when and how they contributed during training.
+- **[10/2026]** My work on path-dependent client selection for Federated Unlearning has been accepted at the [NewInML](https://newinml.github.io/NewInML2026NeurIPS/) workshop @ [NeurIPS 2026](https://neurips.cc/), Paris, France. We take a new, [path-dependent](https://en.wikipedia.org/wiki/Path_dependence) view of client selection: which clients are selected for unlearning depends on when and how they contributed during training.
 
 - **[09/2026]** I was invited to give a talk, ***Data Stays, Intelligence Unites: Designing Sustainable Incentives for Privacy-Preserving AI***, at the [ENSURE-6G Workshop on Privacy-Preserving Machine Learning (PPML)](https://lnkd.in/p/dh6cFX9z). The talk discussed why sustainable incentives, rather than algorithms alone, determine whether privacy-preserving AI systems such as Federated Learning are adopted and sustained in practice.
 
