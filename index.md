@@ -7,15 +7,12 @@ profile:
 published: true
 ---
 
-<!-- #### Research Agenda
-As enhanced devices at the edge of the network exploit artificial intelligence, even novel computing challenges are raised. In my current research agenda, I investigate all aspects related to distributed intelligent systems for supporting cities and communities, with a strong focus on optimizing decentralized and self-organized infrastructures. My research finds application in several domains, among which smart city, mobility, healthcare, and cultural heritage. -->
-
 <p style="background:#f5faff; border-left:4px solid #2196f3; padding:1em; font-style:italic;">
 Welcome to my personal space! This webpage is not only dedicated to my academic pursuits, but also serves as a place where I share technical posts, memorable travel experiences, and the wonderful people I’ve met along the way.
 </p>
 
 ### Short Biography
-I am **Linh**. I am currently a 4th-year PhD candidate in the fields of **Blockchain-based data sharing**, **Federated Learning/Unlearning**, and **Incentivization** at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by the [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). I have been fortunate to complete two 3-month internships: one on incentivization for federated unlearning, from June to September 2025, at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/), and one on client-level federated unlearning solutions, from July to September 2026, at [Montimage](https://www.montimage.com/). 
+I am **Linh**. I am currently a final-year PhD candidate in the fields of **Blockchain-based data sharing**, **Federated Learning/Unlearning**, and **Incentivization** at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by the [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). I have been fortunate to complete two 3-month internships: one on incentivization for federated unlearning, from June to September 2025, at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/), and one on client-level federated unlearning solutions, from July to September 2026, at [Montimage](https://www.montimage.com/). 
 
 During my bachelor's, I led research on the Software-Defined Networking, Wireless Sensor Networks, deep learning-based IoT systems, and blockchain-based data sharing. I also collaborated on projects funded by <a href="https://www.navercorp.com/">NAVER Corporation</a>, the <a href="https://www.apnic.foundation/">APNIC Foundation</a>, <a href="https://www.csiro.au/en/research/technology-space/data">CSIRO Data61</a>, and the <a href="https://www.motorolasolutions.com/en_us/foundation.html">Motorola Solutions Foundation</a>.
 
@@ -25,13 +22,16 @@ In addition to doing research, I enjoy designing, modelling, and turning academi
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E) ![Solidity](https://img.shields.io/badge/Solidity-e6e6e6?style=flat&logo=solidity&logoColor=black) ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white) ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat&logo=Ethereum&logoColor=white) ![Hyperledger Fabric](https://img.shields.io/badge/hyperledger-2F3134?style=flat&logo=hyperledger&logoColor=white) ![Amazon AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
 
-In particular, I am always looking to collaborate on research topics in Blockchain, Federated Learning, game-theoretic network economics and, more recently, LLMs.
+<div style="background:#fff8e1; border-left:4px solid #ff9800; padding:0.8em 1em; margin:1em 0;">
+<i class="fas fa-bullhorn" style="color:#ff9800;"></i>&nbsp; <strong>New blog post:</strong> Linh Nguyen, "<a href="{{site.baseurl}}/research/transformer_llms"><strong>How Transformer LLMs Work</strong></a>" (v1. September 2026)<br>
+<i class="fas fa-sync-alt" style="color:#ff9800;"></i>&nbsp; <em>This is a living post: I will keep adding interview questions and answers on Transformer LLMs.</em>
+</div>
 
 ### News
 
 <div style="height: 500px; overflow-y: auto; text-align: justify; font-size: 0.9rem; margin-bottom: 15px;" markdown="1">
 
-- **[10/2026]** My work on path-dependent client selection for Federated Unlearning has been accepted at the [NewInML](https://newinml.github.io/NewInML2026NeurIPS/) workshop @ [NeurIPS 2026](https://neurips.cc/), Paris, France. We take a new, [path-dependent](https://en.wikipedia.org/wiki/Path_dependence) view of client selection: which clients are selected for unlearning depends on when and how they contributed during training.
+- **[10/2026]** My work on path-dependent client selection for Federated Unlearning has been accepted at the [NewInML Workshop](https://newinml.github.io/NewInML2026NeurIPS/) @ [NeurIPS 2026](https://neurips.cc/), Paris, France. We take a new, [path-dependent](https://en.wikipedia.org/wiki/Path_dependence) view of client selection: which clients are selected for unlearning depends on when and how they contributed during training.
 
 - **[09/2026]** I was invited to give a talk, ***Data Stays, Intelligence Unites: Designing Sustainable Incentives for Privacy-Preserving AI***, at the [ENSURE-6G Workshop on Privacy-Preserving Machine Learning (PPML)](https://lnkd.in/p/dh6cFX9z). The talk discussed why sustainable incentives, rather than algorithms alone, determine whether privacy-preserving AI systems such as Federated Learning are adopted and sustained in practice.
 
