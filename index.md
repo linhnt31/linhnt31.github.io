@@ -8,28 +8,28 @@ published: true
 ---
 
 <p style="background:#f5faff; border-left:4px solid #2196f3; padding:1em; font-style:italic;">
-Welcome to my personal space! Beyond my research, this is where I share technical posts, travel memories, and the wonderful people I’ve met along the way.
+Welcome to my personal space! This is where I share my research updates, technical posts, travel memories, and the wonderful people I’ve met along the way.
 </p>
 
 ### Short Biography
-I am **Linh**. I am currently a final-year PhD candidate in the fields of **Collective Intelligence** and **Network Economics** at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by the [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). In particular, my research focuses on **Privacy-preserving Data Sharing** (Federated Learning/Unlearning) and **Incentivization**, where [*cooperative* and *competitive*](https://en.wikipedia.org/wiki/Coopetition) organizations (e.g., hospitals, banks) jointly train AI models while sharing only model parameters, receive rewards proportional to their contributions (e.g., marginal improvements to the global model, data volume), and can exercise their [*right to be forgotten*](https://en.wikipedia.org/wiki/Right_to_be_forgotten). I have also completed two research internships: at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/) (June–September 2025) on incentives for federated unlearning, and at [Montimage](https://www.montimage.com/) (July–September 2026) on client-level federated unlearning. 
+I am **Linh**. I am currently a final-year PhD candidate in the fields of **Decentralized AI** and **Algorithmic Game Theory** at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by the [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). My work focus on **Federated Learning/Unlearning** paired with **Incentive Mechanisms**. I design *game-theoric frameworks* where [*cooperative* and *competitive*](https://en.wikipedia.org/wiki/Coopetition) organizations (e.g., hospitals, banks) jointly train AI models while sharing only model parameters, receive rewards proportional to their marginal contributions, and retain the verifiable [*right to be forgotten*](https://en.wikipedia.org/wiki/Right_to_be_forgotten). I have also completed two research internships: at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/) (June–September 2025) on incentives for federated unlearning, and at [Montimage](https://www.montimage.com/) (July–September 2026) on client-level federated unlearning. 
 
 During my bachelor's, I led research on the Software-Defined Networking, Wireless Sensor Networks, deep learning-based IoT systems, and blockchain-based data sharing. I also collaborated on projects funded by <a href="https://www.navercorp.com/">NAVER Corporation</a>, the <a href="https://www.apnic.foundation/">APNIC Foundation</a>, <a href="https://www.csiro.au/en/research/technology-space/data">CSIRO Data61</a>, and the <a href="https://www.motorolasolutions.com/en_us/foundation.html">Motorola Solutions Foundation</a>.
 
 Before my PhD, I also worked in industry. I was a DevOps Engineer at <a href="https://fptsoftware.com/">FPT Software</a>, FPT Corporation, from May to November 2022. Earlier, I completed two cloud computing internships: one with the Bizfly Cloud Department at <a href="https://vccorp.vn/">VCCorp Corporation</a> (April–July 2020), and one at <a href="https://hadtech.vn/en_US/">HADTech Joint Stock Company</a> (October 2019–March 2020).
 
-In addition to doing research, I enjoy designing, modelling, and turning academic ideas into practical products. Here is my tech stack: 
+I enjoy modelling, formulating, and turning academic ideas into practical products. Here is my tech stack: 
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E) ![Solidity](https://img.shields.io/badge/Solidity-e6e6e6?style=flat&logo=solidity&logoColor=black) ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white) ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat&logo=Ethereum&logoColor=white) ![Hyperledger Fabric](https://img.shields.io/badge/hyperledger-2F3134?style=flat&logo=hyperledger&logoColor=white) ![Amazon AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
 
-<div style="background:#fff8e1; border-left:4px solid #ff9800; padding:0.8em 1em; margin:1em 0;">
+<div style="background:#fff8e1; border-left:4px solid #ff9800; padding:0.8em 1em; margin:1em 0;font-size: 0.92rem;">
 <i class="fas fa-bullhorn" style="color:#ff9800;"></i>&nbsp; <strong>New blog post:</strong> Linh Nguyen, "<a href="{{site.baseurl}}/research/transformer_llms"><strong>How Transformer LLMs Work</strong></a>" (v1. September 2026)<br>
 <i class="fas fa-sync-alt" style="color:#ff9800;"></i>&nbsp; <em>This is a living post: I will keep adding interview questions and answers on Transformer LLMs.</em>
 </div>
 
 ### News
 
-<div style="height: 500px; overflow-y: auto; text-align: justify; font-size: 0.9rem; margin-bottom: 15px;" markdown="1">
+<div style="height: 500px; overflow-y: auto; text-align: justify; font-size: 0.92rem; margin-bottom: 15px;" markdown="1">
 
 - **[10/2026]** My work on path-dependent client selection for Federated Unlearning has been accepted at the [NewInML Workshop](https://newinml.github.io/NewInML2026NeurIPS/) @ [NeurIPS 2026](https://neurips.cc/), Paris, France. We take a new, [path-dependent](https://en.wikipedia.org/wiki/Path_dependence) view of client selection: which clients are selected for unlearning depends on when and how they contributed during training.
 
@@ -72,7 +72,9 @@ In addition to doing research, I enjoy designing, modelling, and turning academi
 
 </div>
 
----
+
+
+### Viewers
 
 <p style="text-align:center;">
 <a href="http://s05.flagcounter.com/more/iQlX"><img src="https://s05.flagcounter.com/count/iQlX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_50/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Free counters!" border="0"></a>
