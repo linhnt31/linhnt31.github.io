@@ -40,6 +40,7 @@ published: true
     - [5.1. Experts and Routers](#experts-and-routers)
     - [5.2. Total and Active Parameters](#total-and-active-parameters)
     - [5.3. Advantages and Limitations](#moe-advantages-and-limitations)
+    - [5.4. Recent trends till Sept. 2026](#moe-trend)
 - [6. References](#references)
 
 ---
@@ -84,9 +85,15 @@ A Transformer consists of a stack of \(N\) structurally identical layers with se
 
 ### 2.1. Transformer Encoder {#transformer-encoder}
 
-The Transformer encoder converts input token embeddings, which are incorporated with positional information, into contextualized representations. Each encoder layer contains:
+The Transformer encoder converts input token embeddings into contextualized representations using positional information and a stack of encoder layers. Its main components are:
 
-- **Positional embedding** represents the position of each token in a sequence. In models that use additive positional embeddings, each positional vector has the same dimension as the corresponding token embedding. Positional information is necessary because *self-attention does not inherently represent token order*.
+- **Positional information** supplies token order. Without it, self-attention with no causal mask is *permutation-equivariant*: the encoder gives each word in "The dog bit the man" and "The man bit the dog" the same representation, even though who bites whom is reversed. Position can be *added to input embeddings* or *applied within attention*:
+
+    + **Fixed sinusoidal encodings (additive):** the original Transformer adds a non-trainable vector $p_i\in\mathbb{R}^{d_{\text{model}}}$ to the token embedding at position $i$, once, before the first layer [^14]: $p_{i,2r}=\sin(i\omega_r)$ and $p_{i,2r+1}=\cos(i\omega_r)$, with $\omega_r=10000^{-2r/d_{\text{model}}}$.
+
+      > **Limitations:** absolute position is mixed into each token's content vector once, at the input. Attention does not expose the relative offset between two tokens directly, so the model must learn it from this mixture, and deeper layers receive position only through the residual stream. RoPE instead injects relative position into every attention layer (see [Section 4.1](#attention-head) for the formulation).
+
+    + **Rotary position embeddings (RoPE):** every attention layer rotates each 2-D pair of query and key dimensions by an angle proportional to the token's position; the embeddings themselves are unchanged. The query-key dot product then depends on position only through the relative offset between the two tokens [^15].
 
 - **Multi-head self-attention**: multiple heads can use different learned projections for queries, keys, and values from the same input token representations (see Section [4.3.5](#attention-variants-types)). This lets each token gather different kinds of context from other tokens in the input sequence.
 
@@ -121,6 +128,20 @@ A final linear layer and softmax convert a decoder hidden state into a probabili
     - BERT uses bidirectional self-attention, so each ordinary token can attend to tokens on both sides.
 
     - The final representation of `[CLS]` is commonly used for sequence-level tasks after suitable training. `[SEP]` marks the end of a sequence or separates a pair of sequences.
+
+    - **Training strategy (BERT)** [^10][^11]:
+
+        + **Step 1 (Self-supervised pre-training):** Learn general language representations from large amounts of unlabeled text using ***proxy*** tasks, with targets derived automatically from the text. This is usually the most computationally expensive stage.
+
+            + **Masked Language Modeling (MLM):** select **15%** of input tokens for prediction. Of those selected, replace **80%** with `[MASK]`, **10%** with a random token, and leave **10%** unchanged. Predict the original tokens using context from both sides, and compute the MLM loss only at selected positions.
+
+            + **Next Sentence Prediction (NSP):** use the `[CLS]` representation to classify whether text segment B follows segment A in the source document. Half the training pairs are consecutive; half pair A with a random segment from another document.
+
+            + Optimize MLM and NSP **jointly**, using the sum of their losses.
+
+        + **Step 2: Supervised fine-tuning.** Add a task-specific output head and train it together with the pre-trained encoder on labeled data, e.g., for sentiment classification or named entity recognition. This usually requires much less data and computation than pre-training.
+
+        + **Scope:** this recipe describes the original BERT. NSP is optional in encoder-only training. **RoBERTa**, for example, uses MLM without NSP [^12].
 
 - **Decoder-only models**, such as GPT, use **causal self-attention** and learn to predict the next token from the preceding tokens.
 
@@ -249,6 +270,17 @@ Separate projections let the model learn different representations for matching 
 
 > **Training note:** When training from scratch, the token embeddings and projection matrices normally begin with random values and are updated by backpropagation. Learned positional embeddings are updated too; fixed positional encodings are not. By contrast, $X$, $Q$, $K$, and $V$ are temporary **activations**. They are recomputed on every forward pass and change as the model parameters change.
 
+> **Additive positions in the attention score:** in the first block of the original (post-norm) Transformer, row $i$ of $X$ is $x_i=e_i+p_i$. The query at position $i$ is then $q_i=x_iW^Q$ (row $i$ of $Q$), the key at position $j$ is $k_j=x_jW^K$ (row $j$ of $K$), and the raw score $(QK^T)_{ij}=q_ik_j^T$ splits into content-content, content-position, position-content, and position-position terms:
+>
+> $$q_ik_j^T=e_iW^Q{W^K}^Te_j^T+e_iW^Q{W^K}^Tp_j^T+p_iW^Q{W^K}^Te_j^T+p_iW^Q{W^K}^Tp_j^T.$$
+>
+> The second and third terms are **cross terms**: each pairs one token's content with the other token's *absolute* position ($p_j$ or $p_i$), not with the offset $j-i$. Without projection, the sinusoidal encodings from [Section 2.1](#transformer-encoder) satisfy $p_ip_j^T=\sum_r\cos\big((j-i)\omega_r\big)$, a function of the offset $j-i$ alone, but the learned $W^Q{W^K}^T$ generally breaks this. RoPE avoids the problem by rotating $q_i$ and $k_j$ so that their dot product depends on position only through $j-i$ (see Section [4.3.5](#attention-variants-types)).
+>
+> **Example:** suppose the model should learn the rule "attend to the previous token", i.e., the offset $j-i=-1$ for query-key pairs such as $(3,2)$, $(7,6)$, and $(100,99)$.
+>
+> - *Additive:* each pair uses different position vectors ($p_3,p_2$ vs. $p_7,p_6$ vs. $p_{100},p_{99}$), so the scores differ even for identical words. The model must learn from training data at many positions that these pairs mean the same thing.
+> - *RoPE:* every pair uses the same rotation $R_{-1}$, so identical words give identical scores. A rule learned at one position holds at every position.
+
 ### 4.2. Scaled Dot-Product Attention {#attention-math}
 
 One attention head computes [^1]:
@@ -307,6 +339,8 @@ The original Transformer uses ReLU for $\phi$; BERT and GPT-2 use GELU; many rec
 
 - **Pre-norm:** $\text{out} = h + \operatorname{FFN}(\operatorname{LayerNorm}(h))$.
 - **Post-norm:** $\text{out} = \operatorname{LayerNorm}(h + \operatorname{FFN}(h))$.
+
+> **Normalization evolution**: Nowadays, Pre-norm and RMSNorm are widely used.
 
 #### 4.3.4. Output {#attention-output}
 
@@ -375,11 +409,11 @@ The model therefore predicts **sat** as the next token. Computing all four dot p
 
         + **Token embeddings**: the vocabulary size is $128256$, each token is represented by $4096$ numbers.
 
-        + **RoPE**: Rotary position embeddings apply position-dependent rotations to the query and key vectors before computing their dot product. For a $Q$ at position $i$ and a $K$ at position $j$,
+        + **RoPE**: Rotary position embeddings apply position-dependent rotations to the query and key vectors before computing their dot product. For a query $q_i$ (row $i$ of $Q$) and a key $k_j$ (row $j$ of $K$), with $R_i$ the rotation for position $i$,
 
-          $$q_i'=R_iq_i,\qquad k_j'=R_jk_j,\qquad {q_i'}^Tk_j'=q_i^TR_{j-i}k_j.$$
+          $$q_i'=q_iR_i^T,\qquad k_j'=k_jR_j^T,\qquad q_i'{k_j'}^T=q_iR_i^TR_jk_j^T=q_iR_{j-i}k_j^T.$$
 
-          Thus, position affects the attention score through the relative offset $j-i$. By comparison, traditional additive positional embeddings form $x_i=e_i+p_i$, mixing an absolute-position vector directly into the token representation, thereby *the model must then learn how positions relate through its projections*. For example, token pairs at positions $(5,4)$ and $(9,8)$ have different absolute positions but the same offset $-1$, so identical content produces the same positional relationship under RoPE. RoPE is not applied to $V$ because values carry the content retrieved after the attention weights are determined.
+          Thus, position affects the attention score through the relative offset $j-i$. For example, token pairs at positions $(5,4)$ and $(9,8)$ have different absolute positions but the same offset $-1$, so identical content produces the same positional relationship under RoPE. Additive encodings, by contrast, leave the model to learn this relationship through its projections (see Section [4.1](#attention-head)). RoPE is not applied to $V$ because values carry the content retrieved after the attention weights are determined.
 
 - **Sparse attention:** restricts each query to selected positions, reducing the cost of long sequences.
 
@@ -389,7 +423,7 @@ The model therefore predicts **sat** as the next token. Computing all four dot p
 
 ## 5. Mixture of Experts {#mixture-of-experts}
 
-**Mixture of Experts (MoE)** [^2] increases a model's parameter capacity without activating all parameters for every token. In selected Transformer layers, MoE replaces the traditional FFNN with multiple FFNNs, called **experts**.
+**Mixture of Experts (MoE)** [^2] increases a model's parameter capacity without activating all parameters for every token. In selected Transformer layers, MoE replaces the traditional FFN with multiple FFNs, called **experts**.
 
 ![MoE overview]({{ site.baseurl }}/assets/images/Research/moe.png)
 
@@ -397,17 +431,27 @@ The model therefore predicts **sat** as the next token. Computing all four dot p
 
 - **Intuition**: each MoE layer has a set of experts. A **router** selects a small subset of them to process each token representation. Different experts may learn different patterns, although their specializations are not always easy to interpret.
 
-- **Expert**: is normally an FFNN within an MoE layer.
-
-- **Router**: is a small learned gating function, often a linear layer, that assigns each expert a score for a given token representation. It selects, for example, the top-$k$ highest-scoring experts and combines their outputs.
-
 ![MoE layer with a router and experts]({{ site.baseurl }}/assets/images/Research/router_moe.png)
+
+- **Expert**: is normally an FFN within an MoE layer.
+
+- **Gate/Router**: is a small learned gating function, often a linear layer, that assigns each expert a score for a given token representation. It selects, for example, the top-$k$ highest-scoring experts and combines their outputs.
+
+    + **Routing collapse:** the router may learn to favor a few experts early in training. These experts receive more tokens and training updates, which can reinforce the preference while leaving other experts under-trained.
+
+    + **Remedy:** add an **auxiliary load-balancing loss** to the main training loss to encourage more balanced expert usage. For example, Switch Transformer uses the following loss for **top-1 routing** [^13]:
+
+      $$\mathcal{L}_{\mathrm{balance}}=\alpha E\sum_{i=1}^{E} f_i P_i,$$
+
+      where $E$ is the number of experts, $f_i$ is the fraction of tokens in a batch assigned to **expert** $i$, $P_i$ is the router's probability for expert $i$ averaged over **all tokens in that batch**, and $\alpha$ controls the loss strength. Gradients flow through $P_i$, while the discrete assignment fractions $f_i$ are treated as constants. This pushes probability away from heavily used experts. You can see the illustrated image below.
+
+![Routing Collapse and Remedy in MoE]({{ site.baseurl }}/assets/images/Research/moe_loadbalancing_loss.jpg)
 
 ### 5.2. Total and Active Parameters {#total-and-active-parameters}
 
 - **Total parameters** include the input embeddings, attention layers, routers, all experts, and the LM head. During standard inference, all experts must be available in memory, although they may be distributed across multiple devices.
 
-- **Active parameters** are the parameters used to process a particular token. Only the selected top-$k$ experts are activated for that token. This is why MoE is called a **sparsely activated model**.
+- **Active parameters** are the parameters used to process a particular token. Only the selected ***top-$k$*** experts are activated for that token. This is why MoE is called a **sparsely activated model**.
 
 - MoE requires less computation than a dense model with a similar total number of parameters. However, it may still require more computation than a smaller dense model.
 
@@ -423,8 +467,14 @@ The model therefore predicts **sat** as the next token. Computing all four dot p
 
 1. Requires substantial memory to store all experts.
 2. Introduces routing and communication overhead.
-3. May overload some experts while leaving others under-trained.
+3. May overload some experts while leaving others under-trained (see **Routing collapse** above for a remedy).
 4. Is more complex to train and deploy than a dense model.
+
+### 5.4. Recent trends till Sept. 2026 {#moe-trend}
+
+- **Shared experts:** process all tokens and play a role of the foundation which hold the general knowledge for all specialized experts.
+
+![MoE shared experts]({{ site.baseurl }}/assets/images/Research/moe_shared_expert.jpg)
 
 ---
 
@@ -447,3 +497,17 @@ The model therefore predicts **sat** as the next token. Computing all four dot p
 [^8]: [Dong et al., 2021. Attention Is Not All You Need: Pure Attention Loses Rank Doubly Exponentially with Depth](https://arxiv.org/abs/2103.03404)
 
 [^9]: [Xiong et al., 2020. On Layer Normalization in the Transformer Architecture](https://arxiv.org/abs/2002.04745)
+
+[^10]: [Stanford CME295 Transformers & LLMs | Autumn 2026 course](https://cme295.stanford.edu/syllabus/)
+
+[^11]: [Devlin et al., 2019. BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://aclanthology.org/N19-1423/)
+
+[^12]: [Liu et al., 2019. RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692)
+
+[^13]: [Fedus et al., 2022. Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://jmlr.org/papers/v23/21-0998.html)
+
+[^14]: [Vaswani et al., 2017. Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+
+[^15]: [Su et al., 2024. RoFormer: Enhanced Transformer with Rotary Position Embedding](https://arxiv.org/abs/2104.09864)
+
+[^16]: [Press et al., 2022. Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation](https://arxiv.org/abs/2108.12409)
