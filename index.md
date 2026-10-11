@@ -8,11 +8,11 @@ published: true
 ---
 
 <p style="background:#f5faff; border-left:4px solid #2196f3; padding:1em; font-style:italic;">
-Welcome to my personal space! This webpage is not only dedicated to my academic pursuits, but also serves as a place where I share technical posts, memorable travel experiences, and the wonderful people I’ve met along the way.
+Welcome to my personal space! Beyond my research, this is where I share technical posts, travel memories, and the wonderful people I’ve met along the way.
 </p>
 
 ### Short Biography
-I am **Linh**. I am currently a final-year PhD candidate in the fields of **Blockchain-based data sharing**, **Federated Learning/Unlearning**, and **Incentivization** at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by the [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). I have been fortunate to complete two 3-month internships: one on incentivization for federated unlearning, from June to September 2025, at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/), and one on client-level federated unlearning solutions, from July to September 2026, at [Montimage](https://www.montimage.com/). 
+I am **Linh**. I am currently a final-year PhD candidate in the fields of **Collective Intelligence** and **Network Economics** at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by the [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). In particular, my research focuses on **Privacy-preserving Data Sharing** (Federated Learning/Unlearning) and **Incentivization**, where [*cooperative* and *competitive*](https://en.wikipedia.org/wiki/Coopetition) organizations (e.g., hospitals, banks) jointly train AI models while sharing only model parameters, receive rewards proportional to their contributions (e.g., marginal improvements to the global model, data volume), and can exercise their [*right to be forgotten*](https://en.wikipedia.org/wiki/Right_to_be_forgotten). I have also completed two research internships: at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/) (June–September 2025) on incentives for federated unlearning, and at [Montimage](https://www.montimage.com/) (July–September 2026) on client-level federated unlearning. 
 
 During my bachelor's, I led research on the Software-Defined Networking, Wireless Sensor Networks, deep learning-based IoT systems, and blockchain-based data sharing. I also collaborated on projects funded by <a href="https://www.navercorp.com/">NAVER Corporation</a>, the <a href="https://www.apnic.foundation/">APNIC Foundation</a>, <a href="https://www.csiro.au/en/research/technology-space/data">CSIRO Data61</a>, and the <a href="https://www.motorolasolutions.com/en_us/foundation.html">Motorola Solutions Foundation</a>.
 
@@ -73,12 +73,6 @@ In addition to doing research, I enjoy designing, modelling, and turning academi
 </div>
 
 ---
-### Professional Activities
-
-#### Invited Reviewer
-
-- **2026**: The 2026 IEEE 103rd Vehicular Technology Conference (VTC2026-Spring) 
-
 
 <p style="text-align:center;">
 <a href="http://s05.flagcounter.com/more/iQlX"><img src="https://s05.flagcounter.com/count/iQlX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_50/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Free counters!" border="0"></a>
