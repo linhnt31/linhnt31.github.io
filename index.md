@@ -9,6 +9,8 @@ published: true
 
 <p style="background:#f5faff; border-left:4px solid #2196f3; padding:1em; font-style:italic;">
 Welcome to my personal space! This is where I share my research updates, technical posts, travel memories, and the wonderful people I’ve met along the way.
+
+Before reading further, I have a question for you: <span style="background:linear-gradient(transparent 55%, #ffe082 55%); font-weight:600; font-style:normal;">“Besides your <em>great</em> academic achievements, do you think you understand your inner self?”</span>
 </p>
 
 ### Short Biography
