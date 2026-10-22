@@ -12,23 +12,40 @@ published: true
 <p style="margin:0; font-size:1.02rem;">This is where I share my research updates, technical posts, travel memories, and stories of the wonderful people I've met along the way. Beyond AI, I am curious about <em>psychology</em>. My work models people as rational, strategic agents, and psychology reminds me how much richer <em>natural intelligence</em> and the human inner self really are.</p>
 </div>
 
-### Short Biography
-I am **Linh**. I am currently a final-year PhD candidate in the fields of **Decentralized AI** and **Algorithmic Game Theory** at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by the [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). My work focuses on **Federated Learning/Unlearning** paired with **Incentive Mechanisms**. I design *game-theoretic incentive frameworks* for organizations that both [cooperate and compete](https://en.wikipedia.org/wiki/Coopetition), such as hospitals and banks, when they train AI models together while sharing only model parameters. My frameworks help them decide how much to contribute, reward them in proportion to their marginal contributions, and preserve their verifiable [*right to be forgotten*](https://en.wikipedia.org/wiki/Right_to_be_forgotten). I have also completed two research internships: at [Delft University of Technology (TU Delft)](https://www.tudelft.nl/) (June–September 2025) on incentives for federated unlearning, and at [Montimage](https://www.montimage.com/) (July–September 2026) on client-level federated unlearning. 
+### <i class="fas fa-user-graduate" style="color:#2d84ac;"></i>&nbsp; Short Biography
+I am **Linh**. I am currently a final-year PhD candidate in the fields of **Decentralized AI** and **Algorithmic Game Theory** at <a href="https://www.tcd.ie/">Trinity College Dublin, The University of Dublin</a>. My PhD is fully funded by the [School of Computer Science and Statistics, Trinity College Dublin](https://www.tcd.ie/scss/) and [Research Ireland ADVANCE CRT](https://www.advance-crt.ie/). 
 
-During my bachelor's, I led research on the Software-Defined Networking, Wireless Sensor Networks, deep learning-based IoT systems, and blockchain-based data sharing. I also collaborated on projects funded by <a href="https://www.navercorp.com/">NAVER Corporation</a>, the <a href="https://www.apnic.foundation/">APNIC Foundation</a>, <a href="https://www.csiro.au/en/research/technology-space/data">CSIRO Data61</a>, and the <a href="https://www.motorolasolutions.com/en_us/foundation.html">Motorola Solutions Foundation</a>.
+My work focuses on **Federated Learning/Unlearning** paired with **Incentive Mechanisms**. I design ***game-theoretic incentive frameworks*** for organizations, such as hospitals and banks, that train AI models together while sharing only model parameters. These organizations both [cooperate and compete](https://en.wikipedia.org/wiki/Coopetition), and each keeps its local resources (e.g., data quality, computing power) private from other organizations ([information asymmetry](https://en.wikipedia.org/wiki/Information_asymmetry)). My frameworks help them decide how much to contribute, reward them in proportion to their marginal contributions, and preserve their verifiable [*right to be forgotten*](https://en.wikipedia.org/wiki/Right_to_be_forgotten). 
 
-Before my PhD, I also worked in industry. I was a DevOps Engineer at <a href="https://fptsoftware.com/">FPT Software</a>, FPT Corporation, from May to November 2022. Earlier, I completed two cloud computing internships: one with the Bizfly Cloud Department at <a href="https://vccorp.vn/">VCCorp Corporation</a> (April–July 2020), and one at <a href="https://hadtech.vn/en_US/">HADTech Joint Stock Company</a> (October 2019–March 2020).
+<div style="background:#f8fafb; border:1px solid #dde7ec; border-top:4px solid #2d84ac; border-radius:8px; padding:0.8em 1.3em 0.4em; margin:1.4em 0;" markdown="1">
 
-I enjoy modelling, formulating, and turning academic ideas into practical products. Here is my tech stack: 
+#### <i class="fas fa-flask" style="color:#2d84ac;"></i>&nbsp; Research Experience
+
+- <span style="float:right; color:#777;">Jul–Sep 2026</span>**Research Intern**, [Montimage](https://www.montimage.com/), Paris, France<br><span style="color:#666; font-size:0.92em;">Client-level federated unlearning</span>
+- <span style="float:right; color:#777;">Jun–Sep 2025</span>**Research Intern**, [Delft University of Technology (TU Delft)](https://www.tudelft.nl/), Netherlands<br><span style="color:#666; font-size:0.92em;">Incentives for federated unlearning</span>
+
+During my bachelor's, I led research on Software-Defined Networking, Wireless Sensor Networks, deep learning-based IoT systems, and blockchain-based data sharing. I also collaborated on projects funded by <a href="https://www.navercorp.com/">NAVER Corporation</a>, the <a href="https://www.apnic.foundation/">APNIC Foundation</a>, <a href="https://www.csiro.au/en/research/technology-space/data">CSIRO Data61</a>, and the <a href="https://www.motorolasolutions.com/en_us/foundation.html">Motorola Solutions Foundation</a>.
+
+#### <i class="fas fa-briefcase" style="color:#2d84ac;"></i>&nbsp; Industry Experience
+
+- <span style="float:right; color:#777;">May–Nov 2022</span>**DevOps Engineer**, [FPT Software](https://fptsoftware.com/), FPT Corporation
+- <span style="float:right; color:#777;">Apr–Jul 2020</span>**Cloud Computing Intern**, Bizfly Cloud Department, [VCCorp Corporation](https://vccorp.vn/)
+- <span style="float:right; color:#777;">Oct 2019–Mar 2020</span>**Cloud Computing Intern**, [HADTech Joint Stock Company](https://hadtech.vn/en_US/)
+
+#### <i class="fas fa-code" style="color:#2d84ac;"></i>&nbsp; Tech Stack
+
+I enjoy modelling, formulating, and turning academic ideas into practical products.
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) ![Javascript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E) ![Solidity](https://img.shields.io/badge/Solidity-e6e6e6?style=flat&logo=solidity&logoColor=black) ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=flat&logo=docker&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat&logo=PyTorch&logoColor=white) ![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=flat&logo=Ethereum&logoColor=white) ![Hyperledger Fabric](https://img.shields.io/badge/hyperledger-2F3134?style=flat&logo=hyperledger&logoColor=white) ![Amazon AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=flat&logo=amazonaws&logoColor=white)
+
+</div>
 
 <div style="background:#fff8e1; border-left:4px solid #ff9800; padding:0.8em 1em; margin:1em 0;font-size: 0.92rem;">
 <i class="fas fa-bullhorn" style="color:#ff9800;"></i>&nbsp; <strong>New blog post:</strong> Linh Nguyen, "<a href="{{site.baseurl}}/research/transformer_llms"><strong>How Transformer LLMs Work</strong></a>" (v1. September 2026)<br>
 <i class="fas fa-sync-alt" style="color:#ff9800;"></i>&nbsp; <em>This is a living post: I will keep adding interview questions and answers on Transformer LLMs.</em>
 </div>
 
-### News
+### <i class="fas fa-newspaper" style="color:#2d84ac;"></i>&nbsp; News
 
 <div style="height: 500px; overflow-y: auto; text-align: justify; font-size: 0.92rem; margin-bottom: 15px;" markdown="1">
 
@@ -75,7 +92,7 @@ I enjoy modelling, formulating, and turning academic ideas into practical produc
 
 
 
-### Viewers
+### <i class="fas fa-globe-europe" style="color:#2d84ac;"></i>&nbsp; Viewers
 
 <p style="text-align:center;">
 <a href="http://s05.flagcounter.com/more/iQlX"><img src="https://s05.flagcounter.com/count/iQlX/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_50/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Free counters!" border="0"></a>
