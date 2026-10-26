@@ -49,7 +49,7 @@ I enjoy modelling, formulating, and turning academic ideas into practical produc
 
 <div style="height: 500px; overflow-y: auto; text-align: justify; font-size: 0.92rem; margin-bottom: 15px;" markdown="1">
 
-- **[10/2026]** My work ***Not All Retained Clients Are Equal: Client Selection for Federated Unlearning*** has been accepted at the [NewInML Workshop](https://newinml.github.io/NewInML2026NeurIPS/) @ [NeurIPS 2026](https://neurips.cc/), Paris, France. We take a new, [path-dependent](https://en.wikipedia.org/wiki/Path_dependence) view of client selection: which clients are selected for unlearning depends on when and how they contributed during training.
+- **[10/2026]** My work [***Not All Retained Clients Are Equal: Client Selection for Federated Unlearning***](http://arxiv.org/abs/2610.31786) has been accepted at the [NewInML Workshop](https://newinml.github.io/NewInML2026NeurIPS/) @ [NeurIPS 2026](https://neurips.cc/), Paris, France. We take a new, [path-dependent](https://en.wikipedia.org/wiki/Path_dependence) view of client selection: which clients are selected for unlearning depends on when and how they contributed during training.
 
 - **[09/2026]** I was invited to give a talk, ***Data Stays, Intelligence Unites: Designing Sustainable Incentives for Privacy-Preserving AI***, at the [ENSURE-6G Workshop on Privacy-Preserving Machine Learning (PPML)](https://lnkd.in/p/dh6cFX9z). The talk discussed why sustainable incentives, rather than algorithms alone, determine whether privacy-preserving AI systems such as Federated Learning are adopted and sustained in practice.
 

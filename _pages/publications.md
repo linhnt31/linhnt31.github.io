@@ -31,7 +31,7 @@ published: true
 
 ## Conference Papers
 
-0. <ins>**Thanh Linh Nguyen**</ins> and Q.-V. Pham, “PDF: Path-Dependent Client Selection for Federated Unlearning,” in *Conference on Neural Information Processing Systems (NeurIPS) NewInML Workshop*, Paris, France, Dec. 2026.
+0. <ins>**Thanh Linh Nguyen**</ins> and Q.-V. Pham, “<a href="http://arxiv.org/abs/2610.31786">Not All Retained Clients Are Equal: Client Selection for Federated Unlearning</a>,” in *Conference on Neural Information Processing Systems (NeurIPS) NewInML Workshop*, Paris, France, Dec. 2026.
 
 0. et al.,<ins>**Thanh Linh Nguyen**</ins>, et al., "XAI-Driven Runtime Validation for Zero-Touch Security Management in AI-Native 6G,” *Next Generation Communications (NextGCom) conference*, Kefalonia, Greece, 2026.
 
