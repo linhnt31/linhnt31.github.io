@@ -3,9 +3,12 @@ layout: default
 ---
 
 {% if page.profile %}
+    <div class="profile-card {{ page.profile.align }}">
     {% if page.profile.image %}
-      <img class="profile {{ page.profile.align }}"  width="25%" src="{{ page.profile.image | prepend: '/assets/images/' | prepend: site.baseurl | prepend: site.url }}">
+      <img class="profile" src="{{ page.profile.image | prepend: '/assets/images/' | prepend: site.baseurl | prepend: site.url }}" alt="{{ site.title }}">
     {% endif %}
+    {% include social-footer.html %}
+    </div>
 {% endif %}
 
 {{ content }}

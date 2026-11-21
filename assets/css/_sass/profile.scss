@@ -16,12 +16,46 @@
     float: right;
 }
 
+/* Homepage photo with social icons underneath */
+.profile-card {
+    width: 25%;
+    margin: 0 1rem 1rem;
+
+    .profile {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 0 0.6rem;
+    }
+
+    .rounded-social-buttons {
+        line-height: 1;
+    }
+
+    .rounded-social-buttons .social-button {
+        width: 1.75rem;
+        height: 1.75rem;
+        line-height: 1.75rem;
+        font-size: 1.125rem;
+        margin: 0 0.1rem 0.3rem;
+    }
+
+    .rounded-social-buttons .social-button i {
+        font-size: 18px;
+    }
+}
+
 // adjust tile sizes on smaller screens
 @include media-query($on-phone) {
   @media screen and (max-width: $on-phone){
 
     .profile {
       width: 40%;
+    }
+
+    .profile-card {
+      width: 40%;
+      margin: 0 0 0.75rem 0.75rem;
     }
 
   }
