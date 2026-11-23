@@ -13,10 +13,9 @@ published: true
 <p style="margin:0 0 0.4em; font-family:'Lato', sans-serif; font-weight:bold; font-size:1.3rem; color:#2d84ac;">Welcome to my personal space!</p>
 <p style="margin:0; font-size:1.02rem;">This is where I share my research updates, technical posts, travel memories, and stories of the wonderful people I've met along the way. Beyond AI, I am curious about <em>psychology</em>. My work models people as rational, strategic agents, yet psychology reminds me how much richer the human mind is: its <em>intelligence</em>, its <em>consciousness</em>, and the <em>unconscious</em> forces beneath them.</p>
 </div>
-
-<div style="background:#e8f5e9; border-left:5px solid #ff9800; border-radius:8px; padding:0.7em 1.2em; margin:0 0 1.6em; font-size:1.05rem;">
+<div style="background:#e8f5e9; border-left:5px solid #13712e; border-radius:8px; padding:0.7em 1.2em; margin:0 0 1.6em; font-size:1.05rem;">
 <i class="fas fa-search" style="color:#2e7d32;"></i>&nbsp; <strong style="color:#2e7d32;">Seeking an AI internship position starting from June 2027.</strong>
-<span style="font-size:0.95rem;">&nbsp;<a href="{{site.baseurl}}/assets/files/Resume_Thanh-Linh_Nguyen.pdf" target="_blank" style="color:#e65100; font-weight:bold;"><i class="fas fa-file-pdf"></i>&nbsp;Resume</a></span>
+<span style="font-size:0.9rem;">&nbsp;<a href="{{site.baseurl}}/assets/files/Resume_Thanh-Linh_Nguyen.pdf" target="_blank" style="color:#e65100; font-weight:bold;"><i class="fas fa-file-pdf"></i>&nbsp;Resume</a></span>
 </div>
 
 ### <i class="fas fa-user-graduate" style="color:#2d84ac;"></i>&nbsp; Short Biography
