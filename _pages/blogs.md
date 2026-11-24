@@ -80,6 +80,8 @@ published: true
 
 3. Linh Thanh Nguyen, "[**How to develop your writing skills in the science: Myths and Lessons**]({{site.baseurl}}/blog/scientific_writing)" (January 2024)
 
+4. Linh Thanh Nguyen, "[**Lessons learned from my rebuttals**]({{site.baseurl}}/blog/rebuttal_lessons_learned)" (November 2026)
+
 ---
 
 ## Study & Philosophy

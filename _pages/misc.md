@@ -8,6 +8,7 @@ published: true
 <nav class="toc" markdown="1">
 **On this page**
 
+- [ADVANCE CRT 4th Cohort Celebration — Nov. 2026](#advance-cohort4-2026)
 - [Cambridge FL Workshop &amp; Flower Hackathon — Aug. 2026](#fl-cambridge-2026)
 - [ADVANCE CRT Research Colloquium — Feb. 2026](#advance-colloquium-2026)
 - [ADVANCE CRT 3rd Cohort Celebration — Oct. 2025](#advance-cohort3-2025)
@@ -17,6 +18,41 @@ published: true
 - [ADVANCE CRT Workshop — Nov. 2023](#advance-workshop-2023)
 - [9th Vietnam Summer School of Science — Aug. 2022](#vsss-2022)
 </nav>
+
+## Research Ireland ADVANCE CRT 4th Cohort Celebration, Cork, Nov. 2026 {#advance-cohort4-2026}
+
+Time flies! We have already reached the ADVANCE CRT 4th Cohort Celebration, and after this one, only us, the 5th cohort, will be left. Towards the end of the funding period, fewer people come to these events, as many are busy with work and wrapping up their final year. Still, it was a good time to get some emotional support ^^ and practical advice on thesis writing, viva preparation, and life after the PhD (e.g., job hunting and visas). Below are the lessons our alumni learned the hard way, which I am writing down for my future self and for you ^^.
+
+- **Think and prepare ahead:** A thesis is not written in the last month of a PhD, but it is a journey. We should keep the big picture of our thesis in mind, with each paper serving as a main chapter. At the end, we only need to connect the chapters into a coherent story with a clear narrative.
+
+- **For the thesis**, we must deeply understand the parts we control:
+
+  - **Motivation:** Know the background and literature well enough to explain what new knowledge the thesis adds and why it matters. We should also know the key people and works in our field.
+
+  - **Methodology:** a) why we chose this method, b) what alternatives we could have chosen, c) what the outcomes would have looked like with them, and d) what the limitations of our work are.
+
+- **For the viva:**
+
+  - The examiners are there to understand our work better, not to fail us! Each of them has their own perspective and questions.
+
+  - The viva can be long. Do not force yourself to remember everything: you can bring notes or a PDF of your thesis (check your university's rules), and ask for a break when your brain feels tired.
+
+  - For unexpected questions, first, do not panic. Before the viva, we can prepare a list of likely questions and answers. During it, we can show curiosity, honestly admit a limitation and propose it as future work ^^, or ask for a short break to think.
+
+  - For the presentation, remember that the examiners have already read the thesis and probably have their questions ready. So keep it focused: a) a short introduction of ourselves, then b) the main contributions.
+
+<figure class="photo">
+  <a href="{{ site.baseurl }}/assets/images/Cork2026/cork2026.jpeg" target="_blank" rel="noopener">
+    <img src="{{ site.baseurl }}/assets/images/Cork2026/cork2026.jpeg"
+         width="1528" height="1528" loading="lazy" decoding="async"
+         alt="Handwritten 'Dear future Dr...' note from Dr. Fatma resting on a maroon ADVANCE CRT 1st Cohort beanie.">
+  </a>
+  <figcaption>A special gift.</figcaption>
+</figure>
+
+I hope to add more here after my own viva next year, with real experience from defending my PhD thesis. Fingers crossed!
+
+
 
 ## [Federated Learning in Healthcare System Workshop](https://luma.com/mm2ruxjk) & [Flower Collaborative Agent Hackathon](https://flower.ai/events/collaborative-agent-hackathon), Cambridge, 23–26 August 2026 {#fl-cambridge-2026}
 

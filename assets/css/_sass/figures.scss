@@ -71,3 +71,25 @@
     margin-bottom: 0.2em;
   }
 }
+
+/* Small category labels for news items and post lists */
+.tag {
+  display: inline-block;
+  font-size: 0.78em;
+  line-height: 1.4;
+  padding: 0 0.4em;
+  margin: 0 0.15em;
+  border: 1px solid #ffcc80;
+  border-radius: 3px;
+  color: #e65100;
+  white-space: nowrap;
+  vertical-align: 0.08em;
+}
+
+.tag-paper      { color: #2e7d32; border-color: #a5d6a7; }
+.tag-preprint   { color: #2d84ac; border-color: #9ecbe0; }
+.tag-talk       { color: #6a1b9a; border-color: #ce93d8; }
+.tag-event      { color: #e65100; border-color: #ffcc80; }
+.tag-secondment { color: #5d4037; border-color: #bcaaa4; }
+.tag-award      { color: #c62828; border-color: #ef9a9a; }
+.tag-milestone  { color: #455a64; border-color: #b0bec5; }
